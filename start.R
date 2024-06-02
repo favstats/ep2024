@@ -31,11 +31,11 @@ full_cntry_list <- read_rds("https://github.com/favstats/meta_ad_reports/raw/mai
   rename(iso2c = iso2,
          country = cntry) %>% 
   bind_rows(tibble(iso2c = "EU",
-                   country = "European Union"), .) %>% 
+                   country = "European Union"), .)  %>% 
+  filter(iso2c %in% eu_countries) %>% 
   # sample_n(n()) %>% 
   mutate(iso2c = fct_relevel(iso2c, eu_countries)) %>% 
-  arrange(iso2c) #%>% 
-  # filter(iso2c %in% c("EU", "NL", "PL"))
+  arrange(iso2c)
 
 render_it <- function(...) {
   print(...)
