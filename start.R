@@ -36,7 +36,7 @@ full_cntry_list <- read_rds("https://github.com/favstats/meta_ad_reports/raw/mai
   # sample_n(n()) %>% 
   mutate(iso2c = fct_relevel(iso2c, eu_countries)) %>% 
   arrange(iso2c) %>% 
-  filter(iso2c %in% c("DE", "LV"))
+  filter(iso2c %in% c("IT"))
 
 render_it <- function(...) {
   print(...)
