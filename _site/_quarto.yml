@@ -10,7 +10,7 @@ website:
     left:
       - href: map.qmd
         text: "{{< iconify ph map-trifold-thin >}} Map"
-      - href: spending.qmd
+      - href: index.qmd
         text: "{{< iconify ph coins >}} Spending"
       - sidebar:targeting
       - href: about.qmd

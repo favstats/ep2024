@@ -39,11 +39,13 @@ full_cntry_list <- read_rds("https://github.com/favstats/meta_ad_reports/raw/mai
 
 render_it <- function(...) {
   print(...)
+  thefile <- str_remove(..., "_site/") %>% str_replace("qmd", "html")
   if(any(str_detect(..., "map"))){
     if(cntryy == "EU"){
       quarto::quarto_render(..., quiet = T)
     }
   } else {
+    # print(thefile)
     quarto::quarto_render(..., quiet = T)
   }
 
@@ -104,6 +106,7 @@ for (cntryy in full_cntry_list$iso2c) {
           fct_relevel("_site/map.qmd") %>%
           sort() %>%
           as.character() %>%
+          # .[2] %>% 
           purrr::walk(render_it, .progress = T)
 
         dir("docs", full.names = T) %>%

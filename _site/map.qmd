@@ -587,7 +587,7 @@ hc_tooltip(formatter = JS("function () {
     return '<b>' + this.point.name + '</b>: <br><i>€' + this.point.value.toFixed(0) + ' </i> per 1000 inhabitants<br><i>€' + new Intl.NumberFormat('fr-FR').format(this.point.euro_spend.toFixed(0)) + '</i> total spent in last 30 days (' + this.point.perc + '%)';
   }")) %>%
   # hc_mapNavigation(enabled = TRUE) %>%
-  hc_title(text = "Click on Any Country to See More") %>%
+  hc_title(text = "Click on any country or on the dropdown menu on the upper right for more details") %>%
 hc_legend(enabled = F) %>% 
   hc_colorAxis(
     type = 'logarithmic',

@@ -89,7 +89,7 @@ shiny::HTML(html_code)
       const choices = new Choices(iframeSelector, {
         searchEnabled: true,
         shouldSort: false,
-        itemSelectText: '',
+        itemSelectText: ' ',
       });
     
       selectButton.addEventListener('click', function() {
