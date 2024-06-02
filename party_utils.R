@@ -307,11 +307,13 @@ only_keep_these7 <- election_dat7 %>%
 
 election_dat30 <- election_dat30 %>% 
   filter(party != "Dismissed") %>% 
+  filter(party != "Inv") %>% 
   mutate(total_spend_formatted = euro_spend) %>% 
   inner_join(only_keep_these30)
 
 election_dat7 <- election_dat7 %>% 
   filter(party != "Dismissed") %>% 
+  filter(party != "Inv") %>% 
   mutate(total_spend_formatted = euro_spend) %>% 
   inner_join(only_keep_these7)
 
