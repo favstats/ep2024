@@ -8,7 +8,7 @@ print(getwd())
 
 
 # here::i_am("elex.Rproj")
-setwd("C:/Users/fabio/Dropbox/postdoc/elex/")
+# setwd("C:/Users/fabio/Dropbox/postdoc/elex/")
 # source("cntry.R")
 source("utils.R")
 
@@ -35,144 +35,143 @@ full_cntry_list <- read_rds("https://github.com/favstats/meta_ad_reports/raw/mai
   # sample_n(n()) %>% 
   mutate(iso2c = fct_relevel(iso2c, eu_countries)) %>% 
   arrange(iso2c) %>% 
-  filter(iso2c %in% c("EU", "NL", "PL"))
+  filter(iso2c %in% c("NL", "PL"))
 
 render_it <- function(...) {
   print(...)
   if(any(str_detect(..., "map"))){
     if(cntryy == "EU"){
       quarto::quarto_render(..., quiet = T)
-    } 
+    }
   } else {
     quarto::quarto_render(..., quiet = T)
   }
-  
+
 }
 render_it <- possibly(render_it, otherwise = NULL, quiet = F)
 
 # cntryy <- "NL"
 for (cntryy in full_cntry_list$iso2c) {
   # print(cntryy)
-  
+
   t2 <- Sys.time()
-  
+
   print(paste0(cntryy,": ", t2))
-  
-  
+
+
   try({
-    
-    
+
+
     time_difference_seconds <- difftime(t2, t1, units = "hours")
 
-    
+
     if (as.numeric(time_difference_seconds) > 4) {
       if (Sys.info()[["sysname"]] != "Windows") {
         break
       }
     }
-    
- 
-    
+
+
+
     sets$the_country <- full_cntry_list$country[which(full_cntry_list$iso2c==cntryy)]
     sets$cntry <- cntryy
-    
+
     jsonlite::write_json(sets, "settings.json",  simplifyVector = TRUE)
-    
+
     # Sys.sleep(5)
-    
-    
- 
-    
-    
-    
+
+
+
+
+
+
     # rstudioapi::jobRunScript("fbadlibrary.R")
     # try({
-      
-      
-      
-      
+
+
+
+
       # if(nrow(election_dat30)!=0){
-        
+
         # Sys.sleep(60*7)
         # all_dat <- readRDS("data/all_dat.rds")
-        
+
         # write_lines(nrow(distinct(election_dat30, internal_id)), file = "n_advertisers.txt")
         # render_it <- possibly(quarto::quarto_render, otherwise = NULL, quiet = F)
-        dir("_site", full.names = T) %>% 
-          keep(~str_detect(.x, "qmd")) %>% 
+        dir("_site", full.names = T) %>%
+          keep(~str_detect(.x, "qmd")) %>%
           # discard( ~ str_detect(.x, "map")) %>%
-          fct_relevel("_site/map.qmd") %>% 
-          sort() %>% 
-          as.character() %>% 
+          fct_relevel("_site/map.qmd") %>%
+          sort() %>%
+          as.character() %>%
           purrr::walk(render_it, .progress = T)
-        
-        dir("docs", full.names = T) %>% 
-          keep(~str_detect(.x, "site|files")) %>% 
+
+        dir("docs", full.names = T) %>%
+          keep(~str_detect(.x, "site|files")) %>%
           walk(~fs::dir_copy(.x, str_replace(.x, "docs/", glue::glue("docs/{sets$cntry}/")), overwrite = T))
-        
-        dir("docs", full.names = T) %>% 
-          keep(~str_detect(.x, "html|json|logo")) %>% 
+
+        dir("docs", full.names = T) %>%
+          keep(~str_detect(.x, "html|json|logo")) %>%
           walk(~fs::file_copy(.x, str_replace(.x, "docs/", glue::glue("docs/{sets$cntry}/")), overwrite = T))
-        
+
         # knitr::knit("README.Rmd")
-        # 
+        #
         # rmarkdown::render("logs/overview.Rmd")
-        # 
+        #
         # file.copy(from = "logs/overview.html", to = glue::glue("docs/{sets$cntry}/overview.html"), overwrite = T)
-        
+
         unlink("node_modules", recursive = T, force = T)
         unlink("out", recursive = T, force = T)
-        
-        dir("docs", full.names = T) %>% 
-          keep(~str_detect(.x, "site|files")) %>% 
+
+        dir("docs", full.names = T) %>%
+          keep(~str_detect(.x, "site|files")) %>%
           walk(fs::dir_delete)
-        
-        dir("docs", full.names = T) %>% 
-          keep(~str_detect(.x, "html|json")) %>% 
+
+        dir("docs", full.names = T) %>%
+          keep(~str_detect(.x, "html|json")) %>%
           walk(fs::file_delete)
-        
+
       # } #else {
-        
+
       #   rmarkdown::render("logs/index.Rmd")
       #   dir.create(glue::glue("docs/{sets$cntry}"), recursive = T)
       #   file.copy(from = "logs/index.Rmd", to = glue::glue("docs/{sets$cntry}/index.html"), overwrite = T, recursive = T)
-      #   
+      #
       #   unlink("node_modules", recursive = T, force = T)
       #   unlink("out", recursive = T, force = T)
-      #   
+      #
       # }
-      
-      
-      
-      
-      
-    # })
-    
-    # dir("docs", full.names = T) %>% 
-    #   keep(~str_detect(.x, "site|files")) %>% 
-    #   walk(fs::dir_delete)
-    # 
-    # dir("docs", full.names = T) %>% 
-    #   keep(~str_detect(.x, "html|json")) %>% 
-    #   walk(fs::file_delete)
-    
-  })
-  
 
-  
+
+
+
+
+    # })
+
+    # dir("docs", full.names = T) %>%
+    #   keep(~str_detect(.x, "site|files")) %>%
+    #   walk(fs::dir_delete)
+    #
+    # dir("docs", full.names = T) %>%
+    #   keep(~str_detect(.x, "html|json")) %>%
+    #   walk(fs::file_delete)
+
+  })
+
+
+
   # file.remove("_site/_quarto.yml")
-  
+
   # rm(election_dat30)
-  
+
 }
 
-
-rmarkdown::render("index.Rmd")
+rmarkdown::render("index.Rmd", output_file = "docs/index.html")
 # dir.create(glue::glue("docs/{sets$cntry}"), recursive = T)
-file.copy(from = "index.html", to = glue::glue("docs/index.html"), overwrite = T, recursive = T)
-dir(full.names = F) %>%
-  keep(~str_detect(.x, "_libs")) %>%
-  walk(~fs::dir_copy(.x, "docs/site_libs", overwrite = T))
+# file.copy(from = "index.html", to = glue::glue("docs/index.html"), overwrite = T)
+# dir(full.names = F) %>%
+#   keep(~str_detect(.x, "_libs")) %>%
+#   walk(~fs::dir_copy(.x, "docs/site_libs", overwrite = T))
 
 
 
