@@ -147,7 +147,7 @@ source("../party_utils.R")
     
         eu_countries <- c("AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE")
 
-if(Sys.info()[["user"]]=="fabio"){
+if(Sys.info()[["user"]]=="fabio" | Sys.info()[["user"]]=="favoo"){
   fin_spend <- readRDS("../data/fin_spend.rds")
   spend_reports <- readRDS("../data/spend_reports.rds")
 } else {
@@ -464,7 +464,7 @@ options(scipen = 999)
 ```
 
 ```{r}
-if(Sys.info()[["user"]] == "fabio"){
+if(Sys.info()[["user"]]=="fabio" | Sys.info()[["user"]]=="favoo"){
   col_each30 <- readRDS("col_each30.rds")
   col_each30_excl <- readRDS("col_each30_excl.rds")
   col_each30_incl <- readRDS("col_each30_incl.rds")
@@ -620,7 +620,7 @@ hc_legend(enabled = F) %>%
 
 
 ```{r}
-if(Sys.info()[["user"]]=="fabio"){
+if(Sys.info()[["user"]]=="fabio" | Sys.info()[["user"]]=="favoo"){
 election_dat30 <- readRDS("../data/election_dat30.rds") 
 }  else {
 election_dat30 <- dir("../data/30", full.names = T) %>% 

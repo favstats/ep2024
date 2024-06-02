@@ -64,7 +64,7 @@ How much did the campaigns of political parties spend on different audiences? Th
 
 
 library(tidytable)
-if(Sys.info()[["user"]] == "fabio"){
+if(Sys.info()[["user"]]=="fabio" | Sys.info()[["user"]]=="favoo"){
   col_each30 <- readRDS("col_each30.rds")
 } else {
   
