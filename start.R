@@ -184,10 +184,10 @@ full_cntry_list$iso2c %>%
     try({
       
     city_name <- .x
-    dir("docs", full.names = T) %>%
+    dir("docs/EU", full.names = T) %>%
       keep( ~ str_detect(.x, "map")) %>%
       walk( ~ fs::file_copy(.x, str_replace(
-        .x, "docs/", glue::glue("docs/{city_name}/")
+        .x, "docs/EU/", glue::glue("docs/{city_name}/")
       ), overwrite = T))
     
     # dir("docs", full.names = T) %>%
