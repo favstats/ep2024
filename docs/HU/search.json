@@ -1,0 +1,136 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "European Parliament Elections 2024",
+    "section": "",
+    "text": "Methodology\nIn collaboration with Who Targets Me, we monitored 170 political advertisers to better understand how campaigns use different targeting methods made available by Meta. To do this, we used data from the Meta Ad Library, using the new ‘Audience’ data which gives some detail on how pages target their ads.\nTo better understand the election, we kept only advertisers who:\n\nAdvertised in the last 7 days (23 May - 29 May 2024)\nAdvertised in the last 30 days (30 Apr - 29 May 2024)\n\n\n\n\n\n\n\nNote\n\n\n\nMeta only provides 7, 30 and 90 days windows for the targeting data in their Ad Library. Meta’s data also lags by a few days. Report will be updated as soon as new data is available.\n\n\n\n\n\n\n\n\nDisclaimer\n\n\n\nThe data shown in this dashboard is based on the platform’s respective ad libraries which are known to be sometimes incomplete (Edelson et al. 2020; Silva et al. 2020). For this reason the data shown here might not reflect the full picture nor all political ads that were targeted at voters.\n\n\n\n\nAbout the Creator of the Dashboard\n\n\n\n\n\n\n\n\n\n\n\nFabio Votta is a Postdoc at the University of Amsterdam who studies (online) political microtargeting and its usage around the world.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  BlueSky\n  Twitter\n  Personal Website\n\n\n\n\n\n\n\n\n\nWant to see how political parties target you? Sign up at Who Targets Me and download the gratis browser plugin to see how parties on Facebook use your data:\nhttps://whotargets.me/\n\n\n\n\n\n\n\nWant to retrieve targeting data from the Facebook Ad Library yourself? This dashboard is powered by the R package: metatargetr. Check it out here:\nhttps://github.com/favstats/metatargetr\n\n\n\n\nElection Targeting Dashboards\nA list of election dashboards:\n\n🇳🇱 2021 Dutch parliamentary election (15th-17th March 2021)\n🇩🇪 2021 German federal election (26 September 2021)\n🇸🇪 2022 Swedish general election (11th September 2022)\n🇺🇸 2022 United States midterm elections (8th November 2022)\n🇺🇸 2022 United States midterm elections - Georgia Runoff (6th December 2022)\n🇮🇹 2023 Lazio & Lombardy regional election (12-13th February 2023)\n🇪🇪 2023 Estonian parliamentary election (5th March 2023)\n🇳🇱 2023 Dutch provincial elections (15th March 2023)\n🇲🇪 2023 Montenegrin presidential elections (19th March 2023) - 1st round\n🇦🇺 2023 New South Wales state election (25th March 2023)\n🇫🇮 2023 Finnish parliamentary election (2 April 2023)\n🇹🇷 2023 Turkish general election (14 May 2023) - Round 1\n🇩🇪 2023 Bremen State election (14 May 2023)\n🇬🇷 2023 Greek Legislative election (21 May 2023)\n🇹🇷 2023 Turkish Presidential election (14 May 2023) - Round 2\n🇲🇪 2023 Montenegrin parliamentary elections (11 June 2023)\n🇬🇷 2nd 2023 Greek Legislative election (25 May 2023)\n🇸🇰 2023 Slovak parliamentary election (30 September 2023)\n🇩🇪 2023 Bavarian state election (8 October 2023)\n🇩🇪 2023 Hessian state election (8 October 2023)\n🇳🇿 2023 New Zealand general election (14 October 2023)\n🇵🇱 2023 Polish parliamentary election (15 October 2023)\n🇺🇸 US Presidential Primaries (2023-2024)"
+  },
+  {
+    "objectID": "demographics.html",
+    "href": "demographics.html",
+    "title": "Demographics",
+    "section": "",
+    "text": "The following graphs illustrate how parties target different age groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024",
+    "crumbs": [
+      "Demographics"
+    ]
+  },
+  {
+    "objectID": "demographics.html#age-targeting",
+    "href": "demographics.html#age-targeting",
+    "title": "Demographics",
+    "section": "",
+    "text": "The following graphs illustrate how parties target different age groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024",
+    "crumbs": [
+      "Demographics"
+    ]
+  },
+  {
+    "objectID": "demographics.html#gender-targeting",
+    "href": "demographics.html#gender-targeting",
+    "title": "Demographics",
+    "section": "Gender Targeting",
+    "text": "Gender Targeting\nDe onderstaande grafieken laten zien hoe partijen gender als focusgroep gebruiken en welk percentage van het budget daaraan werd uitgegeven.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024",
+    "crumbs": [
+      "Demographics"
+    ]
+  },
+  {
+    "objectID": "demographics.html#language-targeting",
+    "href": "demographics.html#language-targeting",
+    "title": "Demographics",
+    "section": "Language Targeting",
+    "text": "Language Targeting\nThe following graphs show how parties use different languages as focus groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024",
+    "crumbs": [
+      "Demographics"
+    ]
+  },
+  {
+    "objectID": "demographics.html#targeting-based-on-employment-or-education-instituation",
+    "href": "demographics.html#targeting-based-on-employment-or-education-instituation",
+    "title": "Demographics",
+    "section": "Targeting based on Employment or Education Instituation",
+    "text": "Targeting based on Employment or Education Instituation\nThe following graphs depict how parties utilize various job sectors and types of education as focus groups and the percentage of the budget allocated to them. The next graph focuses on educational levels.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024",
+    "crumbs": [
+      "Demographics"
+    ]
+  },
+  {
+    "objectID": "demographics.html#education-levels-targeting",
+    "href": "demographics.html#education-levels-targeting",
+    "title": "Demographics",
+    "section": "Education Levels Targeting",
+    "text": "Education Levels Targeting\nThe graphs below illustrate how parties target various education levels as focus groups and the percentage of the budget allocated to each.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024",
+    "crumbs": [
+      "Demographics"
+    ]
+  },
+  {
+    "objectID": "demographics.html#relationship-status-targeting",
+    "href": "demographics.html#relationship-status-targeting",
+    "title": "Demographics",
+    "section": "Relationship Status Targeting",
+    "text": "Relationship Status Targeting\nThe following graphs reveal how political parties utilize different relationship statuses as focus groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024",
+    "crumbs": [
+      "Demographics"
+    ]
+  },
+  {
+    "objectID": "detailed.html",
+    "href": "detailed.html",
+    "title": "Detailed Targeting",
+    "section": "",
+    "text": "The chart below displays the most utilized targeting criteria by political parties on Meta, based on the amounts spent.\n\n29 Apr - 28 May 202422 May - 28 May 2024",
+    "crumbs": [
+      "Detailed Targeting"
+    ]
+  },
+  {
+    "objectID": "detailed.html#top-targeted-audiences",
+    "href": "detailed.html#top-targeted-audiences",
+    "title": "Detailed Targeting",
+    "section": "",
+    "text": "The chart below displays the most utilized targeting criteria by political parties on Meta, based on the amounts spent.\n\n29 Apr - 28 May 202422 May - 28 May 2024",
+    "crumbs": [
+      "Detailed Targeting"
+    ]
+  },
+  {
+    "objectID": "detailed.html#top-excluded-audiences",
+    "href": "detailed.html#top-excluded-audiences",
+    "title": "Detailed Targeting",
+    "section": "Top Excluded Audiences",
+    "text": "Top Excluded Audiences\nAmong the detailed options offered by Meta, the chart below shows the most excluded target audiences per party. The ranking is based on the amounts spent.\n\n29 Apr - 28 May 202422 May - 28 May 2024",
+    "crumbs": [
+      "Detailed Targeting"
+    ]
+  },
+  {
+    "objectID": "detailed.html#top-contested-audiences",
+    "href": "detailed.html#top-contested-audiences",
+    "title": "Detailed Targeting",
+    "section": "Top Contested Audiences",
+    "text": "Top Contested Audiences\nThe charts below show the target audiences where most competition takes place. For example, the groups in which all parties invest large amounts to reach voters with the same interests.\n\n29 Apr - 28 May 202422 May - 28 May 2024",
+    "crumbs": [
+      "Detailed Targeting"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Spending",
+    "section": "",
+    "text": "Here you can see the expenditures of political parties in the lead-up to the elections according to the latest data.\n\n29 Apr - 28 May 202422 May - 28 May 2024\n\n\nDuring this period, political parties spent a total of €2,549,259 and displayed 15283 advertisements on Meta.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNumber of Advertisers\nTop Spenders\nNumber of Ads\nTotal Spend\n\n\n\n\nKorm\n183\n1. hirado.hu (€136,974)2. Szentkirályi Alexandra (€127,472)3. Magyar Nemzet (€102,782)\n8,207\n€1,181,164\n\n\nFidesz\n112\n1. Fidesz (€480,559)2. Orbán Viktor (€143,688)3. Ughy Attila (€2,351)\n2,176\n€653,665\n\n\nFidesz Satellite\n5\n1. Bohár Dániel - Riporter (€110,971)2. Ibolya Csenge (€107,889)3. Szarvas Szilveszter (€97,828)\n505\n€443,688\n\n\nEllen\n100\n1. Dobrev Klára (€85,703)2. Karácsony Gergely (€19,492)3. Gyurcsány Ferenc (€8,969)\n2,188\n€165,847\n\n\nDK\n31\n1. Dr. Molnár Csaba (€35,583)2. Demokratikus Koalíció (€10,460)3. Perlai Zoltán Budafok-Tétény (€1,280)\n401\n€50,398\n\n\nMom\n71\n1. Momentum Mozgalom (€4,054)2. Cseh Katalin (€2,183)3. Dukán András Ferenc (€679)\n425\n€14,015\n\n\nNGO\n15\n1. Paradigma Intézet (€2,459)2. Amnesty International Magyarország (€1,933)3. Budapest Pride (€1,907)\n285\n€9,745\n\n\nEgyéb\n31\n1. Dúró Dóra (€2,660)2. Megoldás Mozgalom (€1,673)3. Novák Előd (€1,628)\n332\n€8,998\n\n\nMéd\n15\n1. Partizán (€2,453)2. aHang (€1,932)3. Political Capital (HU) (€1,540)\n338\n€8,675\n\n\nMHM\n13\n1. Mi Hazánk Mozgalom (€3,264)2. Mi Hazánk Budapest XIII. kerület (€171)3. Mi Hazánk Sátoraljaújhely (€82)\n41\n€3,811\n\n\nPár\n11\n1. Párbeszéd Magyarországért (€1,841)2. Jakál Adrienn (€239)3. Berki Sándor (€211)\n102\n€2,753\n\n\nLMP\n14\n1. LMP - Magyarország Zöld Pártja (€1,336.8)2. LMP Veszprém megye (€244.9)3. Pósa András (€240.6)\n72\n€2,531\n\n\nJob\n5\n1. Róna Péter (€1,007)2. Balassa Péter (€514)3. Jobbik Magyarországért Mozgalom (€212)\n61\n€1,791\n\n\nANP\n1\n1. Lehoczki - Spider László Miskolc polgármesterjelöltje (€818)\n22\n€818\n\n\nMSZP\n6\n1. Jeszenszki András (€504)2. Dr. Simon Gábor (€106)3. MSZP Győr-Moson-Sopron Területi Szövetsége (€45)\n91\n€691\n\n\nCiv\n3\n1. Szabó Csaba (€432)2. Transzparens Újságírásért Alapítvány (€173)3. Drogkutató Intézet (€52)\n35\n€656\n\n\nKDNP\n1\n1. KDNP Győri Szervezete (€14)\n2\n€14\n\n\n\n\n\n\n\n\n\n\nDuring this period, political parties spent a total of €843,314 and displayed 6196 advertisements on Meta.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNumber of Advertisers\nTop Spenders\nNumber of Ads\nTotal Spend\n\n\n\n\nKorm\n160\n1. Magyar Nemzet (€47,304)2. hirado.hu (€35,081)3. Ripost (€29,246)\n2,956\n€388,138\n\n\nFidesz\n95\n1. Fidesz (€231,870)2. Orbán Viktor (€25,505)3. Fidesz Hódmezővásárhely (€662)\n965\n€266,198\n\n\nFidesz Satellite\n5\n1. Ibolya Csenge (€22,804)2. Bohár Dániel - Riporter (€22,563)3. Szarvas Szilveszter (€21,674)\n243\n€97,261\n\n\nEllen\n86\n1. Dobrev Klára (€23,684)2. Karácsony Gergely (€5,657)3. Ungár Péter (€4,865)\n983\n€55,189\n\n\nDK\n21\n1. Dr. Molnár Csaba (€10,730)2. Demokratikus Koalíció (€4,993)3. Perlai Zoltán Budafok-Tétény (€604)\n157\n€17,518\n\n\nMom\n57\n1. Momentum Mozgalom (€1,842)2. Cseh Katalin (€1,235)3. Dukán András Ferenc (€238)\n196\n€5,899\n\n\nEgyéb\n26\n1. Dúró Dóra (€1,280)2. Megoldás Mozgalom (€941)3. Novák Előd (€740)\n205\n€4,003\n\n\nMéd\n13\n1. aHang (€1,327)2. Political Capital (HU) (€436)3. atlatszo.hu (€326)\n150\n€2,432\n\n\nNGO\n13\n1. Paradigma Intézet (€907)2. Budapest Pride (€429)3. Amnesty International Magyarország (€381)\n126\n€2,360\n\n\nLMP\n11\n1. LMP - Magyarország Zöld Pártja (€1,033)2. Pósa András (€146)3. LMP Veszprém megye (€96)\n35\n€1,578\n\n\nPár\n10\n1. Párbeszéd Magyarországért (€670)2. Jakál Adrienn (€103)3. Kis Miklós (€92)\n35\n€1,060\n\n\nJob\n5\n1. Róna Péter (€274)2. Balassa Péter (€196)3. Jobbik Magyarországért Mozgalom (€105)\n28\n€592\n\n\nMHM\n8\n1. Mi Hazánk Mozgalom (€190)2. Mi Hazánk Budapest XIII. kerület (€74)3. Mi Hazánk Hatvan és térsége (€26)\n11\n€363\n\n\nANP\n1\n1. Lehoczki - Spider László Miskolc polgármesterjelöltje (€313)\n14\n€313\n\n\nMSZP\n3\n1. Jeszenszki András (€198.5)2. Dr. Simon Gábor (€20.4)3. MSZP Józsefváros (€18.0)\n75\n€237\n\n\nCiv\n3\n1. Szabó Csaba (€100)2. Transzparens Újságírásért Alapítvány (€44)3. Drogkutató Intézet (€26)\n16\n€170\n\n\nKDNP\n1\n1. KDNP Győri Szervezete (€4)\n1\n€4"
+  },
+  {
+    "objectID": "targeting.html",
+    "href": "targeting.html",
+    "title": "Spending per Targeting",
+    "section": "",
+    "text": "These charts show the groups that political parties target with their advertisements leading up to the elections, according to the latest data. The focus is on Meta’s platforms (Facebook and Instagram) because they offer the most detailed targeting options for political advertisements.\nHow much did the campaigns of political parties spend on different audiences? The charts below show both the total and the expenditures per party.\n\nNote: Different targeting criteria may overlap, so the outcome may not necessarily add up to 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024\n\n\n\nTotalBy Party\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTotalBy Party",
+    "crumbs": [
+      "Spending per Targeting"
+    ]
+  }
+]

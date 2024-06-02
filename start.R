@@ -34,8 +34,8 @@ full_cntry_list <- read_rds("https://github.com/favstats/meta_ad_reports/raw/mai
                    country = "European Union"), .) %>% 
   # sample_n(n()) %>% 
   mutate(iso2c = fct_relevel(iso2c, eu_countries)) %>% 
-  arrange(iso2c) %>% 
-  filter(iso2c %in% c("EU", "NL", "PL"))
+  arrange(iso2c) #%>% 
+  # filter(iso2c %in% c("EU", "NL", "PL"))
 
 render_it <- function(...) {
   print(...)
@@ -204,9 +204,9 @@ full_cntry_list$iso2c %>%
     })
   })
 
-# if (Sys.info()[["effective_user"]] == "fabio") {
-#   system("git pull")
-#   system("git add -A")
-#   system('git commit -m "update"')
-#   system("git push")
-# }
+if (Sys.info()[["effective_user"]] == "fabio" | Sys.info()[["effective_user"]] == "favoo") {
+  system("git pull")
+  system("git add -A")
+  system('git commit -m "update"')
+  system("git push")
+}
