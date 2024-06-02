@@ -190,17 +190,12 @@ full_cntry_list$iso2c %>%
         .x, "docs/EU/", glue::glue("docs/{city_name}/")
       ), overwrite = T))
     
-    # dir("docs", full.names = T) %>%
-    #   keep( ~ str_detect(.x, "blog")) %>%
-    #   walk( ~ fs::file_copy(.x, str_replace(
-    #     .x, "docs/", glue::glue("docs/{city_name}/")
-    #   ), overwrite = T))
-    # 
-    # dir("docs", full.names = T) %>%
-    #   keep( ~ str_detect(.x, "post")) %>%
-    #   walk( ~ fs::dir_copy(.x, str_replace(
-    #     .x, "docs/", glue::glue("docs/{city_name}/")
-    #   ), overwrite = T))
+    dir("docs/EU", full.names = T) %>%
+      keep(~str_detect(.x, "site|files"))  %>%
+      walk( ~ fs::file_copy(.x, str_replace(
+        .x, "docs/EU/", glue::glue("docs/{city_name}/")
+      ), overwrite = T))
+    
     })
   })
 
