@@ -1,0 +1,41 @@
+entities.short_name,entities.name,countries.name,European_Political_Group
+DISY,DISY,Cyprus,EPP
+AKEL,AKEL,Cyprus,GUE/NGL
+EDEK,EDEK,Cyprus,S&D
+OTHER,OTH,Cyprus,uncertain
+IND,Independent,Cyprus,uncertain
+DEPA,DEPA,Cyprus,RE
+KOSP,KOSP,Cyprus,uncertain
+GOV,Government,Cyprus,uncertain
+ELAM,ELAM,Cyprus,ID
+CSSD,Česká strana sociálně demokratická,Czechia,S&D
+SPD,Svoboda a přímá demokracie,Czechia,ID
+Pirati,Česká pirátská strana,Czechia,Greens/EFA
+ANO,ANO 2011,Czechia,RE
+OST,Ostatní,Czechia,uncertain
+KDU-ČSL,Křesťanská a demokratická unie – Československá strana lidová,Czechia,EPP
+ODS,Občanská demokratická strana,Czechia,ECR
+STAN,Starostové a nezávislí,Czechia,RE
+Nez,Nezávislí kandidáti a strany,Czechia,uncertain
+TOP,TOP 09,Czechia,EPP
+VLÁ,Vláda,Czechia,uncertain
+SEN21,Senator 21,Czechia,uncertain
+TRI,Trikolora,Czechia,uncertain
+PRO,Právo Respekt Odbornost,Czechia,uncertain
+PRI,Přísaha,Czechia,uncertain
+KSCM,Komunistická strana Čech a Moravy,Czechia,GUE/NGL
+Enh,Enhedslisten,Denmark,GUE/NGL
+Kon,Det Konservative Folkeparti,Denmark,EPP
+Alt,Alternativet,Denmark,Greens/EFA
+Ven,Venstre,Denmark,RE
+Lib,Liberal Alliance,Denmark,RE
+SF,SF,Denmark,Greens/EFA
+Rad,Radikale Venstre,Denmark,RE
+Kri,Kristendemokraterne,Denmark,EPP
+Oth,Others,Denmark,uncertain
+Mod,Moderaterne,Denmark,uncertain
+Grø,Frie Grønne,Denmark,Greens/EFA
+Fol,Dansk Folkeparti,Denmark,ID
+Dem,Danmarksdemokraterne,Denmark,uncertain
+Nye,Nye Borgerlige,Denmark,ID
+Soc,Socialdemokratiet,Denmark,S&D

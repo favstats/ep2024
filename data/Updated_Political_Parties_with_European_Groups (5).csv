@@ -1,0 +1,44 @@
+entities.short_name,entities.name,countries.name,European_Political_Group
+Mod,Modrí,Slovakia,ECR
+SNS,Slovenská národná strana,Slovakia,ID
+R,Republika,Slovakia,ID
+Méd,Médiá,Slovakia,uncertain
+ZL,Za ľudí,Slovakia,RE
+Volt,Volt Sloveksno,Slovakia,RE
+SD,Socialni demokrati,Slovenia,ID
+NSi,Nova Slovenija - Krščanski demokrati,Slovenia,EPP
+Lev,Levica,Slovenia,GUE/NGL
+Vla,Vlada,Slovenia,uncertain
+Slovenska demokratska stranka,SDS,Slovenia,EPP
+GS,Gibanje Svoboda,Slovenia,RE
+CS,Ciudadanos,Spain,RE
+PP,Partido Popular,Spain,EPP
+Jun,Junts,Spain,RE
+ERC,Esquerra Republicana de Catalunya,Spain,GUE/NGL
+VOX,Vox,Spain,ECR
+PSOE,Partido Socialista Obrero Español,Spain,S&D
+CCa,Coalición Canaria,Spain,RE
+Otros,Otros partidos (y municipales23),Spain,uncertain
+BNG,Bloque Nacionalista Galego,Spain,GUE/NGL
+PDeCAT,PDeCAT,Spain,RE
+EHB,EH Bildu,Spain,GUE/NGL
+UPN,Unión del Pueblo Navarro,Spain,EPP
+CUP,Candidatura d'Unitat Popular,Spain,GUE/NGL
+EAJ-PNV,Euzko Alderdi JeltzaleaV,Spain,RE
+NC-BC,NC-BC,Spain,RE
+LW,Otros prescriptores izq.,Spain,uncertain
+RW,Otros prescriptores der.,Spain,uncertain
+POD,Podemos 2024,Spain,GUE/NGL
+SUM2,Sumar 2024,Spain,GUE/NGL
+FORO,FORO Asturias,Spain,EPP
+Més,Ara més,Spain,RE
+AC,Aliança Catalana,Spain,uncertain
+L,Liberalerna,Sweden,RE
+M,Moderata samlingspartiet,Sweden,EPP
+And,Andra politiska partier,Sweden,uncertain
+C,Centerpartiet,Sweden,RE
+SD,Sverigedemokraterna,Sweden,ID
+KD,Kristdemokraterna,Sweden,EPP
+MP,Miljöpartiet de Gröna,Sweden,Greens/EFA
+V,Vänsterpartiet,Sweden,GUE/NGL
+S,Socialdemokratiska arbetarpartiet,Sweden,S&D

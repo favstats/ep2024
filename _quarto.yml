@@ -1,0 +1,35 @@
+project:
+  type: website
+  output-dir: ../docs
+
+website:
+  title: "European Parliament Elections 2024"
+  favicon: "wtm_logo_2020_transparent-150x150.png"
+  navbar:
+    logo: "wtm_logo_2020_transparent-300x300.png"
+    left:
+      - href: map.qmd
+        text: "{{< iconify ph map-trifold-thin >}} Map"
+      - href: spending.qmd
+        text: "{{< iconify ph coins >}} Spending"
+      - sidebar:targeting
+      - href: about.qmd
+        text: "{{< iconify ph info-thin >}} About"
+  sidebar:
+    - id: ""
+    - id: targeting
+      title: "{{< iconify ph users-three-thin >}} Targeting"
+      style: "docked"
+      collapse-level: 2
+      contents:
+        - targeting.qmd
+        - detailed.qmd
+        - demographics.qmd
+
+format:
+  html:
+    theme:
+      - cosmo
+      - custom.scss
+    fontsize: 1.2em
+

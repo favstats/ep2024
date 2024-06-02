@@ -1,0 +1,340 @@
+/*-- scss:defaults --*/
+$body-color: #000;
+$navbar-bg: #fff;
+$navbar-hl: #0056b3;
+$link-color: #0056b3;
+$link-hover-color: #000;
+$nav-tabs-link-active-color: #000;
+
+
+/*-- scss:variables --*/
+$font-primary: 'Roboto', Arial, sans-serif;
+
+
+html, body {
+  font-family: $font-primary;
+}
+
+
+.navbar {
+  border-bottom: 1px solid #ccc;
+}
+
+.navbar-logo {
+  max-height: 70px;
+  height: 70px;
+  border-radius: 0;
+}
+
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+div.sidebar-item-container .active {
+  color: #0056b3;
+}
+
+div.sidebar-item-container .sidebar-link:hover {
+  color: #0056b3;
+}
+
+.panel-tabset .nav-link {
+  font-size: 0.9rem;
+}
+
+.gt_table a {
+  color: $link-hover-color;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.gt_table a:hover {
+  text-decoration: underline;
+}
+
+.quarto-title-block div.description {
+  max-width: 72ch;
+  margin-bottom: 40px;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+
+.button {
+  background-color: #0056b3; /* Blue background */
+  border: none;
+  color: white;
+  padding: 10px 20px; /* Size of the padding around the text */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; /* Size of the font */
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners */
+  transition-duration: 0.4s; /* Smooth transition effect for hover state */
+}
+
+/* Darker background on mouse-over */
+button:hover {
+  background-color: #ccc;
+}
+
+
+
+
+
+/* General Styles for All Tabs */
+.panel-tabset .nav-tabs {
+  display: flex; /* Ensures all tabs are in one row */
+  justify-content: center; /* Centers tabs in the tabset */
+  width: 100%; /* Full width to contain all tabs equally */
+  flex-wrap: wrap; /* Allows tabs to wrap onto the next line on smaller screens */
+  list-style: none; /* Removes default list styling */
+  padding: 0; /* Removes default padding */
+}
+
+.panel-tabset .nav-item {
+  color: #000; /* Color of the text in the tabs */
+  background-color: #eee; /* Default background color of the tabs */
+  border-radius: 5px; /* Rounded corners for the tabs */
+  transition: background-color 0.4s ease; /* Smooth transition for background color */
+  margin: 2px; /* Adds a small space between tabs */
+}
+
+.panel-tabset .nav-item a {
+  display: block; /* Makes the link fill the tab */
+  padding: 8px 16px; /* Padding inside the tabs */
+  text-decoration: none; /* Removes underline from links */
+  color: inherit; /* Inherits color from .nav-item */
+  background-color: inherit; /* Inherits background-color from .nav-item */
+}
+
+
+
+/* Responsive Adjustment for Mobile Devices */
+@media (max-width: 768px) {
+  .panel-tabset .nav-tabs {
+    justify-content: space-around; /* Adjusts spacing for smaller screens */
+  }
+}
+
+
+.panel-tabset {
+  display: flex;
+  flex-direction: column;
+  border-top: none; /* Adds a top border to the whole set for continuity */
+  border-bottom: none; /* Adds a top border to the whole set for continuity */
+  padding: 0em !important;
+  margin-bottom: 0.25em !important;
+}
+
+
+.panel-tabset .tab-content {
+  order: 1; /* Ensures that the content is at the top */
+  border-top: none; /* Adds a subtle top border */
+  border-bottom: none; /* Adds a subtle top border */
+  border-left: none; /* Adds a subtle top border */
+  border-right: none; /* Adds a subtle top border */
+}
+
+
+
+.nav-tabs {
+  border-top: none; /* Adds a subtle top border */
+  border-bottom: none; /* Adds a subtle top border */
+  border-left: none; /* Adds a subtle top border */
+  border-right: none; /* Adds a subtle top border */
+
+}
+
+
+
+blockquote {
+  border-left: none; /* Removes the left border or bar */
+  color: #2f7fe1; /* Sets the text color to black */
+  margin-left: 0; /* Adjusts the left margin if necessary */
+  padding-left: 0; /* Removes padding on the left if it exists */
+}
+
+
+
+
+.button-container {
+  text-align: center;
+}
+
+.buttontop {
+  display: inline-block;
+  background-color: #2f7fe1;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.buttontop:hover {
+  background-color: #2f7fe1;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+
+.panel-tabset .nav-item:hover {
+  background-color: #ccc; /* Light grey background on hover */
+}
+
+
+
+
+.panel-tabset .nav-tabs .nav-link.active {
+  color: #fff; /* White text for active and hover states */
+  background-color: #0056b3; /* Orange background for active tab */
+  box-shadow: 0 6px 8px rgba(211, 211, 211, 1);
+  transform: translateY(-2px);
+}
+
+
+.panel-tabset .tab-content {
+  border-bottom: 1px solid #ccc; /* Adds a subtle top border */
+}
+
+
+
+blockquote.question-text {
+  font-size: 1em; /* Proper text sizing */
+  color: #333; /* Dark grey for main text for readability */
+  border-left: 5px solid #2f7fe1; /* Algosoc blue for distinction */
+  background-color: #f0f8ff; /* Very light blue background for soft contrast */
+  padding: 10px 20px; /* Padding for aesthetics */
+  margin: 20px 0; /* Margin to distinguish blockquotes from other content */
+  line-height: 1.6; /* Improved readability */
+  position: relative; /* For pseudo-element positioning if needed */
+}
+
+
+blockquote.highlightit {
+  font-size: 1em; /* Proper text sizing */
+  color: #333; /* Dark grey for main text for readability */
+  border-left: 5px solid #2f7fe1; /* Algosoc blue for distinction */
+  border-right: 5px solid #2f7fe1; /* Algosoc blue for distinction */
+
+  background-color: #f7e3ce; /* Very light blue background for soft contrast */
+  padding: 10px 20px; /* Padding for aesthetics */
+  margin: 20px 0; /* Margin to distinguish blockquotes from other content */
+  line-height: 1.6; /* Improved readability */
+  position: relative; /* For pseudo-element positioning if needed */
+}
+
+/* Navbar link styling */
+.nav-link {
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    padding: 2px;
+    color: #2f7fe1; /* Change color as needed */
+    text-decoration: none; /* Removes default underline */
+    transition: color 0.8s; /* Smooth transition for color change */
+}
+
+
+
+/* Additional hover effects */
+.nav-link:hover {
+    color: #555; /* Darken text on hover */
+}
+
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px; /* Adjust width as needed */
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -100px; /* Use half of the width to center the tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip on hover */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .nav-left, .navbar .nav-right {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+
+/* Styles for Vertical Tabsets */
+.panel-tabset .tabset-vertical {
+  display: flex; /* Ensure the container for vertical tabs is a flex container */
+}
+
+.panel-tabset .tabset-vertical .nav-tabs {
+  flex-direction: column; /* Vertical tabs */
+  margin-left: 1rem; /* Space between tabs and content */
+}
+
+.panel-tabset .tabset-vertical .nav-item {
+  margin-bottom: 0.5rem; /* Space between vertical tabs */
+}
+
+.panel-tabset .tabset-vertical .tab-content {
+  flex-grow: 1; /* Make the content area take the remaining space */
+}
+
+/* Responsive Adjustment for Mobile Devices */
+@media (max-width: 768px) {
+  .panel-tabset .nav-tabs {
+    justify-content: space-around; /* Adjusts spacing for smaller screens */
+  }
+}

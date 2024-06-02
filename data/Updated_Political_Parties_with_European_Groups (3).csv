@@ -1,0 +1,41 @@
+entities.short_name,entities.name,countries.name,European_Political_Group
+Str,Stram Kurs,Denmark,ID
+RE,Eesti Reformierakond,Estonia,RE
+I,Isamaa,Estonia,EPP
+K,Eesti Keskerakond,Estonia,RE
+EKRE,Eesti Konservatiivne Rahvaerakond,Estonia,ID
+SDE,Sotsiaaldemokraatlik Erakond,Estonia,S&D
+E200,Eesti 200,Estonia,RE
+OTH,Other,Estonia,uncertain
+GOV,Government,Estonia,uncertain
+Par,Parempoolsed,Estonia,uncertain
+SDP,Suomen sosialidemokraattinen puolue,Finland,S&D
+VIH,Vihreä liitto,Finland,Greens/EFA
+VAS,Vasemmistoliitto,Finland,GUE/NGL
+PER,Perussuomalaiset,Finland,ID
+KOK,Kansallinen Kokoomus,Finland,EPP
+KD,Suomen Kristillisdemokraatit,Finland,EPP
+RKP,Svenska folkpartiet i Finland,Finland,RE
+MUUT,Muut poliittiset puolueet,Finland,uncertain
+KES,Kesk,Finland,RE
+KOR,Korjausliike,Finland,uncertain
+,Hallitus (gov),Finland,uncertain
+MODEM,Mouvement Démocrate,France,RE
+AUT,Autres,France,uncertain
+PCF,Parti Communiste,France,GUE/NGL
+FI,La France Insoumise,France,GUE/NGL
+EELV,Europe Écologie les Verts,France,Greens/EFA
+PS,Parti Socialiste,France,S&D
+LR,Les Républicains,France,EPP
+RN,Rassemblement National,France,ID
+Ren,Renaissance,France,RE
+PG,Parti de gauche,France,GUE/NGL
+Inf,Influence étrangère,France,uncertain
+Hor,Horizons,France,RE
+AND,Andere Seiten/Other parties,Germany,uncertain
+SPD,SPD,Germany,S&D
+FDP,FDP,Germany,RE
+Sta,Staat/Gov,Germany,uncertain
+CDU,CDU,Germany,EPP
+AfD,AfD,Germany,ID
+Pol,Politische Player,Germany,uncertain

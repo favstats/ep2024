@@ -1,0 +1,1315 @@
+---
+format: 
+  html:
+    page-layout: full
+---
+
+```{r setup, include=FALSE}
+# here::i_am("wtm_gb.Rproj")
+
+## Global options
+knitr::opts_chunk$set(
+  cache = F,
+  echo = F,
+  warning = F,
+  message = F,
+  cache.lazy = FALSE
+)
+```
+
+
+```{css, echo = F, message=F, warning=F}
+.highcharts-container {
+  height: 100vh !important;
+  width: 100vw !important;
+}
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .show-data-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff; /* Blue shade */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0, 123, 255, 0.5); /* Add some shadow for depth */
+        }
+
+        .show-data-btn:hover, .show-data-btn:focus {
+            background-color: #0056b3; /* Darker blue on hover/focus */
+            transform: translateY(-2px); /* Slight raise effect */
+            box-shadow: 0 4px 6px rgba(0, 123, 255, 0.6); /* Enhanced shadow on hover/focus */
+        }
+
+        .show-data-btn:active {
+            background-color: #004089; /* Even darker blue on active/click */
+            transform: translateY(1px); /* Press down effect */
+            box-shadow: 0 2px 3px rgba(0, 123, 255, 0.5); /* Subdued shadow to simulate press */
+        }
+```
+
+```{r, eval = F}
+
+saveRDS(wtm_labs, "../data/wtm_labs.rds")
+wtm_labs %>% 
+  select(entities.short_name, entities.name, countries.name) %>% 
+  distinct %>% 
+  slice(301:n()) %>% 
+  dput()
+  write_csv("all_entities.csv")
+  
+  
+thelabs <- dir("../data", full.names = T) %>% 
+  keep(~str_detect(.x,"Updated")) %>% 
+  map_dfr(read_csv) 
+
+thelabs %>% 
+  distinct()
+
+more_labs <- enframe(labs) %>% 
+  rename(entities.short_name = name, 
+         European_Political_Group2 = value) %>% 
+  add_count(entities.short_name) %>% 
+  filter(n == 1) %>% 
+  select(-n)
+
+# more_labs %>% count(entities.short_name, sort = T)
+wtm_labs %>% 
+  # select(entities.short_name, entities.name, countries.name) %>% 
+  left_join(thelabs) %>% 
+  left_join(more_labs) %>% 
+  mutate(European_Political_Group = ifelse(is.na(European_Political_Group), European_Political_Group2, European_Political_Group)) %>% 
+  # count(European_Political_Group, sort =T) %>% 
+  # filter(European_Political_Group == "uncertain") %>% 
+  select(internal_id, entities.short_name, entities.name, countries.name, European_Political_Group) %>% 
+  left_join(election_dat30 %>% distinct(internal_id, .keep_all = T)) %>% 
+  group_by(entities.name, countries.name, entities.short_name, European_Political_Group) %>% 
+  summarize(spend = sum(euro_spend, na.rm = T)) %>% 
+  ungroup() %>% 
+  arrange(desc(spend)) %>% 
+  distinct() %>% 
+  write_csv("egroupaffil.csv")
+
+
+wtm_labs %>% 
+  # select(entities.short_name, entities.name, countries.name) %>% 
+  left_join(thelabs) %>% 
+  left_join(more_labs) %>% 
+  mutate(European_Political_Group = ifelse(is.na(European_Political_Group), European_Political_Group2, European_Political_Group)) %>% 
+  # count(European_Political_Group, sort =T) %>% 
+  # filter(European_Political_Group == "uncertain") %>% 
+  select(internal_id, entities.short_name, entities.name, countries.name, European_Political_Group) %>% 
+  left_join(election_dat30 %>% distinct(internal_id, .keep_all = T)) %>% 
+  filter(entities.name == "Investigations") %>% filter(is.na(no_data)) %>% 
+  drop_na(total_spend_pct)
+
+
+```
+
+
+
+
+```{r cars, echo = F, message=F, warning=F}
+library(highcharter)
+library(tidyverse)
+library(reactable)
+library(reactablefmtr)
+
+      
+      download_it <- function(link){
+        thetemps <- tempfile()
+        download.file(link, destfile = thetemps, quiet = T)
+        readRDS(thetemps)
+      }
+    
+    # title_txt <- read_lines(here::here("_quarto.yml"))
+    # title_txt[which(str_detect(title_txt, "title"))[1]] <- glue::glue("  title: \"Targeting Dashboard\"")
+    # # title_txt[which(str_detect(title_txt, "output-dir"))[1]] <- glue::glue("  output-dir: ../docs/{sets$cntry}")
+    # # Sys.sleep(1)
+    # write_lines(title_txt, here::here("_site/_quarto.yml"))
+    
+    
+#     
+# wtm_labs <- all_labels_dat %>% 
+#   rename(internal_id = advertisers_platforms.advertiser_platform_ref) %>% 
+#   filter(entities_groups.group_name != "Group 2") %>% 
+#   filter(entities_groups.group_name != "Group 3") %>% 
+#   arrange(desc(entities_groups.group_name)) %>% 
+#   distinct(internal_id, .keep_all = T)
+
+source("../party_utils.R")
+    
+        eu_countries <- c("AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE")
+
+if(Sys.info()[["user"]]=="fabio"){
+  fin_spend <- readRDS("../data/fin_spend.rds")
+  spend_reports <- readRDS("../data/spend_reports.rds")
+} else {
+  full_cntry_list <- read_rds("https://github.com/favstats/meta_ad_reports/raw/main/cntry_list.rds") %>% 
+  rename(iso2c = iso2,
+         country = cntry) %>% 
+  # sample_n(n())  %>%
+      filter(iso2c %in% eu_countries) 
+
+      out <- full_cntry_list$iso2c %>% 
+        map(~{
+          .x %>% 
+            paste0(c("-last_30_days"))
+        }) %>% 
+        unlist() %>% 
+        # keep(~str_detect(.x, tf)) %>% 
+        # .[100:120] %>% 
+        map_dfr_progress(~{
+          the_assets <- httr::GET(paste0("https://github.com/favstats/meta_ad_targeting/releases/expanded_assets/", .x))
+          
+          the_assets %>% httr::content() %>% 
+            rvest::html_elements(".Box-row") %>% 
+            rvest::html_text()  %>%
+            tibble(raw = .)   %>%
+            # Split the raw column into separate lines
+            mutate(raw = strsplit(as.character(raw), "\n")) %>%
+            # Extract the relevant lines for filename, file size, and timestamp
+            transmute(
+              filename = sapply(raw, function(x) trimws(x[3])),
+              file_size = sapply(raw, function(x) trimws(x[6])),
+              timestamp = sapply(raw, function(x) trimws(x[7]))
+            ) %>% 
+            filter(filename != "Source code") %>% 
+            mutate(release = .x) %>% 
+            mutate_all(as.character)
+        })
+      
+      thosearethere30 <- out %>% 
+        rename(tag = release,
+               file_name = filename)  %>% 
+        arrange(desc(tag)) %>% 
+        separate(tag, into = c("cntry", "tframe"), remove = F, sep = "-") %>%
+        # filter(cntry == sets$cntry) %>% 
+        mutate(ds  = str_remove(file_name, "\\.rds|\\.zip|\\.parquet")) %>% 
+        distinct(cntry, ds, tframe) %>% 
+        drop_na(ds) %>% 
+        arrange(desc(ds)) %>% 
+        group_by(cntry) %>% 
+        slice(1) %>% 
+        ungroup()
+      
+      out <- full_cntry_list$iso2c %>% 
+        map(~{
+          .x %>% 
+            paste0(c("-last_7_days"))
+        }) %>% 
+        unlist() %>% 
+        # keep(~str_detect(.x, tf)) %>% 
+        # .[100:120] %>% 
+        map_dfr_progress(~{
+          the_assets <- httr::GET(paste0("https://github.com/favstats/meta_ad_targeting/releases/expanded_assets/", .x))
+          
+          the_assets %>% httr::content() %>% 
+            rvest::html_elements(".Box-row") %>% 
+            rvest::html_text()  %>%
+            tibble(raw = .)   %>%
+            # Split the raw column into separate lines
+            mutate(raw = strsplit(as.character(raw), "\n")) %>%
+            # Extract the relevant lines for filename, file size, and timestamp
+            transmute(
+              filename = sapply(raw, function(x) trimws(x[3])),
+              file_size = sapply(raw, function(x) trimws(x[6])),
+              timestamp = sapply(raw, function(x) trimws(x[7]))
+            ) %>% 
+            filter(filename != "Source code") %>% 
+            mutate(release = .x) %>% 
+            mutate_all(as.character)
+        })
+      
+      thosearethere7 <- out %>% 
+        rename(tag = release,
+               file_name = filename)  %>% 
+        arrange(desc(tag)) %>% 
+        separate(tag, into = c("cntry", "tframe"), remove = F, sep = "-") %>%
+        # filter(cntry == sets$cntry) %>% 
+        mutate(ds  = str_remove(file_name, "\\.rds|\\.zip|\\.parquet")) %>% 
+        distinct(cntry, ds, tframe) %>% 
+        drop_na(ds) %>% 
+        arrange(desc(ds)) %>% 
+        group_by(cntry) %>% 
+        slice(1) %>% 
+        ungroup()
+      
+          # counter <- 1
+      
+          
+  conversios <- jsonlite::fromJSON(paste0("https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@",thosearethere$ds[1] ,"/v1/currencies/eur.json")) %>% 
+  pluck("eur") %>% 
+  enframe() %>% 
+  unnest(value) %>% 
+  distinct(name, .keep_all = T) %>% 
+  mutate(main_currency = str_to_upper(name)) %>% 
+  filter(str_count(main_currency)==3) %>% 
+  mutate(conversion_rate = value) %>% 
+  select(-name, -value)
+    
+      
+    thosearethere7 %>%
+      filter(cntry %in% eu_countries) %>% 
+        split(1:nrow(.)) %>% 
+        walk(~{
+          # print()
+          
+          elex <-
+            arrow::read_parquet(
+              paste0(
+                "https://github.com/favstats/meta_ad_targeting/releases/download/",
+                .x$cntry,
+                "-last_",
+                7,
+                "_days/",
+                .x$ds,
+                ".parquet"
+              )
+            )  %>%
+            mutate(cntry = .x$cntry) %>%
+            filter(is.na(no_data))  %>%
+            left_join(conversios) %>%
+            mutate(total_spend_formatted = ifelse(total_spend_formatted == 100, 1, total_spend_formatted)) %>%
+            mutate(euro_spend = total_spend_formatted / conversion_rate)
+          
+          saveRDS(elex, glue::glue("../data/7/{.x$cntry}.rds"))
+          
+          
+        }, .progress = T)
+    
+    
+    spendd <- thosearethere30 %>%
+      filter(cntry %in% eu_countries) %>% 
+        split(1:nrow(.)) %>% 
+        map_dfr(~{
+          # print()
+ 
+          elex <-
+            arrow::read_parquet(
+              paste0(
+                "https://github.com/favstats/meta_ad_targeting/releases/download/",
+                .x$cntry,
+                "-last_",
+                30,
+                "_days/",
+                .x$ds,
+                ".parquet"
+              )
+            )  %>%
+            mutate(cntry = .x$cntry) %>%
+            filter(is.na(no_data))  %>%
+            left_join(conversios) %>%
+            mutate(total_spend_formatted = ifelse(total_spend_formatted == 100, 1, total_spend_formatted)) %>%
+            mutate(euro_spend = total_spend_formatted / conversion_rate)
+          
+          saveRDS(elex, glue::glue("../data/30/{.x$cntry}.rds"))
+          
+          return(elex %>% distinct(page_id, .keep_all = T))
+          
+        }, .progress = T)
+    
+
+
+    
+    options(scipen = 999)
+    
+ fin_spend <- spendd %>% 
+    select(cntry, euro_spend, main_currency, total_spend_formatted,
+           total_num_ads,conversion_rate, ds) %>% 
+   group_by(cntry) %>% 
+   summarise(euro_spend = sum(euro_spend),
+             total_num_ads = sum(total_num_ads)) %>% 
+   ungroup() %>% 
+   mutate(url = glue::glue("https://favstats.github.io/elex/{cntry}")) #%>% 
+   # mutate(euro_spend = log(euro_spend)) 
+   
+  # fin_spend %>% 
+  #   filter(cntry == "ID")
+ 
+ saveRDS(fin_spend, "../data/fin_spend.rds")
+ 
+ # saveRDS(spendd, "../data/election_dat30.rds")
+ 
+ 
+           out <- full_cntry_list$iso2c %>% 
+        map(~{
+          .x %>% 
+            paste0(c("-last_30_days"))
+        }) %>% 
+        unlist() %>% 
+        # keep(~str_detect(.x, tf)) %>% 
+        # .[100:120] %>% 
+        map_dfr_progress(~{
+          the_assets <- httr::GET(paste0("https://github.com/favstats/meta_ad_reports/releases/expanded_assets/", .x))
+          
+          the_assets %>% httr::content() %>% 
+            rvest::html_elements(".Box-row") %>% 
+            rvest::html_text()  %>%
+            tibble(raw = .)   %>%
+            # Split the raw column into separate lines
+            mutate(raw = strsplit(as.character(raw), "\n")) %>%
+            # Extract the relevant lines for filename, file size, and timestamp
+            transmute(
+              filename = sapply(raw, function(x) trimws(x[3])),
+              file_size = sapply(raw, function(x) trimws(x[6])),
+              timestamp = sapply(raw, function(x) trimws(x[7]))
+            ) %>% 
+            filter(filename != "Source code") %>% 
+            mutate(release = .x) %>% 
+            mutate_all(as.character)
+        })
+ 
+      thosearethere30_reports <- out %>% 
+        rename(tag = release,
+               file_name = filename)  %>% 
+        arrange(desc(tag)) %>% 
+        separate(tag, into = c("cntry", "tframe"), remove = F, sep = "-") %>%
+        # filter(cntry == sets$cntry) %>% 
+        mutate(ds  = str_remove(file_name, "\\.rds|\\.zip|\\.parquet")) %>% 
+        distinct(cntry, ds, tframe) %>% 
+        drop_na(ds) %>% 
+        arrange(desc(ds)) %>% 
+        group_by(cntry) %>% 
+        slice(2) %>% 
+        ungroup()
+
+          
+    spend_reports <- thosearethere30_reports %>%
+      filter(cntry %in% eu_countries) %>% 
+        split(1:nrow(.)) %>% 
+        map_dfr(~{
+          # print()
+ 
+          elex <<-
+            download_it(
+              paste0(
+                "https://github.com/favstats/meta_ad_reports/releases/download/",
+                .x$cntry,
+                # "DE",
+                "-last_",
+                30,
+                "_days/",
+                .x$ds,
+                # "2024-05-30",
+                ".rds"
+              )
+            )  %>%
+            mutate(cntry = .x$cntry)
+          
+          # print("hello")
+          thecurrent <- elex %>% 
+  select(contains("amount_spent")) %>% 
+  names() %>% 
+  str_remove_all("amount_spent_") %>% 
+  str_to_upper()
+  # print("heee")
+elex <- elex %>% 
+rename_at(vars(contains("amount_spent")), function(.x) return("amount_spent")) %>% 
+  # select(contains("amount_spent")) %>% 
+    mutate(main_currency = thecurrent) %>% 
+            left_join(conversios) %>%
+  mutate(amount_spent = readr::parse_number(amount_spent)) %>% 
+            mutate(amount_spent = ifelse(amount_spent == 100, 1, amount_spent)) %>%
+            mutate(euro_spend = amount_spent / conversion_rate) %>% 
+  mutate_all(as.character)
+          
+          # saveRDS(elex, glue::glue("../data/30/{.x$cntry}.rds"))
+          
+          return(elex %>% distinct(page_id, .keep_all = T))
+          
+        }, .progress = T) %>% 
+      mutate(euro_spend = as.numeric(euro_spend))
+ 
+    
+    saveRDS(spend_reports, "../data/spend_reports.rds")
+    
+}
+
+
+totpop <- readRDS("../data/totpop.rds")
+
+ncavc <- fin_spend %>% 
+  left_join(
+    totpop %>% 
+  filter(year == 2022) %>% 
+    rename(cntry = iso2c)
+  )  %>% 
+  mutate(spn_per_capita = euro_spend/SP.POP.TOTL*1000) %>% 
+  filter(cntry %in% eu_countries) %>% 
+  mutate(perc = euro_spend/sum(euro_spend)*100) %>% 
+  mutate(perc = round(perc,2)) #%>% 
+   # mutate(euro_spend = log(euro_spend))
+   
+# ncavc %>% 
+#   arrange(desc(spn_per_capita))
+
+
+options(scipen = 999)
+# fin_spend <- fin_spend %>%
+#   mutate(perc = exp(euro_spend)/sum(exp(euro_spend))*100) %>% 
+#   arrange(desc(perc)) %>% 
+#   mutate(perc = round(perc,2))
+
+# spend_reports %>% 
+#   arrange(desc(euro_spend))
+
+
+```
+
+```{r}
+if(Sys.info()[["user"]] == "fabio"){
+  col_each30 <- readRDS("col_each30.rds")
+  col_each30_excl <- readRDS("col_each30_excl.rds")
+  col_each30_incl <- readRDS("col_each30_incl.rds")
+} else {
+  
+  
+dat30 <- spend_reports %>%
+    rename(internal_id = page_id) %>% 
+  group_by(cntry) %>% 
+  arrange(desc(euro_spend)) %>% 
+  slice(1:20) %>% 
+  ungroup()  %>% 
+    mutate(total_spend = euro_spend) %>% 
+  group_by(cntry) %>% 
+  arrange(desc(total_spend))
+# t1 <- Sys.time()
+
+thisdat <- election_dat30 %>%
+    filter(internal_id %in% dat30$internal_id)  %>% 
+    mutate(total_spend = euro_spend) %>% 
+  filter(party != "-") %>% 
+  arrange(internal_id) 
+
+# debugonce(calc_targeting)
+  col_each30 <- thisdat %>% 
+    mutate(cntry_internal_id = paste0(cntry, "XXXXXXX", internal_id)) %>% 
+    pull(cntry_internal_id) %>% 
+    unique() %>% 
+    map_dfr(~{
+      important <<- str_split(.x, "XXXXXXX") %>% unlist()
+      the_dat <<- thisdat %>% filter(cntry == important[1]) %>% filter(internal_id == important[2])  
+      suppressWarnings({
+       fin <- calc_targeting(the_dat) %>%
+            mutate(#coalition = .x$coalition[1],
+                   party = the_dat$party[1],
+                   internal_id = the_dat$internal_id[1],
+                   cntry = the_dat$cntry[1])
+       
+       
+    })
+      
+  return(fin)
+    }) %>% 
+  filter(target != "Gender: All") %>% 
+  filter(target != "Unknown")        
+     
+
+
+# t2 <- Sys.time()
+# t2-t1
+#   
+
+saveRDS(col_each30, "col_each30.rds")
+
+
+
+  col_each30_excl <- thisdat %>% 
+    mutate(cntry_internal_id = paste0(cntry, "XXXXXXX", internal_id)) %>% 
+    pull(cntry_internal_id) %>% 
+    unique() %>% 
+    map_dfr(~{
+      important <<- str_split(.x, "XXXXXXX") %>% unlist()
+      the_dat <<- thisdat %>% filter(cntry == important[1]) %>% filter(internal_id == important[2])  
+      suppressWarnings({
+       fin <- calc_targeting(the_dat, exclude = T) %>%
+            mutate(#coalition = .x$coalition[1],
+                   party = the_dat$party[1],
+                   internal_id = the_dat$internal_id[1],
+                   cntry = the_dat$cntry[1])
+    })
+  return(fin)
+    }) %>% 
+  filter(target != "Gender: All") %>% 
+  filter(target != "Unknown") 
+  
+  saveRDS(col_each30_excl, "col_each30_excl.rds")
+
+  col_each30_incl <- thisdat %>% 
+    mutate(cntry_internal_id = paste0(cntry, "XXXXXXX", internal_id)) %>% 
+    pull(cntry_internal_id) %>% 
+    unique() %>% 
+    map_dfr(~{
+      important <<- str_split(.x, "XXXXXXX") %>% unlist()
+      the_dat <<- thisdat %>% filter(cntry == important[1]) %>% filter(internal_id == important[2])  
+      suppressWarnings({
+       fin <- calc_targeting(the_dat, exclude = F) %>%
+            mutate(#coalition = .x$coalition[1],
+                   party = the_dat$party[1],
+                   internal_id = the_dat$internal_id[1],
+                   cntry = the_dat$cntry[1])
+    })
+  return(fin)
+    }) %>% 
+  filter(target != "Gender: All") %>% 
+  filter(target != "Unknown") 
+  
+  saveRDS(col_each30_incl, "col_each30_incl.rds")
+  
+  
+}
+```
+
+
+```{r, echo = F, message=F, warning=F}
+
+  
+
+hcmap(
+  map = "custom/europe",
+  data = ncavc, 
+  joinBy = c('iso-a2','cntry'),
+  name = "Time zone",
+  value = "spn_per_capita"#,
+  # tooltip = list(pointFormat = "{point.name} {point.tz}"),
+  # dataLabels = list(enabled = TRUE, format = "{cntry}")
+  )   %>% 
+  # hc_colorAxis(stops = color_stops()) %>% 
+  hc_title(text = "World Map")  %>%
+hc_tooltip(formatter = JS("function () {
+    return '<b>' + this.point.name + '</b>: <br><i>€' + this.point.value.toFixed(0) + ' </i> per 1000 inhabitants<br><i>€' + new Intl.NumberFormat('fr-FR').format(this.point.euro_spend.toFixed(0)) + '</i> total spent in last 30 days (' + this.point.perc + '%)';
+  }")) %>%
+  # hc_mapNavigation(enabled = TRUE) %>%
+  hc_title(text = "Click on Any Country to See More") %>%
+hc_legend(enabled = F) %>% 
+  hc_colorAxis(
+    type = 'logarithmic',
+    # stops = color_stops(),
+    minColor = "lightblue",
+    maxColor = "#003194"
+  ) %>%
+  hc_plotOptions(
+    series = list(
+      events = list(
+        click = JS("function(event) { 
+                     var cntry = event.point.name;
+                     console.log('Country clicked:', cntry);
+                     document.querySelectorAll('.party-content').forEach(function(el) {
+                       el.style.display = 'none';
+                     });
+                     var partyElement = document.getElementById(cntry);
+                     if (partyElement) {
+                       partyElement.style.display = 'block';
+                     } else {
+                       console.error('Country element with ID ' + cntry + ' not found');
+                     }
+                   }")
+      )
+    )
+  )
+
+```
+
+
+
+```{r}
+if(Sys.info()[["user"]]=="fabio"){
+election_dat30 <- readRDS("../data/election_dat30.rds") 
+}  else {
+election_dat30 <- dir("../data/30", full.names = T) %>% 
+  map_dfr(readRDS)  %>%
+  rename(internal_id = page_id)
+
+saveRDS(election_dat30,file = "../data/election_dat30.rds")
+
+election_dat7 <- dir("../data/7", full.names = T) %>% 
+  map_dfr(readRDS)  %>%
+  rename(internal_id = page_id)
+
+saveRDS(election_dat7,file = "../data/election_dat7.rds")  
+}
+
+
+election_dat30 <- election_dat30 %>% 
+as_tibble() %>% 
+select(-party) %>% 
+  left_join(wtm_labs_fin %>% select(internal_id, party, national_party = entities.short_name)) %>% 
+  mutate(party = ifelse(is.na(party), "-", party)) %>% 
+  mutate(national_party = ifelse(party == "-", "-", national_party))
+
+# election_dat30 %>% 
+# as_tibble() %>% 
+# select(-party) %>% 
+#   left_join(wtm_labs_fin %>% select(internal_id, party, national_party = entities.short_name)) %>% 
+#   mutate(party = ifelse(is.na(party), "-", party)) %>% 
+#   mutate(national_party = ifelse(party == "-", "-", national_party)) %>% 
+#   filter(cntry == "IT") %>% 
+#   arrange(desc(euro_spend)) %>% 
+#   distinct(internal_id, .keep_all = T)
+#   count(cntry, sort = T)
+```
+
+
+
+```{r}
+
+# Render a bar chart with a label on the left
+bar_chart <- function(label, width = "100%", height = "1rem", fill = "#4fd0e8", background = NULL) {
+  bar <- div(style = list(background = fill, width = width, height = height))
+  chart <- div(style = list(flexGrow = 1, marginLeft = "0.5rem", background = background), bar)
+  div(style = list(display = "flex", alignItems = "center"), label, chart)
+}
+
+detailed_colors <- c(
+  "INTERESTS" = "#FFDDC1",
+  "DEMOGRAPHICS" = "#C1E1C1",
+  "BEHAVIORS" = "#C1E3E1",
+  "AUDIENCES" = "#A1E3E1",
+  "GEOGRAPHY" = "#C1D4E1"
+)
+
+
+
+
+byparty30 <- election_dat30 %>% 
+  distinct(internal_id, cntry, .keep_all = T) %>%
+  group_by(cntry, party) %>%
+  summarize(total_spenderino = sum(total_spend_formatted)) %>%
+  ungroup() %>%
+  select(cntry, total_spenderino)
+
+col_each30 <- readRDS("col_each30.rds")
+col_each30_excl <- readRDS("col_each30_excl.rds")
+col_each30_incl <- readRDS("col_each30_incl.rds")
+
+
+interest_targeting30 <-  election_dat30 %>%
+    mutate(total_spend = euro_spend) %>%
+    filter(type == "detailed") %>%
+    mutate(target_spend = total_spend * total_spend_pct) %>%
+    # filter(main_currency == the_currency)  %>%
+    arrange(desc(total_spend))  %>%
+  filter(total_spend >= 1) %>%
+  mutate(perc = target_spend/total_spend) %>%
+  mutate(detailed_type = case_when(
+    detailed_type == "INTERESTS" ~ "INTERESTS",
+    detailed_type == "DEMOGRAPHICS" ~ "DEMOGRAPHICS",
+    detailed_type == "BEHAVIOURS" ~ "BEHAVIOURS",
+    T ~ detailed_type
+  ))
+
+
+findat <- interest_targeting30 %>% 
+  mutate(perc_ads = num_ads / total_num_ads,
+         perc = target_spend/total_spend_formatted) %>% 
+  select(internal_id, detailed_type, target = value, is_exclusion, ads_per = num_ads, spend_per = target_spend, party, perc, perc_ads)  %>% 
+  bind_rows(col_each30_incl %>%
+  mutate(perc = perc/100,
+         perc_ads = perc_ads/100,
+         is_exclusion = F) %>%
+  filter(perc != 0)) %>%
+  bind_rows(col_each30_excl %>%
+  mutate(perc = perc/100,
+         perc_ads = perc_ads/100,
+         is_exclusion = T)) %>%
+  bind_rows(col_each30 %>%
+  mutate(perc = perc/100,
+         perc_ads = perc_ads/100) %>%
+    filter(target %in% c("Gender: Men", "Gender: Women", "age", "language")) %>%
+           mutate(is_exclusion = F)) %>%
+  # bind_rows(col_each30 %>% 
+  # mutate(perc = perc/100, 
+  #        perc_ads = perc_ads/100)) %>%
+  filter(perc != 0)  %>%
+  distinct(detailed_type, target, internal_id, is_exclusion, .keep_all = T) %>% 
+  filter(target != "countries") %>% 
+  filter(target != "interest") %>% 
+  filter(target != "Gender: All") %>% 
+  # filter(n == 3) %>%
+  mutate(detailed_type = case_when(
+target == "custom_audience" ~ "AUDIENCES",
+target == "regions" ~ "GEOGRAPHY",
+target == "lookalike_audience" ~ "AUDIENCES",
+target == "interest" ~ "INTERESTS",
+target == "age" ~ "DEMOGRAPHICS",
+target == "zips" ~ "GEOGRAPHY",
+target == "CITY" ~ "GEOGRAPHY",
+target == "language" ~ "DEMOGRAPHICS",
+target == "gender" ~ "DEMOGRAPHICS",
+target == "Gender: Men" ~ "DEMOGRAPHICS",
+target == "Gender: Women" ~ "DEMOGRAPHICS",
+target == "Men" ~ "DEMOGRAPHICS",
+target == "Women" ~ "DEMOGRAPHICS",
+target == "COMUNE" ~ "GEOGRAPHY",
+target == "electoral_districts" ~ "GEOGRAPHY",
+target == "COUNTY" ~ "GEOGRAPHY",
+str_detect(target, "NEIGHBOR|BOROUGH") ~ "GEOGRAPHY",
+target == "MUNICIPALITY" ~ "GEOGRAPHY",
+T ~ detailed_type
+)) %>% 
+mutate(target = case_when(
+target == "custom_audience" ~ "Custom Audiences",
+target == "countries" ~ "Whole Country",
+target == "regions" ~ "Regions",
+target == "lookalike_audience" ~ "Lookalike Audiences",
+target == "interest" ~ "Interests",
+target == "age" ~ "Age",
+target == "zips" ~ "Zip Code",
+target == "CITY" ~ "City",
+target == "language" ~ "Language",
+target == "gender" ~ "Gender",
+target == "Gender: Men" ~ "Men",
+target == "Gender: Women" ~ "Women",
+target == "COMUNE" ~ "Municipality",
+target == "electoral_districts" ~ "Electoral Districts",
+target == "COUNTY" ~ "Counties",
+target == "BOROUGH" ~ "Borough",
+str_detect(target, "NEIGHBOR") ~ "Neighborhood",
+    T ~ target
+  )) %>% 
+    filter(target != "Unknown") %>% 
+  mutate(is_exclusion = ifelse(!is_exclusion, "✅", "❌")) %>% 
+  left_join(data.frame(detailed_colors ) %>%
+              rownames_to_column() %>%
+              rename(detailed_type = rowname)) %>% 
+  mutate(is_exclusion = case_when(
+    target == "Language" ~ "✅", 
+    target == "Gender" ~ "✅", 
+    target == "Men" ~ "✅", 
+    target == "Women" ~ "✅", 
+    target == "Age" ~ "✅", 
+    T ~ is_exclusion
+  ))
+
+with_tooltip <- function(value, tooltip) {
+  tags$abbr(style = "text-decoration: underline; text-decoration-style: dotted; cursor: help",
+            title = tooltip, value)
+}
+
+make_tab <- function(thecntry = "DE") {
+  
+yes <<-  spend_reports %>% 
+
+  # select(-type) %>% 
+  # filter(euro_spend >= 1000) %>% 
+  # left_join(lts %>% select(-party, -page_name) %>% 
+              rename(internal_id = page_id) %>% 
+  left_join(wtm_labs_fin %>% select(internal_id, party, national_party = entities.short_name)) %>% 
+  mutate(party = ifelse(is.na(party), "-", party)) %>% 
+  mutate(party = ifelse(str_detect(page_name, "Volt"), "Greens/EFA", party)) %>% 
+  mutate(national_party = ifelse(party == "-", "-", national_party)) %>% 
+  #           by = "internal_id") %>%
+  # mutate(type = str_remove_all(type, "Lijsttrekkers_")) %>% 
+  filter(cntry == thecntry) %>% 
+  arrange(desc(euro_spend)) %>% 
+  # filter(party == tp) %>%
+  # filter(main_currency == the_currency) %>%
+  distinct(internal_id, .keep_all = TRUE) %>%
+  arrange(desc(euro_spend)) %>% 
+  slice(1:20) %>% 
+  mutate(number_of_ads_in_library = as.numeric(number_of_ads_in_library)) %>% 
+  # mutate(total_spend_formatted = scales::comma(total_spend_formatted)) %>%
+  select(page_name, number_of_ads_in_library, euro_spend, party, internal_id) %>%
+  set_names(c("Page", "Ads", "Spent (€)", "European Group", "internal_id"))
+
+# Assuming `election_dat30` and `lts` are your data frames
+styled_reactable <- yes %>%
+  # select(-internal_id) %>%
+  reactable(
+    fullWidth = T,
+    pagination = T,
+    defaultSorted = "Spent (€)",
+    defaultColDef = colDef(headerClass = "header", align = "left"),
+    columns = list(
+      Page = colDef(
+        name = "Page",
+        cell = function(value) {
+          internal_eyed <<- yes$internal_id[yes$Page == value][1]
+          thecntry <<- yes$cntry[yes$Page == value][1]
+
+          theurl <<- glue::glue("https://www.facebook.com/ads/library/?active_status=all&ad_type=political_and_issue_ads&country={thecntry}&view_all_page_id={internal_eyed}&sort_data[direction]=desc&sort_data[mode]=relevancy_monthly_grouped&search_type=page&media_type=all"
+  )
+          tags$a(href = theurl, target = "_blank", value)
+        }
+      ),
+      Ads = colDef(
+        defaultSortOrder = "desc",
+        name = "Ads",
+        cell = data_bars(
+          data = .,
+          round_edges = TRUE,
+              fill_color = "#003194",
+          background = "transparent",
+          text_position = "outside-end",
+          # text_color = text_color,
+          fill_gradient = FALSE,
+          # fill_color_ref = "energy_source_color",
+          number_fmt = scales::label_number(big.mark = ","),
+          bar_height = 10
+        )
+      ),
+      `Spent (€)` = colDef(
+        header = with_tooltip("Spent (€)", "Last 30 Days"),
+        defaultSortOrder = "desc", 
+        cell = data_bars(
+          data = .,
+              fill_color = "#003194",
+          round_edges = TRUE,
+          background = "transparent",
+          text_position = "outside-end",
+          # text_color = text_color,
+          fill_gradient = FALSE,
+          # fill_color_ref = "energy_source_color",
+          number_fmt = scales::label_number(big.mark = ","),
+          bar_height = 10
+        ), width = 500
+      ),
+      # Race = colDef(
+      #   name = "Race",
+      #   cell = color_tiles(data = .,
+      #                      color_ref = 'election_type_colors')
+      # ),
+      # election_type_colors = colDef(show = FALSE),
+      internal_id = colDef(show = FALSE)
+    ),
+    # compact = TRUE,
+    class = "styled-table",
+    details = function(index) {
+      plant_data <- findat[findat$internal_id == yes$internal_id[index],]
+      withindat <<- plant_data %>% select(detailed_type, target, is_exclusion, spend_per, perc, detailed_colors)
+      htmltools::div(
+        style = "padding: 1rem",
+        reactable(
+          withindat,
+          # outlined = TRUE,
+          pagination = T,
+          fullWidth = T,
+          defaultColDef = colDef(headerClass = "header", align = "left"),
+          defaultSorted = "perc",
+          columns = list(
+            detailed_type = colDef(name = "Type",
+                          cell = color_tiles(data = withindat,
+                                             color_ref = 'detailed_colors'), width = 180), 
+                detailed_colors = colDef(show = FALSE),
+            target = colDef(header = "Target"),
+            is_exclusion = colDef(header = "Included", width = 100),
+
+            
+        #     ads_per = colDef(
+        #       header = "Ads",
+        #               cell = data_bars(
+        #   data =withindat,
+        #       fill_color = "#3fc1c9",
+        #   round_edges = TRUE,
+        #   background = "transparent",
+        #   text_position = "outside-end",
+        #   # text_color = text_color,
+        #   fill_gradient = FALSE,
+        #   # fill_color_ref = "energy_source_color",
+        #   number_fmt = scales::label_number(big.mark = ","),
+        #   bar_height = 10
+        # )
+        #     ),
+        #     spend_per = colDef(
+        #       header = "Spent (€)",
+        #               cell = data_bars(
+        #   data = withindat,
+        #       fill_color = "#3fc1c9",
+        #   round_edges = TRUE,
+        #   background = "transparent",
+        #   text_position = "outside-end",
+        #   # text_color = text_color,
+        #   fill_gradient = FALSE,
+        #   # fill_color_ref = "energy_source_color",
+        #   number_fmt = scales::label_number(big.mark = ","),
+        #   bar_height = 10
+        # )
+        #     ),
+                spend_per = colDef(show = FALSE),
+            perc = colDef(
+              header = "% Budget",
+              defaultSortOrder = "desc",
+              # format = colFormat(percent = TRUE, digits = 1),
+                                          cell = data_bars(
+              data = withindat,
+              fill_color = "#003194",
+              background = 'lightblue',  text_size = 12,
+              # text_color = "white",
+              brighten_text = T,
+              min_value = 0,
+              max_value = 1,
+              text_position = 'center',
+              number_fmt = scales::percent,
+          bar_height = 20)
+            )#,
+            # perc_ads = colDef(
+            #   header = "% Ads",
+            #   # format = colFormat(percent = TRUE, digits = 1),
+            #   cell = data_bars(
+            #   data = withindat,
+            #   fill_color = "#3fc1c9",
+            #   background = '#eafafc',  text_size = 12,
+            #   # text_color = "white",
+            #   brighten_text = T,
+            #   min_value = 0,
+            #   max_value = 1,
+            #   text_position = 'inside-base',
+            #   number_fmt = scales::percent))
+          ),
+          # compact = TRUE,
+          class = "styled-table"
+        )
+      )
+    }
+  )
+
+return(styled_reactable)
+}
+
+
+# debugonce(make_tab)
+# styled_reactable
+
+
+ 
+```
+
+
+
+
+<div id="content">
+
+<div id="Germany" class="party-content" style="display:none;">
+```{r}
+make_tab("DE")
+```
+</div>
+
+<div id="Italy" class="party-content" style="display:none;">
+```{r}
+make_tab("IT")
+```
+</div>
+
+<div id="France" class="party-content" style="display:none;">
+```{r}
+make_tab("FR")
+```
+</div>
+
+<div id="Portugal" class="party-content" style="display:none;">
+```{r}
+make_tab("PT")
+```
+</div>
+
+<div id="Sweden" class="party-content" style="display:none;">
+```{r}
+make_tab("SE")
+```
+</div>
+
+<div id="Belgium" class="party-content" style="display:none;">
+```{r}
+make_tab("BE")
+```
+</div>
+
+<div id="Austria" class="party-content" style="display:none;">
+```{r}
+make_tab("AT")
+```
+</div>
+
+<div id="Bulgaria" class="party-content" style="display:none;">
+```{r}
+make_tab("BG")
+```
+</div>
+
+<div id="Ireland" class="party-content" style="display:none;">
+```{r}
+make_tab("IE")
+```
+</div>
+
+<div id="Netherlands" class="party-content" style="display:none;">
+```{r}
+make_tab("NL")
+```
+</div>
+
+<div id="Estonia" class="party-content" style="display:none;">
+```{r}
+make_tab("EE")
+```
+</div>
+
+<div id="Lithuania" class="party-content" style="display:none;">
+```{r}
+make_tab("LT")
+```
+</div>
+
+<div id="Poland" class="party-content" style="display:none;">
+```{r}
+make_tab("PL")
+```
+</div>
+
+<div id="Hungary" class="party-content" style="display:none;">
+```{r}
+make_tab("HU")
+```
+</div>
+
+<div id="Spain" class="party-content" style="display:none;">
+```{r}
+make_tab("ES")
+```
+</div>
+
+<div id="Slovakia" class="party-content" style="display:none;">
+```{r}
+make_tab("SK")
+```
+</div>
+
+
+<div id="Finland" class="party-content" style="display:none;">
+```{r}
+make_tab("FI")
+```
+</div>
+
+
+<div id="Greece" class="party-content" style="display:none;">
+```{r}
+make_tab("GR")
+```
+</div>
+
+<div id="Denmark" class="party-content" style="display:none;">
+```{r}
+make_tab("DK")
+```
+</div>
+
+<div id="Latvia" class="party-content" style="display:none;">
+```{r}
+make_tab("LV")
+```
+</div>
+
+<div id="Czech Republic" class="party-content" style="display:none;">
+```{r}
+make_tab("CZ")
+```
+</div>
+
+<div id="Czech Republic" class="party-content" style="display:none;">
+```{r}
+make_tab("CZ")
+```
+</div>
+
+<div id="Slovenia" class="party-content" style="display:none;">
+```{r}
+make_tab("SI")
+```
+</div>
+
+<div id="Croatia" class="party-content" style="display:none;">
+```{r}
+make_tab("HR")
+```
+</div>
+
+<div id="Cyprus" class="party-content" style="display:none;">
+```{r}
+make_tab("CY")
+```
+</div>
+
+<div id="Romania" class="party-content" style="display:none;">
+```{r}
+make_tab("RO")
+```
+</div>
+
+</div>
+
+```{r}
+ # election_dat30 %>%
+  # select(-type) %>% 
+  # # filter(euro_spend >= 1000) %>% 
+  # # left_join(lts %>% select(-party, -page_name) %>% 
+  # #             rename(internal_id = page_id), 
+  # #           by = "internal_id") %>%
+  # # mutate(type = str_remove_all(type, "Lijsttrekkers_")) %>% 
+  # filter(cntry == "IT") %>% 
+  # arrange(desc(euro_spend)) %>% 
+  # # filter(party == tp) %>%
+  # # filter(main_currency == the_currency) %>%
+  # distinct(internal_id, .keep_all = TRUE) %>%
+  # arrange(desc(euro_spend)) %>% 
+  # slice(1:20)
+```
+
+
+```{=html}
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  console.log('DOM fully loaded and parsed');
+
+  // Hide all content initially
+  document.querySelectorAll('.region-content').forEach(function(el) {
+    el.style.display = 'none';
+  });
+  document.querySelectorAll('.party-content').forEach(function(el) {
+    el.style.display = 'none';
+  });
+</script>
+```
+```{=html}
+<style>
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.highcharts-container {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.highcharts-root {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.panel-tabset .tab-content {
+  border-top: none; /* Adds a subtle top border */
+  border-bottom: none; /* Adds a subtle top border */
+  border-left: none; /* Adds a subtle top border */
+  border-right: none; /* Adds a subtle top border */    
+}
+
+
+.panel-tabset {
+  border-top: none; /* Adds a top border to the whole set for continuity */
+}
+
+
+/* CSS for the styled reactable */
+
+/* Styles for the table container, title, and subtitle */
+.styled-table {
+  /* Center the table */
+  margin: 0 auto;
+  /* Reduce the table width */
+  font-family: Karla, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* CSS for the styled reactable */
+
+/* Styles for the table container, title, and subtitle */
+.styled-table {
+  /* Center the table */
+  margin: 0 auto;
+  /* Reduce the table width */
+  font-family: Karla, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.header {
+  border-bottom: 2px solid #555;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.header:hover {
+  background-color: #eee;
+}
+
+/* Styles for the bar charts */
+.bar-cell {
+  display: flex;
+  align-items: center;
+}
+
+.number {
+  font-family: "Fira Mono", Consolas, Monaco, monospace;
+  font-size: 0.84375rem;
+  white-space: pre;
+}
+
+.bar-chart {
+  flex-grow: 1;
+  margin-left: 0.375rem;
+  height: 0.875rem;
+}
+
+.bar {
+  height: 100%;
+  background-color: #3fc1c9;
+}
+
+.number-cell {
+  text-align: right;
+  font-family: monospace;
+}
+
+.type-cell {
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.styled-table a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.styled-table a:hover,
+.styled-table a:focus {
+  text-decoration: underline;
+  text-decoration-thickness: max(1px, 0.0625rem);
+}
+
+.panel-tabset .tab-content {
+  border-top: none; /* Adds a subtle top border */
+  border-bottom: none; /* Adds a subtle top border */
+  border-left: none; /* Adds a subtle top border */
+  border-right: none; /* Adds a subtle top border */
+}
+
+.nav-tabs {
+  border-top: none; /* Adds a subtle top border */
+  border-bottom: none; /* Adds a subtle top border */
+  border-left: none; /* Adds a subtle top border */
+  border-right: none; /* Adds a subtle top border */
+}
+
+</style>
+
+
+```
+
+
+
+
+
+
+
+
+
+

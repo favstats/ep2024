@@ -1,0 +1,21 @@
+entities.short_name,entities.name,countries.name,European_Political_Group
+EPP,Europejska Partia Ludowa,Poland,EPP
+S&D,Postępowy Sojusz Socjalistów i Demokratów,Poland,S&D
+InneEP,Inne ugrupowania (PE),Poland,uncertain
+G/EFA,Zieloni – Wolny Sojusz Europejski,Poland,Greens/EFA
+RE,Renew Europe,Poland,RE
+ECR,Europejscy Konserwatyści i Reformatorzy,Poland,ECR
+INT,Interesantes,Spain,uncertain
+SPÖ,Sozialdemokratische Partei,Austria,S&D
+FPÖ,Freiheitliche Partei,Austria,ID
+ÖVP,Österreichische Volkspartei,Austria,EPP
+NEOS,Das Neue Österreich und Liberales Forum,Austria,RE
+GRÜNE,Die Grünen,Austria,Greens/EFA
+MFG,MFG,Austria,uncertain
+KPÖ,Kommunistische Partei,Austria,GUE/NGL
+And,Andere Parteien,Austria,uncertain
+Reg,Regierung,Austria,uncertain
+Oth,Andere politische Seiten,Austria,uncertain
+Aut,Autres,Belgium,uncertain
+MR,Mouvement Réformateur,Belgium,RE
+Eng,Les Engagés,Belgium,uncertain
