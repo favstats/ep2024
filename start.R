@@ -177,7 +177,7 @@ rmarkdown::render("index.Rmd", output_file = "docs/index.html")
 #   walk(~fs::dir_copy(.x, "docs/site_libs", overwrite = T))
 
 
-
+# setwd("C:/Users/favoo/Documents/ep2024")
 full_cntry_list$iso2c %>%
   # .[1] %>% 
   walk_progress( ~ {
@@ -192,7 +192,7 @@ full_cntry_list$iso2c %>%
     
     dir("docs/EU", full.names = T) %>%
       keep(~str_detect(.x, "site|files"))  %>%
-      walk( ~ fs::file_copy(.x, str_replace(
+      walk( ~ fs::dir_copy(.x, str_replace(
         .x, "docs/EU/", glue::glue("docs/{city_name}/")
       ), overwrite = T))
     
@@ -201,7 +201,10 @@ full_cntry_list$iso2c %>%
 
 if (Sys.info()[["effective_user"]] == "fabio" | Sys.info()[["effective_user"]] == "favoo") {
   system("git pull")
-  system("git add -A")
-  system('git commit -m "update"')
-  system("git push")
+  # system("git add -A")
+  # system('git commit -m "update"')
+  # system("git push")
+  gert::git_add(".")
+  gert::git_commit("update")
+  gert::git_push()
 }
