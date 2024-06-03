@@ -435,17 +435,19 @@ rename_at(vars(contains("amount_spent")), function(.x) return("amount_spent")) %
 
 totpop <- readRDS("../data/totpop.rds")
 
-ncavc <- fin_spend %>% 
+ncavc <- spend_reports %>% 
+  group_by(cntry) %>% 
+  summarize(euro_spend = sum(euro_spend)) %>% 
+  arrange(desc(euro_spend)) %>% 
   left_join(
     totpop %>% 
   filter(year == 2022) %>% 
     rename(cntry = iso2c)
   )  %>% 
   mutate(spn_per_capita = euro_spend/SP.POP.TOTL*1000) %>% 
-  filter(cntry %in% eu_countries) %>% 
-  mutate(perc = euro_spend/sum(euro_spend)*100) %>% 
+  # filter(cntry %in% eu_countries) %>% 
+  mutate(perc = euro_spend/sum(dollar_spend)*100) %>% 
   mutate(perc = round(perc,2)) #%>% 
-   # mutate(euro_spend = log(euro_spend))
    
 # ncavc %>% 
 #   arrange(desc(spn_per_capita))
@@ -590,7 +592,6 @@ hc_tooltip(formatter = JS("function () {
   hc_title(text = "Click on any country or on the dropdown menu on the upper right for more details") %>%
 hc_legend(enabled = F) %>% 
   hc_colorAxis(
-    type = 'logarithmic',
     # stops = color_stops(),
     minColor = "lightblue",
     maxColor = "#003194"
