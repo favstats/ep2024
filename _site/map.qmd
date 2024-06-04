@@ -244,7 +244,7 @@ if(Sys.info()[["user"]]=="fabio" | Sys.info()[["user"]]=="favoo"){
           # counter <- 1
       
           
-  conversios <- jsonlite::fromJSON(paste0("https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@",thosearethere$ds[1] ,"/v1/currencies/eur.json")) %>% 
+  conversios <- jsonlite::fromJSON(paste0("https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@",thosearethere30$ds[1] ,"/v1/currencies/eur.json")) %>% 
   pluck("eur") %>% 
   enframe() %>% 
   unnest(value) %>% 
