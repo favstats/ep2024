@@ -185,8 +185,10 @@ if(sets$cntry == "EU"){
   
   color_dat <- wtm_labs_fin %>% 
     filter(countries.alpha2 == str_to_lower(sets$cntry)) %>% 
-    select(party = entities.short_name, colors  = entities.color) %>% 
-    distinct()
+    select(party = entities.short_name, color  = entities.color) %>% 
+    distinct() %>% 
+    setColors() %>% 
+    rename(colors = color)
   
   saveRDS(color_dat, here::here("data/color_dat.rds"))
 

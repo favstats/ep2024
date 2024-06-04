@@ -35,8 +35,8 @@ full_cntry_list <- read_rds("https://github.com/favstats/meta_ad_reports/raw/mai
   filter(iso2c %in% eu_countries) %>% 
   # sample_n(n()) %>% 
   mutate(iso2c = fct_relevel(iso2c, eu_countries)) %>% 
-  arrange(iso2c) %>% 
-  filter(iso2c %in% c("IT"))
+  arrange(iso2c) #%>% 
+  # filter(iso2c %in% c("IT"))
 
 render_it <- function(...) {
   print(...)
@@ -187,6 +187,12 @@ full_cntry_list$iso2c %>%
     city_name <- .x
     dir("docs/EU", full.names = T) %>%
       keep( ~ str_detect(.x, "map")) %>%
+      walk( ~ fs::file_copy(.x, str_replace(
+        .x, "docs/EU/", glue::glue("docs/{city_name}/")
+      ), overwrite = T))
+    
+    dir("docs/EU", full.names = T) %>%
+      keep( ~ str_detect(.x, "about")) %>%
       walk( ~ fs::file_copy(.x, str_replace(
         .x, "docs/EU/", glue::glue("docs/{city_name}/")
       ), overwrite = T))
