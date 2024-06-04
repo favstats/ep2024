@@ -446,7 +446,7 @@ ncavc <- spend_reports %>%
   )  %>% 
   mutate(spn_per_capita = euro_spend/SP.POP.TOTL*1000) %>% 
   # filter(cntry %in% eu_countries) %>% 
-  mutate(perc = euro_spend/sum(dollar_spend)*100) %>% 
+  mutate(perc = euro_spend/sum(euro_spend)*100) %>% 
   mutate(perc = round(perc,2)) #%>% 
    
 # ncavc %>% 
@@ -572,11 +572,11 @@ saveRDS(col_each30, "col_each30.rds")
 
 ```{r, echo = F, message=F, warning=F}
 
-  
+library(highcharter)
 
 hcmap(
   map = "custom/europe",
-  data = ncavc, 
+  data = ncavc %>% mutate(spn_per_capita = log(spn_per_capita)), 
   joinBy = c('iso-a2','cntry'),
   name = "Time zone",
   value = "spn_per_capita"#,
@@ -586,10 +586,11 @@ hcmap(
   # hc_colorAxis(stops = color_stops()) %>% 
   hc_title(text = "World Map")  %>%
 hc_tooltip(formatter = JS("function () {
-    return '<b>' + this.point.name + '</b>: <br><i>€' + this.point.value.toFixed(0) + ' </i> per 1000 inhabitants<br><i>€' + new Intl.NumberFormat('fr-FR').format(this.point.euro_spend.toFixed(0)) + '</i> total spent in last 30 days (' + this.point.perc + '%)';
+    return '<b>' + this.point.name + '</b>: <br><i>€' + new Intl.NumberFormat('fr-FR').format(Math.exp(this.point.value).toFixed(0)) + ' </i> per 1000 inhabitants<br><i>$' + new Intl.NumberFormat('fr-FR').format(this.point.euro_spend.toFixed(0)) + '</i> total spent in last 30 days (' + this.point.perc + '%)';
   }")) %>%
   # hc_mapNavigation(enabled = TRUE) %>%
-  hc_title(text = "Click on any country or on the dropdown menu on the upper right for more details") %>%
+  hc_title(text = glue::glue("Political Ad Spend on Facebook and Instagram in last 30 Days ({last30days_string})")) %>%
+  hc_caption(text = "Click on any country for more details. To see individual dashboards use the dropbox menu in the upper right.") %>% 
 hc_legend(enabled = F) %>% 
   hc_colorAxis(
     # stops = color_stops(),
@@ -981,6 +982,7 @@ return(styled_reactable)
 
  
 ```
+
 
 
 
