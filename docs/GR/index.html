@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.433">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -48,7 +48,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -57,6 +63,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -70,9 +77,9 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
     <img src="./wtm_logo_2020_transparent-300x300.png" alt="" class="navbar-logo">
     </a>
@@ -87,40 +94,40 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="https://favstats.github.io/ep2024/" rel="" target="">
- <span class="menu-text"><iconify-icon inline="" icon="ph:map-trifold-thin" aria-label="Icon map-trifold-thin from ph Iconify.design set." title="Icon map-trifold-thin from ph Iconify.design set."></iconify-icon> Map</span></a>
+    <a class="nav-link" href="https://favstats.github.io/ep2024/"> 
+<span class="menu-text"><iconify-icon inline="" icon="ph:map-trifold-thin" aria-label="Icon map-trifold-thin from ph Iconify.design set." title="Icon map-trifold-thin from ph Iconify.design set."></iconify-icon> Map</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
- <span class="menu-text"><iconify-icon inline="" icon="ph:coins" aria-label="Icon coins from ph Iconify.design set." title="Icon coins from ph Iconify.design set."></iconify-icon> Spending</span></a>
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text"><iconify-icon inline="" icon="ph:coins" aria-label="Icon coins from ph Iconify.design set." title="Icon coins from ph Iconify.design set."></iconify-icon> Spending</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-iconify-ph-users-three-thin--targeting" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-iconify-ph-users-three-thin--targeting" role="button" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text"><iconify-icon inline="" icon="ph:users-three-thin" aria-label="Icon users-three-thin from ph Iconify.design set." title="Icon users-three-thin from ph Iconify.design set."></iconify-icon> Targeting</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-iconify-ph-users-three-thin--targeting">    
         <li>
-    <a class="dropdown-item" href="./targeting.html" rel="" target="">
+    <a class="dropdown-item" href="./targeting.html">
  <span class="dropdown-text">Spending per Targeting</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./detailed.html" rel="" target="">
+    <a class="dropdown-item" href="./detailed.html">
  <span class="dropdown-text">Detailed Targeting</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./demographics.html" rel="" target="">
+    <a class="dropdown-item" href="./demographics.html">
  <span class="dropdown-text">Demographics</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
- <span class="menu-text"><iconify-icon inline="" icon="ph:info-thin" aria-label="Icon info-thin from ph Iconify.design set." title="Icon info-thin from ph Iconify.design set."></iconify-icon> About</span></a>
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text"><iconify-icon inline="" icon="ph:info-thin" aria-label="Icon info-thin from ph Iconify.design set." title="Icon info-thin from ph Iconify.design set."></iconify-icon> About</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -139,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -147,7 +154,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <p>Here you can see the expenditures of political parties in the lead-up to the elections according to the latest data.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
@@ -157,25 +166,27 @@ ul.task-list li input[type="checkbox"] {
 <p>During this period, political parties spent a total of €104,972 and displayed 1901 advertisements on Meta.</p>
 <div class="cell">
 <div class="cell-output-display">
-
-<div id="blgickazar" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="jvjwsffqzr" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#blgickazar table {
-  font-family: Chivo, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+#jvjwsffqzr table {
+  font-family: Cairo, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#blgickazar thead, #blgickazar tbody, #blgickazar tfoot, #blgickazar tr, #blgickazar td, #blgickazar th {
+#jvjwsffqzr thead, #jvjwsffqzr tbody, #jvjwsffqzr tfoot, #jvjwsffqzr tr, #jvjwsffqzr td, #jvjwsffqzr th {
   border-style: none;
 }
 
-#blgickazar p {
+#jvjwsffqzr p {
   margin: 0;
   padding: 0;
 }
 
-#blgickazar .gt_table {
+#jvjwsffqzr .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -183,7 +194,7 @@ ul.task-list li input[type="checkbox"] {
   margin-right: auto;
   color: #333333;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   background-color: #FFFFFF;
   width: auto;
@@ -201,12 +212,12 @@ ul.task-list li input[type="checkbox"] {
   border-left-color: #D3D3D3;
 }
 
-#blgickazar .gt_caption {
+#jvjwsffqzr .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#blgickazar .gt_title {
+#jvjwsffqzr .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -218,7 +229,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-width: 0;
 }
 
-#blgickazar .gt_subtitle {
+#jvjwsffqzr .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -230,7 +241,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-width: 0;
 }
 
-#blgickazar .gt_heading {
+#jvjwsffqzr .gt_heading {
   background-color: #FFFFFF;
   text-align: left;
   border-bottom-color: #FFFFFF;
@@ -242,13 +253,13 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#blgickazar .gt_bottom_border {
+#jvjwsffqzr .gt_bottom_border {
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#blgickazar .gt_col_headings {
+#jvjwsffqzr .gt_col_headings {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -263,12 +274,12 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#blgickazar .gt_col_heading {
+#jvjwsffqzr .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
+  font-size: 100%;
   font-weight: normal;
-  text-transform: uppercase;
+  text-transform: inherit;
   border-left-style: none;
   border-left-width: 1px;
   border-left-color: #D3D3D3;
@@ -283,27 +294,27 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#blgickazar .gt_column_spanner_outer {
+#jvjwsffqzr .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
+  font-size: 100%;
   font-weight: normal;
-  text-transform: uppercase;
+  text-transform: inherit;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 4px;
   padding-right: 4px;
 }
 
-#blgickazar .gt_column_spanner_outer:first-child {
+#jvjwsffqzr .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#blgickazar .gt_column_spanner_outer:last-child {
+#jvjwsffqzr .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#blgickazar .gt_column_spanner {
+#jvjwsffqzr .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #000000;
@@ -315,20 +326,20 @@ ul.task-list li input[type="checkbox"] {
   width: 100%;
 }
 
-#blgickazar .gt_spanner_row {
+#jvjwsffqzr .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#blgickazar .gt_group_heading {
+#jvjwsffqzr .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
   padding-right: 5px;
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
-  font-weight: bolder;
-  text-transform: uppercase;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #000000;
@@ -345,12 +356,12 @@ ul.task-list li input[type="checkbox"] {
   text-align: left;
 }
 
-#blgickazar .gt_empty_group_heading {
+#jvjwsffqzr .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
-  font-weight: bolder;
+  font-size: 100%;
+  font-weight: initial;
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #000000;
@@ -360,15 +371,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 
-#blgickazar .gt_from_md > :first-child {
+#jvjwsffqzr .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#blgickazar .gt_from_md > :last-child {
+#jvjwsffqzr .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#blgickazar .gt_row {
+#jvjwsffqzr .gt_row {
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 5px;
@@ -387,12 +398,12 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#blgickazar .gt_stub {
+#jvjwsffqzr .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
-  font-weight: bolder;
-  text-transform: uppercase;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
   border-right-style: solid;
   border-right-width: 0px;
   border-right-color: #FFFFFF;
@@ -400,7 +411,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#blgickazar .gt_stub_row_group {
+#jvjwsffqzr .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -414,15 +425,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: top;
 }
 
-#blgickazar .gt_row_group_first td {
+#jvjwsffqzr .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#blgickazar .gt_row_group_first th {
+#jvjwsffqzr .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#blgickazar .gt_summary_row {
+#jvjwsffqzr .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -432,16 +443,16 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#blgickazar .gt_first_summary_row {
+#jvjwsffqzr .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#blgickazar .gt_first_summary_row.thick {
+#jvjwsffqzr .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#blgickazar .gt_last_summary_row {
+#jvjwsffqzr .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -451,7 +462,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#blgickazar .gt_grand_summary_row {
+#jvjwsffqzr .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -461,7 +472,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#blgickazar .gt_first_grand_summary_row {
+#jvjwsffqzr .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -471,7 +482,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-color: #D3D3D3;
 }
 
-#blgickazar .gt_last_grand_summary_row_top {
+#jvjwsffqzr .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -481,11 +492,11 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#blgickazar .gt_striped {
+#jvjwsffqzr .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#blgickazar .gt_table_body {
+#jvjwsffqzr .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -494,7 +505,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#blgickazar .gt_footnotes {
+#jvjwsffqzr .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -508,7 +519,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#blgickazar .gt_footnote {
+#jvjwsffqzr .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -517,7 +528,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#blgickazar .gt_sourcenotes {
+#jvjwsffqzr .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -531,7 +542,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#blgickazar .gt_sourcenote {
+#jvjwsffqzr .gt_sourcenote {
   font-size: 12px;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -539,63 +550,63 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#blgickazar .gt_left {
+#jvjwsffqzr .gt_left {
   text-align: left;
 }
 
-#blgickazar .gt_center {
+#jvjwsffqzr .gt_center {
   text-align: center;
 }
 
-#blgickazar .gt_right {
+#jvjwsffqzr .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#blgickazar .gt_font_normal {
+#jvjwsffqzr .gt_font_normal {
   font-weight: normal;
 }
 
-#blgickazar .gt_font_bold {
+#jvjwsffqzr .gt_font_bold {
   font-weight: bold;
 }
 
-#blgickazar .gt_font_italic {
+#jvjwsffqzr .gt_font_italic {
   font-style: italic;
 }
 
-#blgickazar .gt_super {
+#jvjwsffqzr .gt_super {
   font-size: 65%;
 }
 
-#blgickazar .gt_footnote_marks {
+#jvjwsffqzr .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#blgickazar .gt_asterisk {
+#jvjwsffqzr .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#blgickazar .gt_indent_1 {
+#jvjwsffqzr .gt_indent_1 {
   text-indent: 5px;
 }
 
-#blgickazar .gt_indent_2 {
+#jvjwsffqzr .gt_indent_2 {
   text-indent: 10px;
 }
 
-#blgickazar .gt_indent_3 {
+#jvjwsffqzr .gt_indent_3 {
   text-indent: 15px;
 }
 
-#blgickazar .gt_indent_4 {
+#jvjwsffqzr .gt_indent_4 {
   text-indent: 20px;
 }
 
-#blgickazar .gt_indent_5 {
+#jvjwsffqzr .gt_indent_5 {
   text-indent: 25px;
 }
 
@@ -603,82 +614,70 @@ tbody tr:last-child {
   border-bottom: 2px solid #ffffff00;
 }
 </style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-  <thead>
-    
-    <tr class="gt_col_headings">
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id=""></th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;" scope="col" id="Number of Advertisers">Number of Advertisers</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;" scope="col" id="Top Spenders">Top Spenders</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;" scope="col" id="Number of Ads">Number of Ads</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;" scope="col" id="Total Spend">Total Spend</th>
-    </tr>
-  </thead>
-  <tbody class="gt_table_body">
-    <tr><th id="stub_1_1" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>ΝΔ</p>
-</div></th>
-<td headers="stub_1_1 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #3366cc;"><div class="gt_from_md"><p>37</p>
-</div></td>
-<td headers="stub_1_1 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=82362291274">ΝΕΑ ΔΗΜΟΚΡΑΤΙΑ</a> (€24,609)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=34848567724">Kyriakos Mitsotakis</a> (€14,727)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=253581075582399">Μιχάλης Αγγελόπουλος</a> (€5,527)<br><br></p>
-</div></td>
-<td headers="stub_1_1 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>554</p>
-</div></td>
-<td headers="stub_1_1 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€52,414</p>
-</div></td></tr>
-    <tr><th id="stub_1_2" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>OTHER</p>
-</div></th>
-<td headers="stub_1_2 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #666666;"><div class="gt_from_md"><p>25</p>
-</div></td>
-<td headers="stub_1_2 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=2004113959706025">Κόσμος - Kosmos</a> (€12,345)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=1748153855406537">vradini.gr</a> (€2,477)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=1489639131352219">Ζωή Κωνσταντοπούλου - Zoe Konstantopoulou</a> (€1,471)<br><br></p>
-</div></td>
-<td headers="stub_1_2 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>567</p>
-</div></td>
-<td headers="stub_1_2 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€20,868</p>
-</div></td></tr>
-    <tr><th id="stub_1_3" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>ΠΑΣΟΚ</p>
-</div></th>
-<td headers="stub_1_3 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #2D902D;"><div class="gt_from_md"><p>13</p>
-</div></td>
-<td headers="stub_1_3 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=296107141177054">Alexis Charitsis - Αλέξης Χαρίτσης</a> (€8,702)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=216089191899991">Νίκος Ανδρουλάκης</a> (€5,520)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=197154300621371">Milena Apostolaki</a> (€1,246)<br><br></p>
-</div></td>
-<td headers="stub_1_3 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>249</p>
-</div></td>
-<td headers="stub_1_3 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€17,364</p>
-</div></td></tr>
-    <tr><th id="stub_1_4" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>ΣΥ.ΡΙΖ.Α</p>
-</div></th>
-<td headers="stub_1_4 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #ca272c;"><div class="gt_from_md"><p>20</p>
-</div></td>
-<td headers="stub_1_4 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=234040963454964">Πέτρος Κόκκαλης - Petros Kokkalis</a> (€2,211)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=453670504778927">Ευγενία - Τζένη Αρσένη Dr. Eugenia Arsenis</a> (€1,705)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=264433650874916">Γιώργος Τσίπρας / Giorgos Tsipras</a> (€1,115)<br><br></p>
-</div></td>
-<td headers="stub_1_4 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>449</p>
-</div></td>
-<td headers="stub_1_4 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€7,454</p>
-</div></td></tr>
-    <tr><th id="stub_1_5" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>ΕΛ</p>
-</div></th>
-<td headers="stub_1_5 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #5493ce;"><div class="gt_from_md"><p>4</p>
-</div></td>
-<td headers="stub_1_5 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=279116802432610">Ελληνική Λύση</a> (€3,573)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=109605951374648">Παναγιώτης Ηρακλής</a> (€310)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=104497128822912">Πιπεργιάς Δημήτριος Ελληνική λύση</a> (€294)<br><br></p>
-</div></td>
-<td headers="stub_1_5 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>38</p>
-</div></td>
-<td headers="stub_1_5 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€4,178</p>
-</div></td></tr>
-    <tr><th id="stub_1_6" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>ΜέΡΑ25</p>
-</div></th>
-<td headers="stub_1_6 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #c3341d;"><div class="gt_from_md"><p>2</p>
-</div></td>
-<td headers="stub_1_6 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=333635613794935">ΜέΡΑ25</a> (€2,562)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=113756371686238">Θανάσης Πετράκος</a> (€132)<br><br></p>
-</div></td>
-<td headers="stub_1_6 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>44</p>
-</div></td>
-<td headers="stub_1_6 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€2,694</p>
-</div></td></tr>
-  </tbody>
-  
-  
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header gt_col_headings">
+<th class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"></th>
+<th id="Number of Advertisers" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Number of Advertisers</th>
+<th id="Top Spenders" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Top Spenders</th>
+<th id="Number of Ads" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Number of Ads</th>
+<th id="Total Spend" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Total Spend</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td id="stub_1_1" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>ΝΔ</p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #3366cc"><p>37</p></td>
+<td class="gt_row gt_left" headers="stub_1_1 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=82362291274">ΝΕΑ ΔΗΜΟΚΡΑΤΙΑ</a> (€24,609)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=34848567724">Kyriakos Mitsotakis</a> (€14,727)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=253581075582399">Μιχάλης Αγγελόπουλος</a> (€5,527)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Number of Ads"><p>554</p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Total Spend"><p>€52,414</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_2" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>OTHER</p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #666666"><p>25</p></td>
+<td class="gt_row gt_left" headers="stub_1_2 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=2004113959706025">Κόσμος - Kosmos</a> (€12,345)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=1748153855406537">vradini.gr</a> (€2,477)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=1489639131352219">Ζωή Κωνσταντοπούλου - Zoe Konstantopoulou</a> (€1,471)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Number of Ads"><p>567</p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Total Spend"><p>€20,868</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_3" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>ΠΑΣΟΚ</p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #2D902D"><p>13</p></td>
+<td class="gt_row gt_left" headers="stub_1_3 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=296107141177054">Alexis Charitsis - Αλέξης Χαρίτσης</a> (€8,702)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=216089191899991">Νίκος Ανδρουλάκης</a> (€5,520)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=197154300621371">Milena Apostolaki</a> (€1,246)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Number of Ads"><p>249</p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Total Spend"><p>€17,364</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_4" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>ΣΥ.ΡΙΖ.Α</p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #ca272c"><p>20</p></td>
+<td class="gt_row gt_left" headers="stub_1_4 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=234040963454964">Πέτρος Κόκκαλης - Petros Kokkalis</a> (€2,211)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=453670504778927">Ευγενία - Τζένη Αρσένη Dr.&nbsp;Eugenia Arsenis</a> (€1,705)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=264433650874916">Γιώργος Τσίπρας / Giorgos Tsipras</a> (€1,115)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Number of Ads"><p>449</p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Total Spend"><p>€7,454</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_5" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>ΕΛ</p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #5493ce"><p>4</p></td>
+<td class="gt_row gt_left" headers="stub_1_5 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=279116802432610">Ελληνική Λύση</a> (€3,573)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=109605951374648">Παναγιώτης Ηρακλής</a> (€310)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=104497128822912">Πιπεργιάς Δημήτριος Ελληνική λύση</a> (€294)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Number of Ads"><p>38</p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Total Spend"><p>€4,178</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_6" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>ΜέΡΑ25</p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #c3341d"><p>2</p></td>
+<td class="gt_row gt_left" headers="stub_1_6 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=333635613794935">ΜέΡΑ25</a> (€2,562)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=113756371686238">Θανάσης Πετράκος</a> (€132)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Number of Ads"><p>44</p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Total Spend"><p>€2,694</p></td>
+</tr>
+</tbody>
 </table>
+
 </div>
 </div>
 </div>
@@ -687,25 +686,27 @@ tbody tr:last-child {
 <p>During this period, political parties spent a total of €40,063 and displayed 825 advertisements on Meta.</p>
 <div class="cell">
 <div class="cell-output-display">
-
-<div id="jkkvbnvkvp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="jlijsgbrvz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#jkkvbnvkvp table {
-  font-family: Chivo, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+#jlijsgbrvz table {
+  font-family: Cairo, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#jkkvbnvkvp thead, #jkkvbnvkvp tbody, #jkkvbnvkvp tfoot, #jkkvbnvkvp tr, #jkkvbnvkvp td, #jkkvbnvkvp th {
+#jlijsgbrvz thead, #jlijsgbrvz tbody, #jlijsgbrvz tfoot, #jlijsgbrvz tr, #jlijsgbrvz td, #jlijsgbrvz th {
   border-style: none;
 }
 
-#jkkvbnvkvp p {
+#jlijsgbrvz p {
   margin: 0;
   padding: 0;
 }
 
-#jkkvbnvkvp .gt_table {
+#jlijsgbrvz .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -713,7 +714,7 @@ tbody tr:last-child {
   margin-right: auto;
   color: #333333;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   background-color: #FFFFFF;
   width: auto;
@@ -731,12 +732,12 @@ tbody tr:last-child {
   border-left-color: #D3D3D3;
 }
 
-#jkkvbnvkvp .gt_caption {
+#jlijsgbrvz .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#jkkvbnvkvp .gt_title {
+#jlijsgbrvz .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -748,7 +749,7 @@ tbody tr:last-child {
   border-bottom-width: 0;
 }
 
-#jkkvbnvkvp .gt_subtitle {
+#jlijsgbrvz .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -760,7 +761,7 @@ tbody tr:last-child {
   border-top-width: 0;
 }
 
-#jkkvbnvkvp .gt_heading {
+#jlijsgbrvz .gt_heading {
   background-color: #FFFFFF;
   text-align: left;
   border-bottom-color: #FFFFFF;
@@ -772,13 +773,13 @@ tbody tr:last-child {
   border-right-color: #D3D3D3;
 }
 
-#jkkvbnvkvp .gt_bottom_border {
+#jlijsgbrvz .gt_bottom_border {
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#jkkvbnvkvp .gt_col_headings {
+#jlijsgbrvz .gt_col_headings {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -793,12 +794,12 @@ tbody tr:last-child {
   border-right-color: #D3D3D3;
 }
 
-#jkkvbnvkvp .gt_col_heading {
+#jlijsgbrvz .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
+  font-size: 100%;
   font-weight: normal;
-  text-transform: uppercase;
+  text-transform: inherit;
   border-left-style: none;
   border-left-width: 1px;
   border-left-color: #D3D3D3;
@@ -813,27 +814,27 @@ tbody tr:last-child {
   overflow-x: hidden;
 }
 
-#jkkvbnvkvp .gt_column_spanner_outer {
+#jlijsgbrvz .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
+  font-size: 100%;
   font-weight: normal;
-  text-transform: uppercase;
+  text-transform: inherit;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 4px;
   padding-right: 4px;
 }
 
-#jkkvbnvkvp .gt_column_spanner_outer:first-child {
+#jlijsgbrvz .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#jkkvbnvkvp .gt_column_spanner_outer:last-child {
+#jlijsgbrvz .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#jkkvbnvkvp .gt_column_spanner {
+#jlijsgbrvz .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #000000;
@@ -845,20 +846,20 @@ tbody tr:last-child {
   width: 100%;
 }
 
-#jkkvbnvkvp .gt_spanner_row {
+#jlijsgbrvz .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#jkkvbnvkvp .gt_group_heading {
+#jlijsgbrvz .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
   padding-right: 5px;
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
-  font-weight: bolder;
-  text-transform: uppercase;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #000000;
@@ -875,12 +876,12 @@ tbody tr:last-child {
   text-align: left;
 }
 
-#jkkvbnvkvp .gt_empty_group_heading {
+#jlijsgbrvz .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
-  font-weight: bolder;
+  font-size: 100%;
+  font-weight: initial;
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #000000;
@@ -890,15 +891,15 @@ tbody tr:last-child {
   vertical-align: middle;
 }
 
-#jkkvbnvkvp .gt_from_md > :first-child {
+#jlijsgbrvz .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#jkkvbnvkvp .gt_from_md > :last-child {
+#jlijsgbrvz .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#jkkvbnvkvp .gt_row {
+#jlijsgbrvz .gt_row {
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 5px;
@@ -917,12 +918,12 @@ tbody tr:last-child {
   overflow-x: hidden;
 }
 
-#jkkvbnvkvp .gt_stub {
+#jlijsgbrvz .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
-  font-weight: bolder;
-  text-transform: uppercase;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
   border-right-style: solid;
   border-right-width: 0px;
   border-right-color: #FFFFFF;
@@ -930,7 +931,7 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#jkkvbnvkvp .gt_stub_row_group {
+#jlijsgbrvz .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -944,15 +945,15 @@ tbody tr:last-child {
   vertical-align: top;
 }
 
-#jkkvbnvkvp .gt_row_group_first td {
+#jlijsgbrvz .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#jkkvbnvkvp .gt_row_group_first th {
+#jlijsgbrvz .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#jkkvbnvkvp .gt_summary_row {
+#jlijsgbrvz .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -962,16 +963,16 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#jkkvbnvkvp .gt_first_summary_row {
+#jlijsgbrvz .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#jkkvbnvkvp .gt_first_summary_row.thick {
+#jlijsgbrvz .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#jkkvbnvkvp .gt_last_summary_row {
+#jlijsgbrvz .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -981,7 +982,7 @@ tbody tr:last-child {
   border-bottom-color: #D3D3D3;
 }
 
-#jkkvbnvkvp .gt_grand_summary_row {
+#jlijsgbrvz .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -991,7 +992,7 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#jkkvbnvkvp .gt_first_grand_summary_row {
+#jlijsgbrvz .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1001,7 +1002,7 @@ tbody tr:last-child {
   border-top-color: #D3D3D3;
 }
 
-#jkkvbnvkvp .gt_last_grand_summary_row_top {
+#jlijsgbrvz .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1011,11 +1012,11 @@ tbody tr:last-child {
   border-bottom-color: #D3D3D3;
 }
 
-#jkkvbnvkvp .gt_striped {
+#jlijsgbrvz .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#jkkvbnvkvp .gt_table_body {
+#jlijsgbrvz .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1024,7 +1025,7 @@ tbody tr:last-child {
   border-bottom-color: #D3D3D3;
 }
 
-#jkkvbnvkvp .gt_footnotes {
+#jlijsgbrvz .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1038,7 +1039,7 @@ tbody tr:last-child {
   border-right-color: #D3D3D3;
 }
 
-#jkkvbnvkvp .gt_footnote {
+#jlijsgbrvz .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1047,7 +1048,7 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#jkkvbnvkvp .gt_sourcenotes {
+#jlijsgbrvz .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1061,7 +1062,7 @@ tbody tr:last-child {
   border-right-color: #D3D3D3;
 }
 
-#jkkvbnvkvp .gt_sourcenote {
+#jlijsgbrvz .gt_sourcenote {
   font-size: 12px;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1069,63 +1070,63 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#jkkvbnvkvp .gt_left {
+#jlijsgbrvz .gt_left {
   text-align: left;
 }
 
-#jkkvbnvkvp .gt_center {
+#jlijsgbrvz .gt_center {
   text-align: center;
 }
 
-#jkkvbnvkvp .gt_right {
+#jlijsgbrvz .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#jkkvbnvkvp .gt_font_normal {
+#jlijsgbrvz .gt_font_normal {
   font-weight: normal;
 }
 
-#jkkvbnvkvp .gt_font_bold {
+#jlijsgbrvz .gt_font_bold {
   font-weight: bold;
 }
 
-#jkkvbnvkvp .gt_font_italic {
+#jlijsgbrvz .gt_font_italic {
   font-style: italic;
 }
 
-#jkkvbnvkvp .gt_super {
+#jlijsgbrvz .gt_super {
   font-size: 65%;
 }
 
-#jkkvbnvkvp .gt_footnote_marks {
+#jlijsgbrvz .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#jkkvbnvkvp .gt_asterisk {
+#jlijsgbrvz .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#jkkvbnvkvp .gt_indent_1 {
+#jlijsgbrvz .gt_indent_1 {
   text-indent: 5px;
 }
 
-#jkkvbnvkvp .gt_indent_2 {
+#jlijsgbrvz .gt_indent_2 {
   text-indent: 10px;
 }
 
-#jkkvbnvkvp .gt_indent_3 {
+#jlijsgbrvz .gt_indent_3 {
   text-indent: 15px;
 }
 
-#jkkvbnvkvp .gt_indent_4 {
+#jlijsgbrvz .gt_indent_4 {
   text-indent: 20px;
 }
 
-#jkkvbnvkvp .gt_indent_5 {
+#jlijsgbrvz .gt_indent_5 {
   text-indent: 25px;
 }
 
@@ -1133,82 +1134,70 @@ tbody tr:last-child {
   border-bottom: 2px solid #ffffff00;
 }
 </style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-  <thead>
-    
-    <tr class="gt_col_headings">
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id=""></th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;" scope="col" id="Number of Advertisers">Number of Advertisers</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;" scope="col" id="Top Spenders">Top Spenders</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;" scope="col" id="Number of Ads">Number of Ads</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;" scope="col" id="Total Spend">Total Spend</th>
-    </tr>
-  </thead>
-  <tbody class="gt_table_body">
-    <tr><th id="stub_1_1" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>ΝΔ</p>
-</div></th>
-<td headers="stub_1_1 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #3366cc;"><div class="gt_from_md"><p>31</p>
-</div></td>
-<td headers="stub_1_1 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=82362291274">ΝΕΑ ΔΗΜΟΚΡΑΤΙΑ</a> (€13,348)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=34848567724">Kyriakos Mitsotakis</a> (€3,121)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=253581075582399">Μιχάλης Αγγελόπουλος</a> (€2,949)<br><br></p>
-</div></td>
-<td headers="stub_1_1 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>267</p>
-</div></td>
-<td headers="stub_1_1 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€22,072</p>
-</div></td></tr>
-    <tr><th id="stub_1_2" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>OTHER</p>
-</div></th>
-<td headers="stub_1_2 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #666666;"><div class="gt_from_md"><p>21</p>
-</div></td>
-<td headers="stub_1_2 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=2004113959706025">Κόσμος - Kosmos</a> (€4,392)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=1489639131352219">Ζωή Κωνσταντοπούλου - Zoe Konstantopoulou</a> (€871)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=1748153855406537">vradini.gr</a> (€645)<br><br></p>
-</div></td>
-<td headers="stub_1_2 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>213</p>
-</div></td>
-<td headers="stub_1_2 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€7,371</p>
-</div></td></tr>
-    <tr><th id="stub_1_3" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>ΠΑΣΟΚ</p>
-</div></th>
-<td headers="stub_1_3 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #2D902D;"><div class="gt_from_md"><p>10</p>
-</div></td>
-<td headers="stub_1_3 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=216089191899991">Νίκος Ανδρουλάκης</a> (€2,088)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=296107141177054">Alexis Charitsis - Αλέξης Χαρίτσης</a> (€1,266)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=197154300621371">Milena Apostolaki</a> (€536)<br><br></p>
-</div></td>
-<td headers="stub_1_3 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>118</p>
-</div></td>
-<td headers="stub_1_3 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€4,353</p>
-</div></td></tr>
-    <tr><th id="stub_1_4" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>ΣΥ.ΡΙΖ.Α</p>
-</div></th>
-<td headers="stub_1_4 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #ca272c;"><div class="gt_from_md"><p>18</p>
-</div></td>
-<td headers="stub_1_4 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=234040963454964">Πέτρος Κόκκαλης - Petros Kokkalis</a> (€1,067)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=453670504778927">Ευγενία - Τζένη Αρσένη Dr. Eugenia Arsenis</a> (€677)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=121210824282432">Μάριος Αθανασίου</a> (€349)<br><br></p>
-</div></td>
-<td headers="stub_1_4 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>173</p>
-</div></td>
-<td headers="stub_1_4 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€2,919</p>
-</div></td></tr>
-    <tr><th id="stub_1_5" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>ΕΛ</p>
-</div></th>
-<td headers="stub_1_5 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #5493ce;"><div class="gt_from_md"><p>4</p>
-</div></td>
-<td headers="stub_1_5 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=279116802432610">Ελληνική Λύση</a> (€1,629)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=104497128822912">Πιπεργιάς Δημήτριος Ελληνική λύση</a> (€139)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=105260258009154">Κωτσιόπουλος Ελευθέριος  υπ.Ευρωβουλευτής   Ελληνική Λύση</a> (€1)<br><br></p>
-</div></td>
-<td headers="stub_1_5 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>23</p>
-</div></td>
-<td headers="stub_1_5 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€1,770</p>
-</div></td></tr>
-    <tr><th id="stub_1_6" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>ΜέΡΑ25</p>
-</div></th>
-<td headers="stub_1_6 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #c3341d;"><div class="gt_from_md"><p>1</p>
-</div></td>
-<td headers="stub_1_6 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=333635613794935">ΜέΡΑ25</a> (€1,578)<br><br></p>
-</div></td>
-<td headers="stub_1_6 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>31</p>
-</div></td>
-<td headers="stub_1_6 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€1,578</p>
-</div></td></tr>
-  </tbody>
-  
-  
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header gt_col_headings">
+<th class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"></th>
+<th id="Number of Advertisers" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Number of Advertisers</th>
+<th id="Top Spenders" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Top Spenders</th>
+<th id="Number of Ads" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Number of Ads</th>
+<th id="Total Spend" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Total Spend</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td id="stub_1_1" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>ΝΔ</p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #3366cc"><p>31</p></td>
+<td class="gt_row gt_left" headers="stub_1_1 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=82362291274">ΝΕΑ ΔΗΜΟΚΡΑΤΙΑ</a> (€13,348)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=34848567724">Kyriakos Mitsotakis</a> (€3,121)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=253581075582399">Μιχάλης Αγγελόπουλος</a> (€2,949)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Number of Ads"><p>267</p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Total Spend"><p>€22,072</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_2" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>OTHER</p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #666666"><p>21</p></td>
+<td class="gt_row gt_left" headers="stub_1_2 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=2004113959706025">Κόσμος - Kosmos</a> (€4,392)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=1489639131352219">Ζωή Κωνσταντοπούλου - Zoe Konstantopoulou</a> (€871)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=1748153855406537">vradini.gr</a> (€645)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Number of Ads"><p>213</p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Total Spend"><p>€7,371</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_3" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>ΠΑΣΟΚ</p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #2D902D"><p>10</p></td>
+<td class="gt_row gt_left" headers="stub_1_3 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=216089191899991">Νίκος Ανδρουλάκης</a> (€2,088)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=296107141177054">Alexis Charitsis - Αλέξης Χαρίτσης</a> (€1,266)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=197154300621371">Milena Apostolaki</a> (€536)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Number of Ads"><p>118</p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Total Spend"><p>€4,353</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_4" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>ΣΥ.ΡΙΖ.Α</p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #ca272c"><p>18</p></td>
+<td class="gt_row gt_left" headers="stub_1_4 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=234040963454964">Πέτρος Κόκκαλης - Petros Kokkalis</a> (€1,067)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=453670504778927">Ευγενία - Τζένη Αρσένη Dr.&nbsp;Eugenia Arsenis</a> (€677)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=121210824282432">Μάριος Αθανασίου</a> (€349)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Number of Ads"><p>173</p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Total Spend"><p>€2,919</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_5" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>ΕΛ</p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #5493ce"><p>4</p></td>
+<td class="gt_row gt_left" headers="stub_1_5 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=279116802432610">Ελληνική Λύση</a> (€1,629)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=104497128822912">Πιπεργιάς Δημήτριος Ελληνική λύση</a> (€139)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=105260258009154">Κωτσιόπουλος Ελευθέριος υπ.Ευρωβουλευτής Ελληνική Λύση</a> (€1)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Number of Ads"><p>23</p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Total Spend"><p>€1,770</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_6" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>ΜέΡΑ25</p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #c3341d"><p>1</p></td>
+<td class="gt_row gt_left" headers="stub_1_6 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=GR&amp;view_all_page_id=333635613794935">ΜέΡΑ25</a> (€1,578)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Number of Ads"><p>31</p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Total Spend"><p>€1,578</p></td>
+</tr>
+</tbody>
 </table>
+
 </div>
 </div>
 </div>
@@ -1298,10 +1287,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1311,8 +1317,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1324,7 +1339,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1368,6 +1506,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1393,6 +1532,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1453,6 +1618,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 

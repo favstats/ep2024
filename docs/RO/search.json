@@ -1,100 +1,119 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "European Parliament Elections 2024",
-    "section": "",
-    "text": "Methodology\nIn collaboration with Who Targets Me, we monitored 170 political advertisers to better understand how campaigns use different targeting methods made available by Meta. To do this, we used data from the Meta Ad Library, using the new ‘Audience’ data which gives some detail on how pages target their ads.\nTo better understand the election, we kept only advertisers who:\n\nAdvertised in the last 7 days (22 May - 28 May 2024)\nAdvertised in the last 30 days (29 Apr - 28 May 2024)\n\n\n\n\n\n\n\nNote\n\n\n\nMeta only provides 7, 30 and 90 days windows for the targeting data in their Ad Library. Meta’s data also lags by a few days. Report will be updated as soon as new data is available.\n\n\n\n\n\n\n\n\nDisclaimer\n\n\n\nThe data shown in this dashboard is based on the platform’s respective ad libraries which are known to be sometimes incomplete (Edelson et al. 2020; Silva et al. 2020). For this reason the data shown here might not reflect the full picture nor all political ads that were targeted at voters.\n\n\n\n\nAbout the Creator of the Dashboard\n\n\n\n\n\n\n\n\n\n\n\nFabio Votta is a Postdoc at the University of Amsterdam who studies (online) political microtargeting and its usage around the world.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  BlueSky\n  Twitter\n  Personal Website\n\n\n\n\n\n\n\n\n\nWant to see how political parties target you? Sign up at Who Targets Me and download the gratis browser plugin to see how parties on Facebook use your data:\nhttps://whotargets.me/\n\n\n\n\n\n\n\nWant to retrieve targeting data from the Facebook Ad Library yourself? This dashboard is powered by the R package: metatargetr. Check it out here:\nhttps://github.com/favstats/metatargetr\n\n\n\n\nElection Targeting Dashboards\nA list of election dashboards:\n\n🇳🇱 2021 Dutch parliamentary election (15th-17th March 2021)\n🇩🇪 2021 German federal election (26 September 2021)\n🇸🇪 2022 Swedish general election (11th September 2022)\n🇺🇸 2022 United States midterm elections (8th November 2022)\n🇺🇸 2022 United States midterm elections - Georgia Runoff (6th December 2022)\n🇮🇹 2023 Lazio & Lombardy regional election (12-13th February 2023)\n🇪🇪 2023 Estonian parliamentary election (5th March 2023)\n🇳🇱 2023 Dutch provincial elections (15th March 2023)\n🇲🇪 2023 Montenegrin presidential elections (19th March 2023) - 1st round\n🇦🇺 2023 New South Wales state election (25th March 2023)\n🇫🇮 2023 Finnish parliamentary election (2 April 2023)\n🇹🇷 2023 Turkish general election (14 May 2023) - Round 1\n🇩🇪 2023 Bremen State election (14 May 2023)\n🇬🇷 2023 Greek Legislative election (21 May 2023)\n🇹🇷 2023 Turkish Presidential election (14 May 2023) - Round 2\n🇲🇪 2023 Montenegrin parliamentary elections (11 June 2023)\n🇬🇷 2nd 2023 Greek Legislative election (25 May 2023)\n🇸🇰 2023 Slovak parliamentary election (30 September 2023)\n🇩🇪 2023 Bavarian state election (8 October 2023)\n🇩🇪 2023 Hessian state election (8 October 2023)\n🇳🇿 2023 New Zealand general election (14 October 2023)\n🇵🇱 2023 Polish parliamentary election (15 October 2023)\n🇺🇸 US Presidential Primaries (2023-2024)"
-  },
-  {
     "objectID": "demographics.html",
     "href": "demographics.html",
     "title": "Demographics",
     "section": "",
-    "text": "The following graphs illustrate how parties target different age groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024"
+    "text": "The following graphs illustrate how parties target different age groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024",
+    "crumbs": [
+      "Demographics"
+    ]
   },
   {
     "objectID": "demographics.html#age-targeting",
     "href": "demographics.html#age-targeting",
     "title": "Demographics",
     "section": "",
-    "text": "The following graphs illustrate how parties target different age groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024"
+    "text": "The following graphs illustrate how parties target different age groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024",
+    "crumbs": [
+      "Demographics"
+    ]
   },
   {
     "objectID": "demographics.html#gender-targeting",
     "href": "demographics.html#gender-targeting",
     "title": "Demographics",
     "section": "Gender Targeting",
-    "text": "Gender Targeting\nDe onderstaande grafieken laten zien hoe partijen gender als focusgroep gebruiken en welk percentage van het budget daaraan werd uitgegeven.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024"
+    "text": "Gender Targeting\nDe onderstaande grafieken laten zien hoe partijen gender als focusgroep gebruiken en welk percentage van het budget daaraan werd uitgegeven.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024",
+    "crumbs": [
+      "Demographics"
+    ]
   },
   {
     "objectID": "demographics.html#language-targeting",
     "href": "demographics.html#language-targeting",
     "title": "Demographics",
     "section": "Language Targeting",
-    "text": "Language Targeting\nThe following graphs show how parties use different languages as focus groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024"
+    "text": "Language Targeting\nThe following graphs show how parties use different languages as focus groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024",
+    "crumbs": [
+      "Demographics"
+    ]
   },
   {
     "objectID": "demographics.html#targeting-based-on-employment-or-education-instituation",
     "href": "demographics.html#targeting-based-on-employment-or-education-instituation",
     "title": "Demographics",
     "section": "Targeting based on Employment or Education Instituation",
-    "text": "Targeting based on Employment or Education Instituation\nThe following graphs depict how parties utilize various job sectors and types of education as focus groups and the percentage of the budget allocated to them. The next graph focuses on educational levels.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024"
+    "text": "Targeting based on Employment or Education Instituation\nThe following graphs depict how parties utilize various job sectors and types of education as focus groups and the percentage of the budget allocated to them. The next graph focuses on educational levels.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024",
+    "crumbs": [
+      "Demographics"
+    ]
   },
   {
     "objectID": "demographics.html#education-levels-targeting",
     "href": "demographics.html#education-levels-targeting",
     "title": "Demographics",
     "section": "Education Levels Targeting",
-    "text": "Education Levels Targeting\nThe graphs below illustrate how parties target various education levels as focus groups and the percentage of the budget allocated to each.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024"
+    "text": "Education Levels Targeting\nThe graphs below illustrate how parties target various education levels as focus groups and the percentage of the budget allocated to each.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024",
+    "crumbs": [
+      "Demographics"
+    ]
   },
   {
     "objectID": "demographics.html#relationship-status-targeting",
     "href": "demographics.html#relationship-status-targeting",
     "title": "Demographics",
     "section": "Relationship Status Targeting",
-    "text": "Relationship Status Targeting\nThe following graphs reveal how political parties utilize different relationship statuses as focus groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024"
+    "text": "Relationship Status Targeting\nThe following graphs reveal how political parties utilize different relationship statuses as focus groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024",
+    "crumbs": [
+      "Demographics"
+    ]
   },
   {
     "objectID": "detailed.html",
     "href": "detailed.html",
     "title": "Detailed Targeting",
     "section": "",
-    "text": "The chart below displays the most utilized targeting criteria by political parties on Meta, based on the amounts spent.\n\n29 Apr - 28 May 202422 May - 28 May 2024"
+    "text": "The chart below displays the most utilized targeting criteria by political parties on Meta, based on the amounts spent.\n\n29 Apr - 28 May 202422 May - 28 May 2024",
+    "crumbs": [
+      "Detailed Targeting"
+    ]
   },
   {
     "objectID": "detailed.html#top-targeted-audiences",
     "href": "detailed.html#top-targeted-audiences",
     "title": "Detailed Targeting",
     "section": "",
-    "text": "The chart below displays the most utilized targeting criteria by political parties on Meta, based on the amounts spent.\n\n29 Apr - 28 May 202422 May - 28 May 2024"
+    "text": "The chart below displays the most utilized targeting criteria by political parties on Meta, based on the amounts spent.\n\n29 Apr - 28 May 202422 May - 28 May 2024",
+    "crumbs": [
+      "Detailed Targeting"
+    ]
   },
   {
     "objectID": "detailed.html#top-excluded-audiences",
     "href": "detailed.html#top-excluded-audiences",
     "title": "Detailed Targeting",
     "section": "Top Excluded Audiences",
-    "text": "Top Excluded Audiences\nAmong the detailed options offered by Meta, the chart below shows the most excluded target audiences per party. The ranking is based on the amounts spent.\n\n29 Apr - 28 May 202422 May - 28 May 2024"
+    "text": "Top Excluded Audiences\nAmong the detailed options offered by Meta, the chart below shows the most excluded target audiences per party. The ranking is based on the amounts spent.\n\n29 Apr - 28 May 202422 May - 28 May 2024",
+    "crumbs": [
+      "Detailed Targeting"
+    ]
   },
   {
     "objectID": "detailed.html#top-contested-audiences",
     "href": "detailed.html#top-contested-audiences",
     "title": "Detailed Targeting",
     "section": "Top Contested Audiences",
-    "text": "Top Contested Audiences\nThe charts below show the target audiences where most competition takes place. For example, the groups in which all parties invest large amounts to reach voters with the same interests.\n\n29 Apr - 28 May 202422 May - 28 May 2024"
+    "text": "Top Contested Audiences\nThe charts below show the target audiences where most competition takes place. For example, the groups in which all parties invest large amounts to reach voters with the same interests.\n\n29 Apr - 28 May 202422 May - 28 May 2024",
+    "crumbs": [
+      "Detailed Targeting"
+    ]
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Spending",
     "section": "",
-    "text": "Here you can see the expenditures of political parties in the lead-up to the elections according to the latest data.\n\n29 Apr - 28 May 202422 May - 28 May 2024\n\n\nDuring this period, political parties spent a total of €600,376 and displayed 8420 advertisements on Meta.\n\n\n\n\n\n\n  \n    \n    \n      \n      Number of Advertisers\n      Top Spenders\n      Number of Ads\n      Total Spend\n    \n  \n  \n    USR\n\n131\n\n1. USR PLUS Brașov (€19,907)2. Alexandru Dimitriu (€17,163)3. Allen Coliban (€10,212)\n\n2,159\n\n€163,262\n\n    PSD\n\n68\n\n1. Marcel Ciolacu (€31,055)2. Gabriel Valer Zetea (€18,930)3. Lucian Patrascu (€16,945)\n\n2,303\n\n€157,473\n\n    PNL\n\n112\n\n1. George Scripcaru (€23,102)2. Ionel Bogdan (€16,125)3. Partidul Naţional Liberal (€14,924)\n\n2,167\n\n€132,991\n\n    AUR\n\n48\n\n1. Alianța pentru Unirea Românilor - AUR (€22,476)2. Europarlamentari AUR (€19,693)3. George Simion (€9,261)\n\n409\n\n€62,922\n\n    REPER\n\n21\n\n1. Partidul REPER (€25,734)2. Ramona Strugariu (€6,293)3. Dacian Cioloş (€6,163)\n\n231\n\n€40,996\n\n    UDMR\n\n28\n\n1. RMDSZ (€11,996)2. Kelemen Hunor (€5,596)3. RMDSZ, Maros megyei szervezet (€2,572)\n\n862\n\n€32,012\n\n    PMP\n\n8\n\n1. Cătălina Bozianu (€1,834)2. Ramona Cupă președinte PMP Mehedinți (€1,616)3. PMP Prahova - Oficial (€1,570)\n\n144\n\n€8,053\n\n    FD\n\n12\n\n1. Forța Dreptei - Ilfov (€688)2. Forța Dreptei Constanța (€480)3. Forța Dreptei Iași (€455)\n\n139\n\n€2,476\n\n    PRO\n\n2\n\n1. Petru Florea (€134)2. Corina Cretu (€56)\n\n6\n\n€190\n\n  \n  \n  \n\n\n\n\n\n\nDuring this period, political parties spent a total of €265,956 and displayed 4967 advertisements on Meta.\n\n\n\n\n\n\n  \n    \n    \n      \n      Number of Advertisers\n      Top Spenders\n      Number of Ads\n      Total Spend\n    \n  \n  \n    PSD\n\n52\n\n1. Marcel Ciolacu (€21,792)2. Partidul Social Democrat (€8,042)3. Lucian Patrascu (€7,714)\n\n1,532\n\n€83,689\n\n    USR\n\n114\n\n1. USR PLUS Brașov (€8,515)2. Alexandru Dimitriu (€5,533)3. Cătălin Drulă (€4,739)\n\n1,201\n\n€65,716\n\n    PNL\n\n83\n\n1. Ionel Bogdan (€8,606)2. George Scripcaru (€6,527)3. Ciprian Ciucu (€4,396)\n\n1,376\n\n€54,820\n\n    REPER\n\n16\n\n1. Partidul REPER (€15,697)2. Ramona Strugariu (€4,082)3. Dacian Cioloş (€2,770)\n\n127\n\n€25,894\n\n    UDMR\n\n26\n\n1. RMDSZ (€5,690)2. Kelemen Hunor (€2,985)3. RMDSZ, Maros megyei szervezet (€1,996)\n\n426\n\n€15,924\n\n    AUR\n\n18\n\n1. George Simion (€5,411)2. Alianța pentru Unirea Românilor - A U R  Bistrița-Năsăud (€3,485)3. Alianța pentru Unirea Românilor - AUR (€1,290)\n\n150\n\n€13,934\n\n    PMP\n\n8\n\n1. Cătălina Bozianu (€1,209)2. Ramona Cupă președinte PMP Mehedinți (€1,147)3. PMP Prahova - Oficial (€988)\n\n104\n\n€4,922\n\n    FD\n\n8\n\n1. Forța Dreptei Iași (€331)2. Forța Dreptei Constanța (€244)3. Forța Dreptei Brăila (€138)\n\n46\n\n€901\n\n    PRO\n\n2\n\n1. Petru Florea (€91)2. Corina Cretu (€65)\n\n5\n\n€155"
-  },
-  {
-    "objectID": "targeting.html",
-    "href": "targeting.html",
-    "title": "Spending per Targeting",
-    "section": "",
-    "text": "These charts show the groups that political parties target with their advertisements leading up to the elections, according to the latest data. The focus is on Meta’s platforms (Facebook and Instagram) because they offer the most detailed targeting options for political advertisements.\nHow much did the campaigns of political parties spend on different audiences? The charts below show both the total and the expenditures per party.\n\nNote: Different targeting criteria may overlap, so the outcome may not necessarily add up to 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024\n\n\n\nTotalBy Party\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTotalBy Party"
+    "text": "Here you can see the expenditures of political parties in the lead-up to the elections according to the latest data.\n\n29 Apr - 28 May 202422 May - 28 May 2024\n\n\nDuring this period, political parties spent a total of €600,376 and displayed 8420 advertisements on Meta.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNumber of Advertisers\nTop Spenders\nNumber of Ads\nTotal Spend\n\n\n\n\nUSR\n131\n1. USR PLUS Brașov (€19,907)2. Alexandru Dimitriu (€17,163)3. Allen Coliban (€10,212)\n2,159\n€163,262\n\n\nPSD\n68\n1. Marcel Ciolacu (€31,055)2. Gabriel Valer Zetea (€18,930)3. Lucian Patrascu (€16,945)\n2,303\n€157,473\n\n\nPNL\n112\n1. George Scripcaru (€23,102)2. Ionel Bogdan (€16,125)3. Partidul Naţional Liberal (€14,924)\n2,167\n€132,991\n\n\nAUR\n48\n1. Alianța pentru Unirea Românilor - AUR (€22,476)2. Europarlamentari AUR (€19,693)3. George Simion (€9,261)\n409\n€62,922\n\n\nREPER\n21\n1. Partidul REPER (€25,734)2. Ramona Strugariu (€6,293)3. Dacian Cioloş (€6,163)\n231\n€40,996\n\n\nUDMR\n28\n1. RMDSZ (€11,996)2. Kelemen Hunor (€5,596)3. RMDSZ, Maros megyei szervezet (€2,572)\n862\n€32,012\n\n\nPMP\n8\n1. Cătălina Bozianu (€1,834)2. Ramona Cupă președinte PMP Mehedinți (€1,616)3. PMP Prahova - Oficial (€1,570)\n144\n€8,053\n\n\nFD\n12\n1. Forța Dreptei - Ilfov (€688)2. Forța Dreptei Constanța (€480)3. Forța Dreptei Iași (€455)\n139\n€2,476\n\n\nPRO\n2\n1. Petru Florea (€134)2. Corina Cretu (€56)\n6\n€190\n\n\n\n\n\n\n\n\n\nDuring this period, political parties spent a total of €265,956 and displayed 4967 advertisements on Meta.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNumber of Advertisers\nTop Spenders\nNumber of Ads\nTotal Spend\n\n\n\n\nPSD\n52\n1. Marcel Ciolacu (€21,792)2. Partidul Social Democrat (€8,042)3. Lucian Patrascu (€7,714)\n1,532\n€83,689\n\n\nUSR\n114\n1. USR PLUS Brașov (€8,515)2. Alexandru Dimitriu (€5,533)3. Cătălin Drulă (€4,739)\n1,201\n€65,716\n\n\nPNL\n83\n1. Ionel Bogdan (€8,606)2. George Scripcaru (€6,527)3. Ciprian Ciucu (€4,396)\n1,376\n€54,820\n\n\nREPER\n16\n1. Partidul REPER (€15,697)2. Ramona Strugariu (€4,082)3. Dacian Cioloş (€2,770)\n127\n€25,894\n\n\nUDMR\n26\n1. RMDSZ (€5,690)2. Kelemen Hunor (€2,985)3. RMDSZ, Maros megyei szervezet (€1,996)\n426\n€15,924\n\n\nAUR\n18\n1. George Simion (€5,411)2. Alianța pentru Unirea Românilor - A U R Bistrița-Năsăud (€3,485)3. Alianța pentru Unirea Românilor - AUR (€1,290)\n150\n€13,934\n\n\nPMP\n8\n1. Cătălina Bozianu (€1,209)2. Ramona Cupă președinte PMP Mehedinți (€1,147)3. PMP Prahova - Oficial (€988)\n104\n€4,922\n\n\nFD\n8\n1. Forța Dreptei Iași (€331)2. Forța Dreptei Constanța (€244)3. Forța Dreptei Brăila (€138)\n46\n€901\n\n\nPRO\n2\n1. Petru Florea (€91)2. Corina Cretu (€65)\n5\n€155"
   }
 ]

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.433">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -48,7 +48,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -57,6 +63,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -70,9 +77,9 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
     <img src="./wtm_logo_2020_transparent-300x300.png" alt="" class="navbar-logo">
     </a>
@@ -87,40 +94,40 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="https://favstats.github.io/ep2024/" rel="" target="">
- <span class="menu-text"><iconify-icon inline="" icon="ph:map-trifold-thin" aria-label="Icon map-trifold-thin from ph Iconify.design set." title="Icon map-trifold-thin from ph Iconify.design set."></iconify-icon> Map</span></a>
+    <a class="nav-link" href="https://favstats.github.io/ep2024/"> 
+<span class="menu-text"><iconify-icon inline="" icon="ph:map-trifold-thin" aria-label="Icon map-trifold-thin from ph Iconify.design set." title="Icon map-trifold-thin from ph Iconify.design set."></iconify-icon> Map</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
- <span class="menu-text"><iconify-icon inline="" icon="ph:coins" aria-label="Icon coins from ph Iconify.design set." title="Icon coins from ph Iconify.design set."></iconify-icon> Spending</span></a>
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text"><iconify-icon inline="" icon="ph:coins" aria-label="Icon coins from ph Iconify.design set." title="Icon coins from ph Iconify.design set."></iconify-icon> Spending</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-iconify-ph-users-three-thin--targeting" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-iconify-ph-users-three-thin--targeting" role="button" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text"><iconify-icon inline="" icon="ph:users-three-thin" aria-label="Icon users-three-thin from ph Iconify.design set." title="Icon users-three-thin from ph Iconify.design set."></iconify-icon> Targeting</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-iconify-ph-users-three-thin--targeting">    
         <li>
-    <a class="dropdown-item" href="./targeting.html" rel="" target="">
+    <a class="dropdown-item" href="./targeting.html">
  <span class="dropdown-text">Spending per Targeting</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./detailed.html" rel="" target="">
+    <a class="dropdown-item" href="./detailed.html">
  <span class="dropdown-text">Detailed Targeting</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./demographics.html" rel="" target="">
+    <a class="dropdown-item" href="./demographics.html">
  <span class="dropdown-text">Demographics</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
- <span class="menu-text"><iconify-icon inline="" icon="ph:info-thin" aria-label="Icon info-thin from ph Iconify.design set." title="Icon info-thin from ph Iconify.design set."></iconify-icon> About</span></a>
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text"><iconify-icon inline="" icon="ph:info-thin" aria-label="Icon info-thin from ph Iconify.design set." title="Icon info-thin from ph Iconify.design set."></iconify-icon> About</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -139,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -147,7 +154,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <p>Here you can see the expenditures of political parties in the lead-up to the elections according to the latest data.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
@@ -157,25 +166,27 @@ ul.task-list li input[type="checkbox"] {
 <p>During this period, political parties spent a total of €365,894 and displayed 3521 advertisements on Meta.</p>
 <div class="cell">
 <div class="cell-output-display">
-
-<div id="zzmgjeqyjs" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="fbptthsfbj" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#zzmgjeqyjs table {
-  font-family: Chivo, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+#fbptthsfbj table {
+  font-family: Cairo, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#zzmgjeqyjs thead, #zzmgjeqyjs tbody, #zzmgjeqyjs tfoot, #zzmgjeqyjs tr, #zzmgjeqyjs td, #zzmgjeqyjs th {
+#fbptthsfbj thead, #fbptthsfbj tbody, #fbptthsfbj tfoot, #fbptthsfbj tr, #fbptthsfbj td, #fbptthsfbj th {
   border-style: none;
 }
 
-#zzmgjeqyjs p {
+#fbptthsfbj p {
   margin: 0;
   padding: 0;
 }
 
-#zzmgjeqyjs .gt_table {
+#fbptthsfbj .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -183,7 +194,7 @@ ul.task-list li input[type="checkbox"] {
   margin-right: auto;
   color: #333333;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   background-color: #FFFFFF;
   width: auto;
@@ -201,12 +212,12 @@ ul.task-list li input[type="checkbox"] {
   border-left-color: #D3D3D3;
 }
 
-#zzmgjeqyjs .gt_caption {
+#fbptthsfbj .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#zzmgjeqyjs .gt_title {
+#fbptthsfbj .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -218,7 +229,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-width: 0;
 }
 
-#zzmgjeqyjs .gt_subtitle {
+#fbptthsfbj .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -230,7 +241,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-width: 0;
 }
 
-#zzmgjeqyjs .gt_heading {
+#fbptthsfbj .gt_heading {
   background-color: #FFFFFF;
   text-align: left;
   border-bottom-color: #FFFFFF;
@@ -242,13 +253,13 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#zzmgjeqyjs .gt_bottom_border {
+#fbptthsfbj .gt_bottom_border {
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#zzmgjeqyjs .gt_col_headings {
+#fbptthsfbj .gt_col_headings {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -263,12 +274,12 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#zzmgjeqyjs .gt_col_heading {
+#fbptthsfbj .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
+  font-size: 100%;
   font-weight: normal;
-  text-transform: uppercase;
+  text-transform: inherit;
   border-left-style: none;
   border-left-width: 1px;
   border-left-color: #D3D3D3;
@@ -283,27 +294,27 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#zzmgjeqyjs .gt_column_spanner_outer {
+#fbptthsfbj .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
+  font-size: 100%;
   font-weight: normal;
-  text-transform: uppercase;
+  text-transform: inherit;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 4px;
   padding-right: 4px;
 }
 
-#zzmgjeqyjs .gt_column_spanner_outer:first-child {
+#fbptthsfbj .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#zzmgjeqyjs .gt_column_spanner_outer:last-child {
+#fbptthsfbj .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#zzmgjeqyjs .gt_column_spanner {
+#fbptthsfbj .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #000000;
@@ -315,20 +326,20 @@ ul.task-list li input[type="checkbox"] {
   width: 100%;
 }
 
-#zzmgjeqyjs .gt_spanner_row {
+#fbptthsfbj .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#zzmgjeqyjs .gt_group_heading {
+#fbptthsfbj .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
   padding-right: 5px;
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
-  font-weight: bolder;
-  text-transform: uppercase;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #000000;
@@ -345,12 +356,12 @@ ul.task-list li input[type="checkbox"] {
   text-align: left;
 }
 
-#zzmgjeqyjs .gt_empty_group_heading {
+#fbptthsfbj .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
-  font-weight: bolder;
+  font-size: 100%;
+  font-weight: initial;
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #000000;
@@ -360,15 +371,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 
-#zzmgjeqyjs .gt_from_md > :first-child {
+#fbptthsfbj .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#zzmgjeqyjs .gt_from_md > :last-child {
+#fbptthsfbj .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#zzmgjeqyjs .gt_row {
+#fbptthsfbj .gt_row {
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 5px;
@@ -387,12 +398,12 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#zzmgjeqyjs .gt_stub {
+#fbptthsfbj .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
-  font-weight: bolder;
-  text-transform: uppercase;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
   border-right-style: solid;
   border-right-width: 0px;
   border-right-color: #FFFFFF;
@@ -400,7 +411,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#zzmgjeqyjs .gt_stub_row_group {
+#fbptthsfbj .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -414,15 +425,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: top;
 }
 
-#zzmgjeqyjs .gt_row_group_first td {
+#fbptthsfbj .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#zzmgjeqyjs .gt_row_group_first th {
+#fbptthsfbj .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#zzmgjeqyjs .gt_summary_row {
+#fbptthsfbj .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -432,16 +443,16 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#zzmgjeqyjs .gt_first_summary_row {
+#fbptthsfbj .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#zzmgjeqyjs .gt_first_summary_row.thick {
+#fbptthsfbj .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#zzmgjeqyjs .gt_last_summary_row {
+#fbptthsfbj .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -451,7 +462,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#zzmgjeqyjs .gt_grand_summary_row {
+#fbptthsfbj .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -461,7 +472,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#zzmgjeqyjs .gt_first_grand_summary_row {
+#fbptthsfbj .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -471,7 +482,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-color: #D3D3D3;
 }
 
-#zzmgjeqyjs .gt_last_grand_summary_row_top {
+#fbptthsfbj .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -481,11 +492,11 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#zzmgjeqyjs .gt_striped {
+#fbptthsfbj .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#zzmgjeqyjs .gt_table_body {
+#fbptthsfbj .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -494,7 +505,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#zzmgjeqyjs .gt_footnotes {
+#fbptthsfbj .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -508,7 +519,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#zzmgjeqyjs .gt_footnote {
+#fbptthsfbj .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -517,7 +528,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#zzmgjeqyjs .gt_sourcenotes {
+#fbptthsfbj .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -531,7 +542,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#zzmgjeqyjs .gt_sourcenote {
+#fbptthsfbj .gt_sourcenote {
   font-size: 12px;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -539,63 +550,63 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#zzmgjeqyjs .gt_left {
+#fbptthsfbj .gt_left {
   text-align: left;
 }
 
-#zzmgjeqyjs .gt_center {
+#fbptthsfbj .gt_center {
   text-align: center;
 }
 
-#zzmgjeqyjs .gt_right {
+#fbptthsfbj .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#zzmgjeqyjs .gt_font_normal {
+#fbptthsfbj .gt_font_normal {
   font-weight: normal;
 }
 
-#zzmgjeqyjs .gt_font_bold {
+#fbptthsfbj .gt_font_bold {
   font-weight: bold;
 }
 
-#zzmgjeqyjs .gt_font_italic {
+#fbptthsfbj .gt_font_italic {
   font-style: italic;
 }
 
-#zzmgjeqyjs .gt_super {
+#fbptthsfbj .gt_super {
   font-size: 65%;
 }
 
-#zzmgjeqyjs .gt_footnote_marks {
+#fbptthsfbj .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#zzmgjeqyjs .gt_asterisk {
+#fbptthsfbj .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#zzmgjeqyjs .gt_indent_1 {
+#fbptthsfbj .gt_indent_1 {
   text-indent: 5px;
 }
 
-#zzmgjeqyjs .gt_indent_2 {
+#fbptthsfbj .gt_indent_2 {
   text-indent: 10px;
 }
 
-#zzmgjeqyjs .gt_indent_3 {
+#fbptthsfbj .gt_indent_3 {
   text-indent: 15px;
 }
 
-#zzmgjeqyjs .gt_indent_4 {
+#fbptthsfbj .gt_indent_4 {
   text-indent: 20px;
 }
 
-#zzmgjeqyjs .gt_indent_5 {
+#fbptthsfbj .gt_indent_5 {
   text-indent: 25px;
 }
 
@@ -603,122 +614,98 @@ tbody tr:last-child {
   border-bottom: 2px solid #ffffff00;
 }
 </style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-  <thead>
-    
-    <tr class="gt_col_headings">
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id=""></th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;" scope="col" id="Number of Advertisers">Number of Advertisers</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;" scope="col" id="Top Spenders">Top Spenders</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;" scope="col" id="Number of Ads">Number of Ads</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;" scope="col" id="Total Spend">Total Spend</th>
-    </tr>
-  </thead>
-  <tbody class="gt_table_body">
-    <tr><th id="stub_1_1" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>ÖVP</p>
-</div></th>
-<td headers="stub_1_1 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #63C3D0;"><div class="gt_from_md"><p>26</p>
-</div></td>
-<td headers="stub_1_1 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=15078244418">Volkspartei</a> (€32,200)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=272460762896374">Reinhold Lopatka</a> (€29,316)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=141015722773374">Angelika Winzig</a> (€19,470)<br><br></p>
-</div></td>
-<td headers="stub_1_1 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>785</p>
-</div></td>
-<td headers="stub_1_1 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€116,472</p>
-</div></td></tr>
-    <tr><th id="stub_1_2" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>FPÖ</p>
-</div></th>
-<td headers="stub_1_2 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #0056A2;"><div class="gt_from_md"><p>49</p>
-</div></td>
-<td headers="stub_1_2 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=547597092025909">Harald Vilimsky</a> (€48,965)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=1977684662509834">Herbert Kickl</a> (€22,125)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=110505960537604">FPÖ TV</a> (€7,531)<br><br></p>
-</div></td>
-<td headers="stub_1_2 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>721</p>
-</div></td>
-<td headers="stub_1_2 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€91,721</p>
-</div></td></tr>
-    <tr><th id="stub_1_3" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>Reg</p>
-</div></th>
-<td headers="stub_1_3 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #000000;"><div class="gt_from_md"><p>9</p>
-</div></td>
-<td headers="stub_1_3 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=144503708754525">BMJ ‐ Bundesministerium für Justiz</a> (€26,419)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=1553709981598439">Bundesministerium für Arbeit und Wirtschaft</a> (€7,816)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=1648447185409375">Bundesministerium für Land- und Forstwirtschaft, Regionen und Wasserwirtschaft</a> (€4,026)<br><br></p>
-</div></td>
-<td headers="stub_1_3 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>200</p>
-</div></td>
-<td headers="stub_1_3 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€42,469</p>
-</div></td></tr>
-    <tr><th id="stub_1_4" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>SPÖ</p>
-</div></th>
-<td headers="stub_1_4 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #ce000c;"><div class="gt_from_md"><p>62</p>
-</div></td>
-<td headers="stub_1_4 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=658997160869183">Andreas Babler</a> (€8,606)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=77393060080">SPÖ</a> (€8,467)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=255318067965019">SPÖ im Parlament</a> (€5,000)<br><br></p>
-</div></td>
-<td headers="stub_1_4 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>495</p>
-</div></td>
-<td headers="stub_1_4 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€34,559</p>
-</div></td></tr>
-    <tr><th id="stub_1_5" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>GRÜNE</p>
-</div></th>
-<td headers="stub_1_5 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #88B626;"><div class="gt_from_md"><p>46</p>
-</div></td>
-<td headers="stub_1_5 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=21759893033">Die Grünen</a> (€14,111)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=235816017203590">Thomas Waitz</a> (€2,690)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=88676876113">Die Grünen Wien</a> (€2,598)<br><br></p>
-</div></td>
-<td headers="stub_1_5 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>355</p>
-</div></td>
-<td headers="stub_1_5 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€27,562</p>
-</div></td></tr>
-    <tr><th id="stub_1_6" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>And</p>
-</div></th>
-<td headers="stub_1_6 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #524B62;"><div class="gt_from_md"><p>19</p>
-</div></td>
-<td headers="stub_1_6 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=185269004912086">Volkspartei Niederösterreich</a> (€11,910)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=1518586031734271">Die Bierpartei</a> (€6,351)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=114818145852">Steirische Volkspartei</a> (€3,129)<br><br></p>
-</div></td>
-<td headers="stub_1_6 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>246</p>
-</div></td>
-<td headers="stub_1_6 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€25,706</p>
-</div></td></tr>
-    <tr><th id="stub_1_7" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>NEOS</p>
-</div></th>
-<td headers="stub_1_7 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #CB1667;"><div class="gt_from_md"><p>13</p>
-</div></td>
-<td headers="stub_1_7 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=327450964017497">NEOS</a> (€12,494)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=243225039137708">Beate Meinl-Reisinger</a> (€2,495)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=206105796121067">Helmut Brandstätter</a> (€2,479)<br><br></p>
-</div></td>
-<td headers="stub_1_7 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>468</p>
-</div></td>
-<td headers="stub_1_7 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€19,601</p>
-</div></td></tr>
-    <tr><th id="stub_1_8" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>KPÖ</p>
-</div></th>
-<td headers="stub_1_8 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #AA0000;"><div class="gt_from_md"><p>5</p>
-</div></td>
-<td headers="stub_1_8 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=328437010251">KPÖ Steiermark</a> (€2,879)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=167792116901542">KPÖ Graz</a> (€405)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=117791943721">Claudia Klimt-Weithaler</a> (€187)<br><br></p>
-</div></td>
-<td headers="stub_1_8 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>189</p>
-</div></td>
-<td headers="stub_1_8 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€3,618</p>
-</div></td></tr>
-    <tr><th id="stub_1_9" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>Oth</p>
-</div></th>
-<td headers="stub_1_9 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #666666;"><div class="gt_from_md"><p>2</p>
-</div></td>
-<td headers="stub_1_9 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=179085222154531">ÖGB</a> (€2,134)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=364093897023468">FSG - Fraktion Sozialdemokratischer GewerkschafterInnen</a> (€376)<br><br></p>
-</div></td>
-<td headers="stub_1_9 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>48</p>
-</div></td>
-<td headers="stub_1_9 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€2,510</p>
-</div></td></tr>
-    <tr><th id="stub_1_10" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>MFG</p>
-</div></th>
-<td headers="stub_1_10 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #d32630;"><div class="gt_from_md"><p>4</p>
-</div></td>
-<td headers="stub_1_10 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=101224425507213">MFG Oberösterreich - Menschen Freiheit Grundrechte</a> (€660)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=111392511033485">𝑴𝑭𝑮 - 𝗠𝗲𝗻𝘀𝗰𝗵𝗲𝗻 𝗙𝗿𝗲𝗶𝗵𝗲𝗶𝘁 𝗚𝗿𝘂𝗻𝗱𝗿𝗲𝗰𝗵𝘁𝗲</a> (€393)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=112115411309958">Manuel Krautgartner</a> (€373)<br><br></p>
-</div></td>
-<td headers="stub_1_10 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>14</p>
-</div></td>
-<td headers="stub_1_10 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€1,676</p>
-</div></td></tr>
-  </tbody>
-  
-  
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header gt_col_headings">
+<th class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"></th>
+<th id="Number of Advertisers" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Number of Advertisers</th>
+<th id="Top Spenders" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Top Spenders</th>
+<th id="Number of Ads" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Number of Ads</th>
+<th id="Total Spend" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Total Spend</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td id="stub_1_1" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>ÖVP</p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #63C3D0"><p>26</p></td>
+<td class="gt_row gt_left" headers="stub_1_1 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=15078244418">Volkspartei</a> (€32,200)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=272460762896374">Reinhold Lopatka</a> (€29,316)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=141015722773374">Angelika Winzig</a> (€19,470)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Number of Ads"><p>785</p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Total Spend"><p>€116,472</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_2" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>FPÖ</p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #0056A2"><p>49</p></td>
+<td class="gt_row gt_left" headers="stub_1_2 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=547597092025909">Harald Vilimsky</a> (€48,965)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=1977684662509834">Herbert Kickl</a> (€22,125)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=110505960537604">FPÖ TV</a> (€7,531)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Number of Ads"><p>721</p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Total Spend"><p>€91,721</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_3" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>Reg</p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #000000"><p>9</p></td>
+<td class="gt_row gt_left" headers="stub_1_3 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=144503708754525">BMJ ‐ Bundesministerium für Justiz</a> (€26,419)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=1553709981598439">Bundesministerium für Arbeit und Wirtschaft</a> (€7,816)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=1648447185409375">Bundesministerium für Land- und Forstwirtschaft, Regionen und Wasserwirtschaft</a> (€4,026)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Number of Ads"><p>200</p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Total Spend"><p>€42,469</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_4" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>SPÖ</p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #ce000c"><p>62</p></td>
+<td class="gt_row gt_left" headers="stub_1_4 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=658997160869183">Andreas Babler</a> (€8,606)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=77393060080">SPÖ</a> (€8,467)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=255318067965019">SPÖ im Parlament</a> (€5,000)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Number of Ads"><p>495</p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Total Spend"><p>€34,559</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_5" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>GRÜNE</p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #88B626"><p>46</p></td>
+<td class="gt_row gt_left" headers="stub_1_5 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=21759893033">Die Grünen</a> (€14,111)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=235816017203590">Thomas Waitz</a> (€2,690)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=88676876113">Die Grünen Wien</a> (€2,598)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Number of Ads"><p>355</p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Total Spend"><p>€27,562</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_6" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>And</p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #A2C255"><p>19</p></td>
+<td class="gt_row gt_left" headers="stub_1_6 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=185269004912086">Volkspartei Niederösterreich</a> (€11,910)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=1518586031734271">Die Bierpartei</a> (€6,351)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=114818145852">Steirische Volkspartei</a> (€3,129)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Number of Ads"><p>246</p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Total Spend"><p>€25,706</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_7" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>NEOS</p></td>
+<td class="gt_row gt_center" headers="stub_1_7 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #CB1667"><p>13</p></td>
+<td class="gt_row gt_left" headers="stub_1_7 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=327450964017497">NEOS</a> (€12,494)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=243225039137708">Beate Meinl-Reisinger</a> (€2,495)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=206105796121067">Helmut Brandstätter</a> (€2,479)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_7 Number of Ads"><p>468</p></td>
+<td class="gt_row gt_center" headers="stub_1_7 Total Spend"><p>€19,601</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_8" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>KPÖ</p></td>
+<td class="gt_row gt_center" headers="stub_1_8 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #AA0000"><p>5</p></td>
+<td class="gt_row gt_left" headers="stub_1_8 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=328437010251">KPÖ Steiermark</a> (€2,879)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=167792116901542">KPÖ Graz</a> (€405)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=117791943721">Claudia Klimt-Weithaler</a> (€187)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_8 Number of Ads"><p>189</p></td>
+<td class="gt_row gt_center" headers="stub_1_8 Total Spend"><p>€3,618</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_9" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>Oth</p></td>
+<td class="gt_row gt_center" headers="stub_1_9 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #666666"><p>2</p></td>
+<td class="gt_row gt_left" headers="stub_1_9 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=179085222154531">ÖGB</a> (€2,134)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=364093897023468">FSG - Fraktion Sozialdemokratischer GewerkschafterInnen</a> (€376)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_9 Number of Ads"><p>48</p></td>
+<td class="gt_row gt_center" headers="stub_1_9 Total Spend"><p>€2,510</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_10" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>MFG</p></td>
+<td class="gt_row gt_center" headers="stub_1_10 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #d32630"><p>4</p></td>
+<td class="gt_row gt_left" headers="stub_1_10 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=101224425507213">MFG Oberösterreich - Menschen Freiheit Grundrechte</a> (€660)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=111392511033485">𝑴𝑭𝑮 - 𝗠𝗲𝗻𝘀𝗰𝗵𝗲𝗻 𝗙𝗿𝗲𝗶𝗵𝗲𝗶𝘁 𝗚𝗿𝘂𝗻𝗱𝗿𝗲𝗰𝗵𝘁𝗲</a> (€393)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=112115411309958">Manuel Krautgartner</a> (€373)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_10 Number of Ads"><p>14</p></td>
+<td class="gt_row gt_center" headers="stub_1_10 Total Spend"><p>€1,676</p></td>
+</tr>
+</tbody>
 </table>
+
 </div>
 </div>
 </div>
@@ -727,25 +714,27 @@ tbody tr:last-child {
 <p>During this period, political parties spent a total of €130,182 and displayed 1626 advertisements on Meta.</p>
 <div class="cell">
 <div class="cell-output-display">
-
-<div id="xljjmwhqmw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="xhqyfdttxg" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#xljjmwhqmw table {
-  font-family: Chivo, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+#xhqyfdttxg table {
+  font-family: Cairo, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#xljjmwhqmw thead, #xljjmwhqmw tbody, #xljjmwhqmw tfoot, #xljjmwhqmw tr, #xljjmwhqmw td, #xljjmwhqmw th {
+#xhqyfdttxg thead, #xhqyfdttxg tbody, #xhqyfdttxg tfoot, #xhqyfdttxg tr, #xhqyfdttxg td, #xhqyfdttxg th {
   border-style: none;
 }
 
-#xljjmwhqmw p {
+#xhqyfdttxg p {
   margin: 0;
   padding: 0;
 }
 
-#xljjmwhqmw .gt_table {
+#xhqyfdttxg .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -753,7 +742,7 @@ tbody tr:last-child {
   margin-right: auto;
   color: #333333;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   background-color: #FFFFFF;
   width: auto;
@@ -771,12 +760,12 @@ tbody tr:last-child {
   border-left-color: #D3D3D3;
 }
 
-#xljjmwhqmw .gt_caption {
+#xhqyfdttxg .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#xljjmwhqmw .gt_title {
+#xhqyfdttxg .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -788,7 +777,7 @@ tbody tr:last-child {
   border-bottom-width: 0;
 }
 
-#xljjmwhqmw .gt_subtitle {
+#xhqyfdttxg .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -800,7 +789,7 @@ tbody tr:last-child {
   border-top-width: 0;
 }
 
-#xljjmwhqmw .gt_heading {
+#xhqyfdttxg .gt_heading {
   background-color: #FFFFFF;
   text-align: left;
   border-bottom-color: #FFFFFF;
@@ -812,13 +801,13 @@ tbody tr:last-child {
   border-right-color: #D3D3D3;
 }
 
-#xljjmwhqmw .gt_bottom_border {
+#xhqyfdttxg .gt_bottom_border {
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#xljjmwhqmw .gt_col_headings {
+#xhqyfdttxg .gt_col_headings {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -833,12 +822,12 @@ tbody tr:last-child {
   border-right-color: #D3D3D3;
 }
 
-#xljjmwhqmw .gt_col_heading {
+#xhqyfdttxg .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
+  font-size: 100%;
   font-weight: normal;
-  text-transform: uppercase;
+  text-transform: inherit;
   border-left-style: none;
   border-left-width: 1px;
   border-left-color: #D3D3D3;
@@ -853,27 +842,27 @@ tbody tr:last-child {
   overflow-x: hidden;
 }
 
-#xljjmwhqmw .gt_column_spanner_outer {
+#xhqyfdttxg .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
+  font-size: 100%;
   font-weight: normal;
-  text-transform: uppercase;
+  text-transform: inherit;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 4px;
   padding-right: 4px;
 }
 
-#xljjmwhqmw .gt_column_spanner_outer:first-child {
+#xhqyfdttxg .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#xljjmwhqmw .gt_column_spanner_outer:last-child {
+#xhqyfdttxg .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#xljjmwhqmw .gt_column_spanner {
+#xhqyfdttxg .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #000000;
@@ -885,20 +874,20 @@ tbody tr:last-child {
   width: 100%;
 }
 
-#xljjmwhqmw .gt_spanner_row {
+#xhqyfdttxg .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#xljjmwhqmw .gt_group_heading {
+#xhqyfdttxg .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
   padding-right: 5px;
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
-  font-weight: bolder;
-  text-transform: uppercase;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #000000;
@@ -915,12 +904,12 @@ tbody tr:last-child {
   text-align: left;
 }
 
-#xljjmwhqmw .gt_empty_group_heading {
+#xhqyfdttxg .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
-  font-weight: bolder;
+  font-size: 100%;
+  font-weight: initial;
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #000000;
@@ -930,15 +919,15 @@ tbody tr:last-child {
   vertical-align: middle;
 }
 
-#xljjmwhqmw .gt_from_md > :first-child {
+#xhqyfdttxg .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#xljjmwhqmw .gt_from_md > :last-child {
+#xhqyfdttxg .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#xljjmwhqmw .gt_row {
+#xhqyfdttxg .gt_row {
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 5px;
@@ -957,12 +946,12 @@ tbody tr:last-child {
   overflow-x: hidden;
 }
 
-#xljjmwhqmw .gt_stub {
+#xhqyfdttxg .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
-  font-weight: bolder;
-  text-transform: uppercase;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
   border-right-style: solid;
   border-right-width: 0px;
   border-right-color: #FFFFFF;
@@ -970,7 +959,7 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#xljjmwhqmw .gt_stub_row_group {
+#xhqyfdttxg .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -984,15 +973,15 @@ tbody tr:last-child {
   vertical-align: top;
 }
 
-#xljjmwhqmw .gt_row_group_first td {
+#xhqyfdttxg .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#xljjmwhqmw .gt_row_group_first th {
+#xhqyfdttxg .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#xljjmwhqmw .gt_summary_row {
+#xhqyfdttxg .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1002,16 +991,16 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#xljjmwhqmw .gt_first_summary_row {
+#xhqyfdttxg .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#xljjmwhqmw .gt_first_summary_row.thick {
+#xhqyfdttxg .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#xljjmwhqmw .gt_last_summary_row {
+#xhqyfdttxg .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1021,7 +1010,7 @@ tbody tr:last-child {
   border-bottom-color: #D3D3D3;
 }
 
-#xljjmwhqmw .gt_grand_summary_row {
+#xhqyfdttxg .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1031,7 +1020,7 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#xljjmwhqmw .gt_first_grand_summary_row {
+#xhqyfdttxg .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1041,7 +1030,7 @@ tbody tr:last-child {
   border-top-color: #D3D3D3;
 }
 
-#xljjmwhqmw .gt_last_grand_summary_row_top {
+#xhqyfdttxg .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1051,11 +1040,11 @@ tbody tr:last-child {
   border-bottom-color: #D3D3D3;
 }
 
-#xljjmwhqmw .gt_striped {
+#xhqyfdttxg .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#xljjmwhqmw .gt_table_body {
+#xhqyfdttxg .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1064,7 +1053,7 @@ tbody tr:last-child {
   border-bottom-color: #D3D3D3;
 }
 
-#xljjmwhqmw .gt_footnotes {
+#xhqyfdttxg .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1078,7 +1067,7 @@ tbody tr:last-child {
   border-right-color: #D3D3D3;
 }
 
-#xljjmwhqmw .gt_footnote {
+#xhqyfdttxg .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1087,7 +1076,7 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#xljjmwhqmw .gt_sourcenotes {
+#xhqyfdttxg .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1101,7 +1090,7 @@ tbody tr:last-child {
   border-right-color: #D3D3D3;
 }
 
-#xljjmwhqmw .gt_sourcenote {
+#xhqyfdttxg .gt_sourcenote {
   font-size: 12px;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1109,63 +1098,63 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#xljjmwhqmw .gt_left {
+#xhqyfdttxg .gt_left {
   text-align: left;
 }
 
-#xljjmwhqmw .gt_center {
+#xhqyfdttxg .gt_center {
   text-align: center;
 }
 
-#xljjmwhqmw .gt_right {
+#xhqyfdttxg .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#xljjmwhqmw .gt_font_normal {
+#xhqyfdttxg .gt_font_normal {
   font-weight: normal;
 }
 
-#xljjmwhqmw .gt_font_bold {
+#xhqyfdttxg .gt_font_bold {
   font-weight: bold;
 }
 
-#xljjmwhqmw .gt_font_italic {
+#xhqyfdttxg .gt_font_italic {
   font-style: italic;
 }
 
-#xljjmwhqmw .gt_super {
+#xhqyfdttxg .gt_super {
   font-size: 65%;
 }
 
-#xljjmwhqmw .gt_footnote_marks {
+#xhqyfdttxg .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#xljjmwhqmw .gt_asterisk {
+#xhqyfdttxg .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#xljjmwhqmw .gt_indent_1 {
+#xhqyfdttxg .gt_indent_1 {
   text-indent: 5px;
 }
 
-#xljjmwhqmw .gt_indent_2 {
+#xhqyfdttxg .gt_indent_2 {
   text-indent: 10px;
 }
 
-#xljjmwhqmw .gt_indent_3 {
+#xhqyfdttxg .gt_indent_3 {
   text-indent: 15px;
 }
 
-#xljjmwhqmw .gt_indent_4 {
+#xhqyfdttxg .gt_indent_4 {
   text-indent: 20px;
 }
 
-#xljjmwhqmw .gt_indent_5 {
+#xhqyfdttxg .gt_indent_5 {
   text-indent: 25px;
 }
 
@@ -1173,122 +1162,98 @@ tbody tr:last-child {
   border-bottom: 2px solid #ffffff00;
 }
 </style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-  <thead>
-    
-    <tr class="gt_col_headings">
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id=""></th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;" scope="col" id="Number of Advertisers">Number of Advertisers</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;" scope="col" id="Top Spenders">Top Spenders</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;" scope="col" id="Number of Ads">Number of Ads</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;" scope="col" id="Total Spend">Total Spend</th>
-    </tr>
-  </thead>
-  <tbody class="gt_table_body">
-    <tr><th id="stub_1_1" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>ÖVP</p>
-</div></th>
-<td headers="stub_1_1 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #63C3D0;"><div class="gt_from_md"><p>20</p>
-</div></td>
-<td headers="stub_1_1 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=15078244418">Volkspartei</a> (€14,114)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=272460762896374">Reinhold Lopatka</a> (€12,579)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=141015722773374">Angelika Winzig</a> (€5,483)<br><br></p>
-</div></td>
-<td headers="stub_1_1 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>452</p>
-</div></td>
-<td headers="stub_1_1 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€42,466</p>
-</div></td></tr>
-    <tr><th id="stub_1_2" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>FPÖ</p>
-</div></th>
-<td headers="stub_1_2 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #0056A2;"><div class="gt_from_md"><p>38</p>
-</div></td>
-<td headers="stub_1_2 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=547597092025909">Harald Vilimsky</a> (€18,876)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=1977684662509834">Herbert Kickl</a> (€10,074)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=494195290313">Udo Landbauer</a> (€1,791)<br><br></p>
-</div></td>
-<td headers="stub_1_2 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>180</p>
-</div></td>
-<td headers="stub_1_2 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€33,625</p>
-</div></td></tr>
-    <tr><th id="stub_1_3" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>And</p>
-</div></th>
-<td headers="stub_1_3 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #524B62;"><div class="gt_from_md"><p>10</p>
-</div></td>
-<td headers="stub_1_3 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=185269004912086">Volkspartei Niederösterreich</a> (€8,267)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=1518586031734271">Die Bierpartei</a> (€2,529)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=114818145852">Steirische Volkspartei</a> (€1,250)<br><br></p>
-</div></td>
-<td headers="stub_1_3 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>127</p>
-</div></td>
-<td headers="stub_1_3 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€13,410</p>
-</div></td></tr>
-    <tr><th id="stub_1_4" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>SPÖ</p>
-</div></th>
-<td headers="stub_1_4 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #ce000c;"><div class="gt_from_md"><p>40</p>
-</div></td>
-<td headers="stub_1_4 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=77393060080">SPÖ</a> (€4,606)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=658997160869183">Andreas Babler</a> (€2,023)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=290881691011354">Andreas Schieder</a> (€1,827)<br><br></p>
-</div></td>
-<td headers="stub_1_4 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>246</p>
-</div></td>
-<td headers="stub_1_4 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€12,024</p>
-</div></td></tr>
-    <tr><th id="stub_1_5" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>Reg</p>
-</div></th>
-<td headers="stub_1_5 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #000000;"><div class="gt_from_md"><p>8</p>
-</div></td>
-<td headers="stub_1_5 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=144503708754525">BMJ ‐ Bundesministerium für Justiz</a> (€3,856)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=1553709981598439">Bundesministerium für Arbeit und Wirtschaft</a> (€3,165)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=1648447185409375">Bundesministerium für Land- und Forstwirtschaft, Regionen und Wasserwirtschaft</a> (€1,300)<br><br></p>
-</div></td>
-<td headers="stub_1_5 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>111</p>
-</div></td>
-<td headers="stub_1_5 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€9,639</p>
-</div></td></tr>
-    <tr><th id="stub_1_6" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>NEOS</p>
-</div></th>
-<td headers="stub_1_6 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #CB1667;"><div class="gt_from_md"><p>12</p>
-</div></td>
-<td headers="stub_1_6 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=327450964017497">NEOS</a> (€7,053)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=206105796121067">Helmut Brandstätter</a> (€907)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=243225039137708">Beate Meinl-Reisinger</a> (€653)<br><br></p>
-</div></td>
-<td headers="stub_1_6 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>265</p>
-</div></td>
-<td headers="stub_1_6 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€9,348</p>
-</div></td></tr>
-    <tr><th id="stub_1_7" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>GRÜNE</p>
-</div></th>
-<td headers="stub_1_7 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #88B626;"><div class="gt_from_md"><p>33</p>
-</div></td>
-<td headers="stub_1_7 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=21759893033">Die Grünen</a> (€3,688)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=224027287470500">Ines Vukajlović</a> (€1,209)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=134093926635579">Grüne Wirtschaft</a> (€915)<br><br></p>
-</div></td>
-<td headers="stub_1_7 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>136</p>
-</div></td>
-<td headers="stub_1_7 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€7,910</p>
-</div></td></tr>
-    <tr><th id="stub_1_8" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>KPÖ</p>
-</div></th>
-<td headers="stub_1_8 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #AA0000;"><div class="gt_from_md"><p>4</p>
-</div></td>
-<td headers="stub_1_8 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=328437010251">KPÖ Steiermark</a> (€764)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=117791943721">Claudia Klimt-Weithaler</a> (€1)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=124940167578420">Bildungsverein der KPÖ Steiermark</a> (€1)<br><br></p>
-</div></td>
-<td headers="stub_1_8 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>84</p>
-</div></td>
-<td headers="stub_1_8 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€767</p>
-</div></td></tr>
-    <tr><th id="stub_1_9" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>Oth</p>
-</div></th>
-<td headers="stub_1_9 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #666666;"><div class="gt_from_md"><p>2</p>
-</div></td>
-<td headers="stub_1_9 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=179085222154531">ÖGB</a> (€522)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=364093897023468">FSG - Fraktion Sozialdemokratischer GewerkschafterInnen</a> (€141)<br><br></p>
-</div></td>
-<td headers="stub_1_9 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>19</p>
-</div></td>
-<td headers="stub_1_9 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€663</p>
-</div></td></tr>
-    <tr><th id="stub_1_10" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>MFG</p>
-</div></th>
-<td headers="stub_1_10 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #d32630;"><div class="gt_from_md"><p>2</p>
-</div></td>
-<td headers="stub_1_10 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=112115411309958">Manuel Krautgartner</a> (€185)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=101224425507213">MFG Oberösterreich - Menschen Freiheit Grundrechte</a> (€145)<br><br></p>
-</div></td>
-<td headers="stub_1_10 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>6</p>
-</div></td>
-<td headers="stub_1_10 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€330</p>
-</div></td></tr>
-  </tbody>
-  
-  
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header gt_col_headings">
+<th class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"></th>
+<th id="Number of Advertisers" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Number of Advertisers</th>
+<th id="Top Spenders" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Top Spenders</th>
+<th id="Number of Ads" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Number of Ads</th>
+<th id="Total Spend" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Total Spend</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td id="stub_1_1" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>ÖVP</p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #63C3D0"><p>20</p></td>
+<td class="gt_row gt_left" headers="stub_1_1 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=15078244418">Volkspartei</a> (€14,114)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=272460762896374">Reinhold Lopatka</a> (€12,579)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=141015722773374">Angelika Winzig</a> (€5,483)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Number of Ads"><p>452</p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Total Spend"><p>€42,466</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_2" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>FPÖ</p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #0056A2"><p>38</p></td>
+<td class="gt_row gt_left" headers="stub_1_2 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=547597092025909">Harald Vilimsky</a> (€18,876)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=1977684662509834">Herbert Kickl</a> (€10,074)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=494195290313">Udo Landbauer</a> (€1,791)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Number of Ads"><p>180</p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Total Spend"><p>€33,625</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_3" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>And</p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #A2C255"><p>10</p></td>
+<td class="gt_row gt_left" headers="stub_1_3 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=185269004912086">Volkspartei Niederösterreich</a> (€8,267)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=1518586031734271">Die Bierpartei</a> (€2,529)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=114818145852">Steirische Volkspartei</a> (€1,250)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Number of Ads"><p>127</p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Total Spend"><p>€13,410</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_4" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>SPÖ</p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #ce000c"><p>40</p></td>
+<td class="gt_row gt_left" headers="stub_1_4 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=77393060080">SPÖ</a> (€4,606)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=658997160869183">Andreas Babler</a> (€2,023)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=290881691011354">Andreas Schieder</a> (€1,827)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Number of Ads"><p>246</p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Total Spend"><p>€12,024</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_5" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>Reg</p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #000000"><p>8</p></td>
+<td class="gt_row gt_left" headers="stub_1_5 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=144503708754525">BMJ ‐ Bundesministerium für Justiz</a> (€3,856)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=1553709981598439">Bundesministerium für Arbeit und Wirtschaft</a> (€3,165)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=1648447185409375">Bundesministerium für Land- und Forstwirtschaft, Regionen und Wasserwirtschaft</a> (€1,300)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Number of Ads"><p>111</p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Total Spend"><p>€9,639</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_6" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>NEOS</p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #CB1667"><p>12</p></td>
+<td class="gt_row gt_left" headers="stub_1_6 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=327450964017497">NEOS</a> (€7,053)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=206105796121067">Helmut Brandstätter</a> (€907)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=243225039137708">Beate Meinl-Reisinger</a> (€653)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Number of Ads"><p>265</p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Total Spend"><p>€9,348</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_7" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>GRÜNE</p></td>
+<td class="gt_row gt_center" headers="stub_1_7 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #88B626"><p>33</p></td>
+<td class="gt_row gt_left" headers="stub_1_7 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=21759893033">Die Grünen</a> (€3,688)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=224027287470500">Ines Vukajlović</a> (€1,209)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=134093926635579">Grüne Wirtschaft</a> (€915)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_7 Number of Ads"><p>136</p></td>
+<td class="gt_row gt_center" headers="stub_1_7 Total Spend"><p>€7,910</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_8" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>KPÖ</p></td>
+<td class="gt_row gt_center" headers="stub_1_8 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #AA0000"><p>4</p></td>
+<td class="gt_row gt_left" headers="stub_1_8 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=328437010251">KPÖ Steiermark</a> (€764)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=117791943721">Claudia Klimt-Weithaler</a> (€1)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=124940167578420">Bildungsverein der KPÖ Steiermark</a> (€1)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_8 Number of Ads"><p>84</p></td>
+<td class="gt_row gt_center" headers="stub_1_8 Total Spend"><p>€767</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_9" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>Oth</p></td>
+<td class="gt_row gt_center" headers="stub_1_9 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #666666"><p>2</p></td>
+<td class="gt_row gt_left" headers="stub_1_9 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=179085222154531">ÖGB</a> (€522)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=364093897023468">FSG - Fraktion Sozialdemokratischer GewerkschafterInnen</a> (€141)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_9 Number of Ads"><p>19</p></td>
+<td class="gt_row gt_center" headers="stub_1_9 Total Spend"><p>€663</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_10" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>MFG</p></td>
+<td class="gt_row gt_center" headers="stub_1_10 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #d32630"><p>2</p></td>
+<td class="gt_row gt_left" headers="stub_1_10 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=112115411309958">Manuel Krautgartner</a> (€185)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=AT&amp;view_all_page_id=101224425507213">MFG Oberösterreich - Menschen Freiheit Grundrechte</a> (€145)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_10 Number of Ads"><p>6</p></td>
+<td class="gt_row gt_center" headers="stub_1_10 Total Spend"><p>€330</p></td>
+</tr>
+</tbody>
 </table>
+
 </div>
 </div>
 </div>
@@ -1378,10 +1343,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1391,8 +1373,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1404,7 +1395,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1448,6 +1562,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1473,6 +1588,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1533,6 +1674,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.433">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -48,7 +48,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -57,54 +63,98 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
 }</script>
-<script src="site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
 <script src="site_libs/jquery-3.5.1/jquery.min.js"></script>
+
 <script src="site_libs/proj4js-2.3.15/proj4.js"></script>
+
 <link href="site_libs/highcharts-9.3.1/css/motion.css" rel="stylesheet">
+
 <script src="site_libs/highcharts-9.3.1/highcharts.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/highcharts-3d.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/highcharts-more.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/modules/stock.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/modules/map.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/modules/data.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/modules/exporting.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/modules/offline-exporting.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/modules/drilldown.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/modules/item-series.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/modules/overlapping-datalabels.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/modules/annotations.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/modules/export-data.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/modules/funnel.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/modules/heatmap.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/modules/treemap.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/modules/sankey.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/modules/dependency-wheel.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/modules/organization.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/modules/solid-gauge.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/modules/streamgraph.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/modules/sunburst.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/modules/vector.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/modules/wordcloud.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/modules/xrange.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/modules/tilemap.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/modules/venn.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/modules/gantt.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/modules/timeline.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/modules/parallel-coordinates.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/modules/bullet.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/modules/coloraxis.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/modules/dumbbell.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/modules/lollipop.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/modules/series-label.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/plugins/motion.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/custom/reset.js"></script>
+
 <script src="site_libs/highcharts-9.3.1/modules/boost.js"></script>
+
 <script src="site_libs/highchart-binding-0.9.4/highchart.js"></script>
+
 
 
 </head>
@@ -113,9 +163,9 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
     <img src="./wtm_logo_2020_transparent-300x300.png" alt="" class="navbar-logo">
     </a>
@@ -130,57 +180,57 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="https://favstats.github.io/ep2024/" rel="" target="">
- <span class="menu-text"><iconify-icon inline="" icon="ph:map-trifold-thin" aria-label="Icon map-trifold-thin from ph Iconify.design set." title="Icon map-trifold-thin from ph Iconify.design set."></iconify-icon> Map</span></a>
+    <a class="nav-link" href="https://favstats.github.io/ep2024/"> 
+<span class="menu-text"><iconify-icon inline="" icon="ph:map-trifold-thin" aria-label="Icon map-trifold-thin from ph Iconify.design set." title="Icon map-trifold-thin from ph Iconify.design set."></iconify-icon> Map</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
- <span class="menu-text"><iconify-icon inline="" icon="ph:coins" aria-label="Icon coins from ph Iconify.design set." title="Icon coins from ph Iconify.design set."></iconify-icon> Spending</span></a>
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text"><iconify-icon inline="" icon="ph:coins" aria-label="Icon coins from ph Iconify.design set." title="Icon coins from ph Iconify.design set."></iconify-icon> Spending</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-iconify-ph-users-three-thin--targeting" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-iconify-ph-users-three-thin--targeting" role="button" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text"><iconify-icon inline="" icon="ph:users-three-thin" aria-label="Icon users-three-thin from ph Iconify.design set." title="Icon users-three-thin from ph Iconify.design set."></iconify-icon> Targeting</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-iconify-ph-users-three-thin--targeting">    
         <li>
-    <a class="dropdown-item" href="./targeting.html" rel="" target="">
+    <a class="dropdown-item" href="./targeting.html">
  <span class="dropdown-text">Spending per Targeting</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./detailed.html" rel="" target="">
+    <a class="dropdown-item" href="./detailed.html">
  <span class="dropdown-text">Detailed Targeting</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./demographics.html" rel="" target="">
+    <a class="dropdown-item" href="./demographics.html">
  <span class="dropdown-text">Demographics</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
- <span class="menu-text"><iconify-icon inline="" icon="ph:info-thin" aria-label="Icon info-thin from ph Iconify.design set." title="Icon info-thin from ph Iconify.design set."></iconify-icon> About</span></a>
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text"><iconify-icon inline="" icon="ph:info-thin" aria-label="Icon info-thin from ph Iconify.design set." title="Icon info-thin from ph Iconify.design set."></iconify-icon> About</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./detailed.html">Detailed Targeting</a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./detailed.html">Detailed Targeting</a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
     </div>
   </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -204,7 +254,7 @@ ul.task-list li input[type="checkbox"] {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -227,7 +277,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-body">
 
     
   
@@ -235,7 +285,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <section id="top-targeted-audiences" class="level2">
 <h2 class="anchored" data-anchor-id="top-targeted-audiences">Top Targeted Audiences</h2>
@@ -244,45 +296,39 @@ ul.task-list li input[type="checkbox"] {
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">29 Apr - 28 May 2024</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">22 May - 28 May 2024</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<div class="cell-output-display">
-
 <div class="container">
 <div>
 <div class="row">
 <div style="width: 50%; float: left;">
-<div id="htmlwidget-642209315b0aab787f58" style="width:100%;height:300px;" class="highchart html-widget "></div>
-<script type="application/json" data-for="htmlwidget-642209315b0aab787f58">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"DSVL","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting audience"},"type":"linear","max":17.7352634494157},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"party":"DSVL","value":"Parents (All)","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":49.7841950861751,"total_spenderino":2510,"perc":1.98343406717829,"spend_perlab":"50","y":1.98343406717829,"name":"Parents (All)"},{"party":"DSVL","value":"Health And Beauty","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":3.77107525567368,"total_spenderino":2510,"perc":0.150242042058712,"spend_perlab":"4","y":0.150242042058712,"name":"Health And Beauty"},{"party":"DSVL","value":"Health and wellness (personal care)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":3.77107525567368,"total_spenderino":2510,"perc":0.150242042058712,"spend_perlab":"4","y":0.150242042058712,"name":"Health and wellness (personal care)"},{"party":"DSVL","value":"Human nutrition (science)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":3.77107525567368,"total_spenderino":2510,"perc":0.150242042058712,"spend_perlab":"4","y":0.150242042058712,"name":"Human nutrition (science)"},{"party":"DSVL","value":"Physical fitness (fitness)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":3.77107525567368,"total_spenderino":2510,"perc":0.150242042058712,"spend_perlab":"4","y":0.150242042058712,"name":"Physical fitness (fitness)"},{"party":"DSVL","value":"Skin care (cosmetics)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":3.77107525567368,"total_spenderino":2510,"perc":0.150242042058712,"spend_perlab":"4","y":0.150242042058712,"name":"Skin care (cosmetics)"},{"party":"DSVL","value":"Sports (sports)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":3.77107525567368,"total_spenderino":2510,"perc":0.150242042058712,"spend_perlab":"4","y":0.150242042058712,"name":"Sports (sports)"},{"party":"DSVL","value":"Well-being (psychology)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":3.77107525567368,"total_spenderino":2510,"perc":0.150242042058712,"spend_perlab":"4","y":0.150242042058712,"name":"Well-being (psychology)"}],"type":"bar","color":"#0A1172"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.value}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of €{point.spend_perlab} on ads including this audience.","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-8ef34091ceac7efcdf99" style="width:100%;height:300px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8ef34091ceac7efcdf99">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"DSVL","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting audience"},"type":"linear","max":17.73526344941569},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"party":"DSVL","value":"Parents (All)","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":49.7841950861751,"total_spenderino":2510,"perc":1.983434067178291,"spend_perlab":"50","y":1.983434067178291,"name":"Parents (All)"},{"party":"DSVL","value":"Health And Beauty","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":3.771075255673682,"total_spenderino":2510,"perc":0.1502420420587124,"spend_perlab":"4","y":0.1502420420587124,"name":"Health And Beauty"},{"party":"DSVL","value":"Health and wellness (personal care)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":3.771075255673682,"total_spenderino":2510,"perc":0.1502420420587124,"spend_perlab":"4","y":0.1502420420587124,"name":"Health and wellness (personal care)"},{"party":"DSVL","value":"Human nutrition (science)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":3.771075255673682,"total_spenderino":2510,"perc":0.1502420420587124,"spend_perlab":"4","y":0.1502420420587124,"name":"Human nutrition (science)"},{"party":"DSVL","value":"Physical fitness (fitness)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":3.771075255673682,"total_spenderino":2510,"perc":0.1502420420587124,"spend_perlab":"4","y":0.1502420420587124,"name":"Physical fitness (fitness)"},{"party":"DSVL","value":"Skin care (cosmetics)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":3.771075255673682,"total_spenderino":2510,"perc":0.1502420420587124,"spend_perlab":"4","y":0.1502420420587124,"name":"Skin care (cosmetics)"},{"party":"DSVL","value":"Sports (sports)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":3.771075255673682,"total_spenderino":2510,"perc":0.1502420420587124,"spend_perlab":"4","y":0.1502420420587124,"name":"Sports (sports)"},{"party":"DSVL","value":"Well-being (psychology)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":3.771075255673682,"total_spenderino":2510,"perc":0.1502420420587124,"spend_perlab":"4","y":0.1502420420587124,"name":"Well-being (psychology)"}],"type":"bar","color":"#0A1172"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.value}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of €{point.spend_perlab} on ads including this audience.","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
 </div>
 <div style="width: 50%; float: left;">
-<div id="htmlwidget-1a430153b6d4dfa3e322" style="width:100%;height:300px;" class="highchart html-widget "></div>
-<script type="application/json" data-for="htmlwidget-1a430153b6d4dfa3e322">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"LP","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting audience"},"type":"linear","max":17.7352634494157},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"party":"LP","value":"At university","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":2210.16853106618,"total_spenderino":12462,"perc":17.7352634494157,"spend_perlab":"2,210","y":17.7352634494157,"name":"At university"},{"party":"LP","value":"Doctorate degree","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":2210.16853106618,"total_spenderino":12462,"perc":17.7352634494157,"spend_perlab":"2,210","y":17.7352634494157,"name":"Doctorate degree"},{"party":"LP","value":"Master's degree","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":2210.16853106618,"total_spenderino":12462,"perc":17.7352634494157,"spend_perlab":"2,210","y":17.7352634494157,"name":"Master's degree"},{"party":"LP","value":"University graduate","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":2210.16853106618,"total_spenderino":12462,"perc":17.7352634494157,"spend_perlab":"2,210","y":17.7352634494157,"name":"University graduate"},{"party":"LP","value":"Cinema (films)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":2210.16853106618,"total_spenderino":12462,"perc":17.7352634494157,"spend_perlab":"2,210","y":17.7352634494157,"name":"Cinema (films)"},{"party":"LP","value":"Concerts (music event)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":2210.16853106618,"total_spenderino":12462,"perc":17.7352634494157,"spend_perlab":"2,210","y":17.7352634494157,"name":"Concerts (music event)"},{"party":"LP","value":"Museum (places)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":2210.16853106618,"total_spenderino":12462,"perc":17.7352634494157,"spend_perlab":"2,210","y":17.7352634494157,"name":"Museum (places)"},{"party":"LP","value":"Nightlife","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":2210.16853106618,"total_spenderino":12462,"perc":17.7352634494157,"spend_perlab":"2,210","y":17.7352634494157,"name":"Nightlife"},{"party":"LP","value":"Politics (politics)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":2210.16853106618,"total_spenderino":12462,"perc":17.7352634494157,"spend_perlab":"2,210","y":17.7352634494157,"name":"Politics (politics)"},{"party":"LP","value":"Science (science)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":2210.16853106618,"total_spenderino":12462,"perc":17.7352634494157,"spend_perlab":"2,210","y":17.7352634494157,"name":"Science (science)"}],"type":"bar","color":"#F6005E"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.value}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of €{point.spend_perlab} on ads including this audience.","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-e6a7657ab40dada04dff" style="width:100%;height:300px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e6a7657ab40dada04dff">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"LP","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting audience"},"type":"linear","max":17.73526344941569},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"party":"LP","value":"At university","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":2210.168531066184,"total_spenderino":12462,"perc":17.73526344941569,"spend_perlab":"2,210","y":17.73526344941569,"name":"At university"},{"party":"LP","value":"Doctorate degree","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":2210.168531066184,"total_spenderino":12462,"perc":17.73526344941569,"spend_perlab":"2,210","y":17.73526344941569,"name":"Doctorate degree"},{"party":"LP","value":"Master's degree","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":2210.168531066184,"total_spenderino":12462,"perc":17.73526344941569,"spend_perlab":"2,210","y":17.73526344941569,"name":"Master's degree"},{"party":"LP","value":"University graduate","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":2210.168531066184,"total_spenderino":12462,"perc":17.73526344941569,"spend_perlab":"2,210","y":17.73526344941569,"name":"University graduate"},{"party":"LP","value":"Cinema (films)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":2210.168531066184,"total_spenderino":12462,"perc":17.73526344941569,"spend_perlab":"2,210","y":17.73526344941569,"name":"Cinema (films)"},{"party":"LP","value":"Concerts (music event)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":2210.168531066184,"total_spenderino":12462,"perc":17.73526344941569,"spend_perlab":"2,210","y":17.73526344941569,"name":"Concerts (music event)"},{"party":"LP","value":"Museum (places)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":2210.168531066184,"total_spenderino":12462,"perc":17.73526344941569,"spend_perlab":"2,210","y":17.73526344941569,"name":"Museum (places)"},{"party":"LP","value":"Nightlife","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":2210.168531066184,"total_spenderino":12462,"perc":17.73526344941569,"spend_perlab":"2,210","y":17.73526344941569,"name":"Nightlife"},{"party":"LP","value":"Politics (politics)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":2210.168531066184,"total_spenderino":12462,"perc":17.73526344941569,"spend_perlab":"2,210","y":17.73526344941569,"name":"Politics (politics)"},{"party":"LP","value":"Science (science)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":2210.168531066184,"total_spenderino":12462,"perc":17.73526344941569,"spend_perlab":"2,210","y":17.73526344941569,"name":"Science (science)"}],"type":"bar","color":"#F6005E"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.value}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of €{point.spend_perlab} on ads including this audience.","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div class="row">
 <div style="width: 50%; float: left;">
-<div id="htmlwidget-e8e374c9592da145fe7b" style="width:100%;height:300px;" class="highchart html-widget "></div>
-<script type="application/json" data-for="htmlwidget-e8e374c9592da145fe7b">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"LZP","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting audience"},"type":"linear","max":17.7352634494157},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"party":"LZP","value":"Climate (weather)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":110.50771224345,"total_spenderino":719,"perc":15.3696400894923,"spend_perlab":"111","y":15.3696400894923,"name":"Climate (weather)"},{"party":"LZP","value":"Human rights","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":106.64604494977,"total_spenderino":719,"perc":14.8325514533755,"spend_perlab":"107","y":14.8325514533755,"name":"Human rights"},{"party":"LZP","value":"Activism","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":103.824826875113,"total_spenderino":719,"perc":14.4401706363162,"spend_perlab":"104","y":14.4401706363162,"name":"Activism"},{"party":"LZP","value":"Ecology","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":100.503392829771,"total_spenderino":719,"perc":13.9782187524021,"spend_perlab":"101","y":13.9782187524021,"name":"Ecology"},{"party":"LZP","value":"Health and wellness (personal care)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":100.503392829771,"total_spenderino":719,"perc":13.9782187524021,"spend_perlab":"101","y":13.9782187524021,"name":"Health and wellness (personal care)"},{"party":"LZP","value":"Animal","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":97.542114283326,"total_spenderino":719,"perc":13.5663580366239,"spend_perlab":"98","y":13.5663580366239,"name":"Animal"},{"party":"LZP","value":"Feminist philosophy","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":92.3298638688003,"total_spenderino":719,"perc":12.84142752,"spend_perlab":"92","y":12.84142752,"name":"Feminist philosophy"},{"party":"LZP","value":"Environmental science (science)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":90.3089913472359,"total_spenderino":719,"perc":12.5603604099076,"spend_perlab":"90","y":12.5603604099076,"name":"Environmental science (science)"},{"party":"LZP","value":"Nature (science)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":89.4386155582458,"total_spenderino":719,"perc":12.4393067535808,"spend_perlab":"89","y":12.4393067535808,"name":"Nature (science)"},{"party":"LZP","value":"Higher education","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":70.4904345887503,"total_spenderino":719,"perc":9.80395474113356,"spend_perlab":"70","y":9.80395474113356,"name":"Higher education"}],"type":"bar","color":"green"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.value}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of €{point.spend_perlab} on ads including this audience.","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-d32743d1788012e958da" style="width:100%;height:300px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d32743d1788012e958da">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"LZP","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting audience"},"type":"linear","max":17.73526344941569},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"party":"LZP","value":"Climate (weather)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":110.50771224345,"total_spenderino":719,"perc":15.36964008949235,"spend_perlab":"111","y":15.36964008949235,"name":"Climate (weather)"},{"party":"LZP","value":"Human rights","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":106.6460449497698,"total_spenderino":719,"perc":14.83255145337549,"spend_perlab":"107","y":14.83255145337549,"name":"Human rights"},{"party":"LZP","value":"Activism","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":103.8248268751131,"total_spenderino":719,"perc":14.44017063631615,"spend_perlab":"104","y":14.44017063631615,"name":"Activism"},{"party":"LZP","value":"Ecology","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":100.5033928297711,"total_spenderino":719,"perc":13.9782187524021,"spend_perlab":"101","y":13.9782187524021,"name":"Ecology"},{"party":"LZP","value":"Health and wellness (personal care)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":100.5033928297711,"total_spenderino":719,"perc":13.9782187524021,"spend_perlab":"101","y":13.9782187524021,"name":"Health and wellness (personal care)"},{"party":"LZP","value":"Animal","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":97.542114283326,"total_spenderino":719,"perc":13.56635803662392,"spend_perlab":"98","y":13.56635803662392,"name":"Animal"},{"party":"LZP","value":"Feminist philosophy","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":92.32986386880029,"total_spenderino":719,"perc":12.84142752000004,"spend_perlab":"92","y":12.84142752000004,"name":"Feminist philosophy"},{"party":"LZP","value":"Environmental science (science)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":90.30899134723595,"total_spenderino":719,"perc":12.56036040990764,"spend_perlab":"90","y":12.56036040990764,"name":"Environmental science (science)"},{"party":"LZP","value":"Nature (science)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":89.43861555824583,"total_spenderino":719,"perc":12.43930675358078,"spend_perlab":"89","y":12.43930675358078,"name":"Nature (science)"},{"party":"LZP","value":"Higher education","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":70.49043458875026,"total_spenderino":719,"perc":9.803954741133555,"spend_perlab":"70","y":9.803954741133555,"name":"Higher education"}],"type":"bar","color":"green"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.value}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of €{point.spend_perlab} on ads including this audience.","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
 </div>
 <div style="width: 50%; float: left;"></div>
 </div>
 </div>
 </div>
 </div>
-</div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<div class="cell-output-display">
-
 <div class="container">
 <div>
 <div class="row">
 <div style="width: 50%; float: left;">
-<div id="htmlwidget-f40de5e4aeb28457d20c" style="width:100%;height:300px;" class="highchart html-widget "></div>
-<script type="application/json" data-for="htmlwidget-f40de5e4aeb28457d20c">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"LP","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting audience"},"type":"linear","max":97.089301523165},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"party":"LP","value":"At university","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":1710.71349283817,"total_spenderino":1762,"perc":97.089301523165,"spend_perlab":"1,711","y":97.089301523165,"name":"At university"},{"party":"LP","value":"Doctorate degree","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":1710.71349283817,"total_spenderino":1762,"perc":97.089301523165,"spend_perlab":"1,711","y":97.089301523165,"name":"Doctorate degree"},{"party":"LP","value":"Master's degree","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":1710.71349283817,"total_spenderino":1762,"perc":97.089301523165,"spend_perlab":"1,711","y":97.089301523165,"name":"Master's degree"},{"party":"LP","value":"University graduate","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":1710.71349283817,"total_spenderino":1762,"perc":97.089301523165,"spend_perlab":"1,711","y":97.089301523165,"name":"University graduate"},{"party":"LP","value":"Cinema (films)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":1710.71349283817,"total_spenderino":1762,"perc":97.089301523165,"spend_perlab":"1,711","y":97.089301523165,"name":"Cinema (films)"},{"party":"LP","value":"Concerts (music event)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":1710.71349283817,"total_spenderino":1762,"perc":97.089301523165,"spend_perlab":"1,711","y":97.089301523165,"name":"Concerts (music event)"},{"party":"LP","value":"Museum (places)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":1710.71349283817,"total_spenderino":1762,"perc":97.089301523165,"spend_perlab":"1,711","y":97.089301523165,"name":"Museum (places)"},{"party":"LP","value":"Nightlife","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":1710.71349283817,"total_spenderino":1762,"perc":97.089301523165,"spend_perlab":"1,711","y":97.089301523165,"name":"Nightlife"},{"party":"LP","value":"Politics (politics)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":1710.71349283817,"total_spenderino":1762,"perc":97.089301523165,"spend_perlab":"1,711","y":97.089301523165,"name":"Politics (politics)"},{"party":"LP","value":"Science (science)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":1710.71349283817,"total_spenderino":1762,"perc":97.089301523165,"spend_perlab":"1,711","y":97.089301523165,"name":"Science (science)"}],"type":"bar","color":"#F6005E"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.value}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of €{point.spend_perlab} on ads including this audience.","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-703360eaccf06a63d86e" style="width:100%;height:300px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-703360eaccf06a63d86e">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"LP","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting audience"},"type":"linear","max":97.08930152316499},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"party":"LP","value":"At university","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":1710.713492838167,"total_spenderino":1762,"perc":97.08930152316499,"spend_perlab":"1,711","y":97.08930152316499,"name":"At university"},{"party":"LP","value":"Doctorate degree","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":1710.713492838167,"total_spenderino":1762,"perc":97.08930152316499,"spend_perlab":"1,711","y":97.08930152316499,"name":"Doctorate degree"},{"party":"LP","value":"Master's degree","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":1710.713492838167,"total_spenderino":1762,"perc":97.08930152316499,"spend_perlab":"1,711","y":97.08930152316499,"name":"Master's degree"},{"party":"LP","value":"University graduate","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":1710.713492838167,"total_spenderino":1762,"perc":97.08930152316499,"spend_perlab":"1,711","y":97.08930152316499,"name":"University graduate"},{"party":"LP","value":"Cinema (films)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":1710.713492838167,"total_spenderino":1762,"perc":97.08930152316499,"spend_perlab":"1,711","y":97.08930152316499,"name":"Cinema (films)"},{"party":"LP","value":"Concerts (music event)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":1710.713492838167,"total_spenderino":1762,"perc":97.08930152316499,"spend_perlab":"1,711","y":97.08930152316499,"name":"Concerts (music event)"},{"party":"LP","value":"Museum (places)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":1710.713492838167,"total_spenderino":1762,"perc":97.08930152316499,"spend_perlab":"1,711","y":97.08930152316499,"name":"Museum (places)"},{"party":"LP","value":"Nightlife","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":1710.713492838167,"total_spenderino":1762,"perc":97.08930152316499,"spend_perlab":"1,711","y":97.08930152316499,"name":"Nightlife"},{"party":"LP","value":"Politics (politics)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":1710.713492838167,"total_spenderino":1762,"perc":97.08930152316499,"spend_perlab":"1,711","y":97.08930152316499,"name":"Politics (politics)"},{"party":"LP","value":"Science (science)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":1710.713492838167,"total_spenderino":1762,"perc":97.08930152316499,"spend_perlab":"1,711","y":97.08930152316499,"name":"Science (science)"}],"type":"bar","color":"#F6005E"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.value}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of €{point.spend_perlab} on ads including this audience.","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
 </div>
 <div style="width: 50%; float: left;">
-<div id="htmlwidget-adf55d6235a9e517fffd" style="width:100%;height:300px;" class="highchart html-widget "></div>
-<script type="application/json" data-for="htmlwidget-adf55d6235a9e517fffd">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"LZP","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting audience"},"type":"linear","max":97.089301523165},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"party":"LZP","value":"Human rights","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":22.3300878197779,"total_spenderino":157,"perc":14.22298587247,"spend_perlab":"22","y":14.22298587247,"name":"Human rights"},{"party":"LZP","value":"Feminist philosophy","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":19.7024309532905,"total_spenderino":157,"perc":12.549319078529,"spend_perlab":"20","y":12.549319078529,"name":"Feminist philosophy"},{"party":"LZP","value":"Animal","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":19.3527427771414,"total_spenderino":157,"perc":12.326587756141,"spend_perlab":"19","y":12.326587756141,"name":"Animal"},{"party":"LZP","value":"Activism","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":17.5543464426633,"total_spenderino":157,"perc":11.181112383862,"spend_perlab":"18","y":11.181112383862,"name":"Activism"},{"party":"LZP","value":"Nature (science)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":14.9266895761741,"total_spenderino":157,"perc":9.5074455899198,"spend_perlab":"15","y":9.5074455899198,"name":"Nature (science)"},{"party":"LZP","value":"Environmental science (science)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":14.8467608501973,"total_spenderino":157,"perc":9.4565355733741,"spend_perlab":"15","y":9.4565355733741,"name":"Environmental science (science)"},{"party":"LZP","value":"Foundation degree","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":14.7668321242204,"total_spenderino":157,"perc":9.4056255568283,"spend_perlab":"15","y":9.4056255568283,"name":"Foundation degree"},{"party":"LZP","value":"Climate (weather)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":10.3607611047473,"total_spenderino":157,"perc":6.5992108947435,"spend_perlab":"10","y":6.5992108947435,"name":"Climate (weather)"},{"party":"LZP","value":"Higher education","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":9.99109074710446,"total_spenderino":157,"perc":6.3637520682194,"spend_perlab":"10","y":6.3637520682194,"name":"Higher education"},{"party":"LZP","value":"Human rights activists","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":9.99109074710446,"total_spenderino":157,"perc":6.3637520682194,"spend_perlab":"10","y":6.3637520682194,"name":"Human rights activists"}],"type":"bar","color":"green"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.value}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of €{point.spend_perlab} on ads including this audience.","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
-</div>
+<div id="htmlwidget-2e6ff9b8ab0727f72c3b" style="width:100%;height:300px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-2e6ff9b8ab0727f72c3b">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"LZP","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting audience"},"type":"linear","max":97.08930152316499},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"party":"LZP","value":"Human rights","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":22.3300878197779,"total_spenderino":157,"perc":14.22298587247,"spend_perlab":"22","y":14.22298587247,"name":"Human rights"},{"party":"LZP","value":"Feminist philosophy","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":19.70243095329053,"total_spenderino":157,"perc":12.549319078529,"spend_perlab":"20","y":12.549319078529,"name":"Feminist philosophy"},{"party":"LZP","value":"Animal","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":19.35274277714137,"total_spenderino":157,"perc":12.326587756141,"spend_perlab":"19","y":12.326587756141,"name":"Animal"},{"party":"LZP","value":"Activism","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":17.55434644266334,"total_spenderino":157,"perc":11.181112383862,"spend_perlab":"18","y":11.181112383862,"name":"Activism"},{"party":"LZP","value":"Nature (science)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":14.92668957617409,"total_spenderino":157,"perc":9.507445589919799,"spend_perlab":"15","y":9.507445589919799,"name":"Nature (science)"},{"party":"LZP","value":"Environmental science (science)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":14.84676085019734,"total_spenderino":157,"perc":9.456535573374101,"spend_perlab":"15","y":9.456535573374101,"name":"Environmental science (science)"},{"party":"LZP","value":"Foundation degree","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":14.76683212422043,"total_spenderino":157,"perc":9.4056255568283,"spend_perlab":"15","y":9.4056255568283,"name":"Foundation degree"},{"party":"LZP","value":"Climate (weather)","is_exclusion":false,"detailed_type":"INTERESTS","total_spend":10.3607611047473,"total_spenderino":157,"perc":6.5992108947435,"spend_perlab":"10","y":6.5992108947435,"name":"Climate (weather)"},{"party":"LZP","value":"Higher education","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":9.991090747104458,"total_spenderino":157,"perc":6.3637520682194,"spend_perlab":"10","y":6.3637520682194,"name":"Higher education"},{"party":"LZP","value":"Human rights activists","is_exclusion":false,"detailed_type":"DEMOGRAPHICS","total_spend":9.991090747104458,"total_spenderino":157,"perc":6.3637520682194,"spend_perlab":"10","y":6.3637520682194,"name":"Human rights activists"}],"type":"bar","color":"green"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.value}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of €{point.spend_perlab} on ads including this audience.","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -299,14 +345,10 @@ ul.task-list li input[type="checkbox"] {
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">29 Apr - 28 May 2024</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">22 May - 28 May 2024</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
-<div class="cell-output-display">
 No data (yet).
-</div>
 </div>
 <div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
-<div class="cell-output-display">
 No data (yet).
-</div>
 </div>
 </div>
 </div>
@@ -418,10 +460,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -431,8 +490,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -444,7 +512,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -488,6 +679,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -513,6 +705,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -573,6 +791,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 

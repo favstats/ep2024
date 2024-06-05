@@ -1,100 +1,119 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "European Parliament Elections 2024",
-    "section": "",
-    "text": "Methodology\nIn collaboration with Who Targets Me, we monitored 170 political advertisers to better understand how campaigns use different targeting methods made available by Meta. To do this, we used data from the Meta Ad Library, using the new ‘Audience’ data which gives some detail on how pages target their ads.\nTo better understand the election, we kept only advertisers who:\n\nAdvertised in the last 7 days (23 May - 29 May 2024)\nAdvertised in the last 30 days (30 Apr - 29 May 2024)\n\n\n\n\n\n\n\nNote\n\n\n\nMeta only provides 7, 30 and 90 days windows for the targeting data in their Ad Library. Meta’s data also lags by a few days. Report will be updated as soon as new data is available.\n\n\n\n\n\n\n\n\nDisclaimer\n\n\n\nThe data shown in this dashboard is based on the platform’s respective ad libraries which are known to be sometimes incomplete (Edelson et al. 2020; Silva et al. 2020). For this reason the data shown here might not reflect the full picture nor all political ads that were targeted at voters.\n\n\n\n\nAbout the Creator of the Dashboard\n\n\n\n\n\n\n\n\n\n\n\nFabio Votta is a Postdoc at the University of Amsterdam who studies (online) political microtargeting and its usage around the world.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  BlueSky\n  Twitter\n  Personal Website\n\n\n\n\n\n\n\n\n\nWant to see how political parties target you? Sign up at Who Targets Me and download the gratis browser plugin to see how parties on Facebook use your data:\nhttps://whotargets.me/\n\n\n\n\n\n\n\nWant to retrieve targeting data from the Facebook Ad Library yourself? This dashboard is powered by the R package: metatargetr. Check it out here:\nhttps://github.com/favstats/metatargetr\n\n\n\n\nElection Targeting Dashboards\nA list of election dashboards:\n\n🇳🇱 2021 Dutch parliamentary election (15th-17th March 2021)\n🇩🇪 2021 German federal election (26 September 2021)\n🇸🇪 2022 Swedish general election (11th September 2022)\n🇺🇸 2022 United States midterm elections (8th November 2022)\n🇺🇸 2022 United States midterm elections - Georgia Runoff (6th December 2022)\n🇮🇹 2023 Lazio & Lombardy regional election (12-13th February 2023)\n🇪🇪 2023 Estonian parliamentary election (5th March 2023)\n🇳🇱 2023 Dutch provincial elections (15th March 2023)\n🇲🇪 2023 Montenegrin presidential elections (19th March 2023) - 1st round\n🇦🇺 2023 New South Wales state election (25th March 2023)\n🇫🇮 2023 Finnish parliamentary election (2 April 2023)\n🇹🇷 2023 Turkish general election (14 May 2023) - Round 1\n🇩🇪 2023 Bremen State election (14 May 2023)\n🇬🇷 2023 Greek Legislative election (21 May 2023)\n🇹🇷 2023 Turkish Presidential election (14 May 2023) - Round 2\n🇲🇪 2023 Montenegrin parliamentary elections (11 June 2023)\n🇬🇷 2nd 2023 Greek Legislative election (25 May 2023)\n🇸🇰 2023 Slovak parliamentary election (30 September 2023)\n🇩🇪 2023 Bavarian state election (8 October 2023)\n🇩🇪 2023 Hessian state election (8 October 2023)\n🇳🇿 2023 New Zealand general election (14 October 2023)\n🇵🇱 2023 Polish parliamentary election (15 October 2023)\n🇺🇸 US Presidential Primaries (2023-2024)"
-  },
-  {
     "objectID": "demographics.html",
     "href": "demographics.html",
     "title": "Demographics",
     "section": "",
-    "text": "The following graphs illustrate how parties target different age groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n30 Apr - 29 May 202423 May - 29 May 2024"
+    "text": "The following graphs illustrate how parties target different age groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n30 Apr - 29 May 202423 May - 29 May 2024",
+    "crumbs": [
+      "Demographics"
+    ]
   },
   {
     "objectID": "demographics.html#age-targeting",
     "href": "demographics.html#age-targeting",
     "title": "Demographics",
     "section": "",
-    "text": "The following graphs illustrate how parties target different age groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n30 Apr - 29 May 202423 May - 29 May 2024"
+    "text": "The following graphs illustrate how parties target different age groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n30 Apr - 29 May 202423 May - 29 May 2024",
+    "crumbs": [
+      "Demographics"
+    ]
   },
   {
     "objectID": "demographics.html#gender-targeting",
     "href": "demographics.html#gender-targeting",
     "title": "Demographics",
     "section": "Gender Targeting",
-    "text": "Gender Targeting\nDe onderstaande grafieken laten zien hoe partijen gender als focusgroep gebruiken en welk percentage van het budget daaraan werd uitgegeven.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n30 Apr - 29 May 202423 May - 29 May 2024"
+    "text": "Gender Targeting\nDe onderstaande grafieken laten zien hoe partijen gender als focusgroep gebruiken en welk percentage van het budget daaraan werd uitgegeven.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n30 Apr - 29 May 202423 May - 29 May 2024",
+    "crumbs": [
+      "Demographics"
+    ]
   },
   {
     "objectID": "demographics.html#language-targeting",
     "href": "demographics.html#language-targeting",
     "title": "Demographics",
     "section": "Language Targeting",
-    "text": "Language Targeting\nThe following graphs show how parties use different languages as focus groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n30 Apr - 29 May 202423 May - 29 May 2024"
+    "text": "Language Targeting\nThe following graphs show how parties use different languages as focus groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n30 Apr - 29 May 202423 May - 29 May 2024",
+    "crumbs": [
+      "Demographics"
+    ]
   },
   {
     "objectID": "demographics.html#targeting-based-on-employment-or-education-instituation",
     "href": "demographics.html#targeting-based-on-employment-or-education-instituation",
     "title": "Demographics",
     "section": "Targeting based on Employment or Education Instituation",
-    "text": "Targeting based on Employment or Education Instituation\nThe following graphs depict how parties utilize various job sectors and types of education as focus groups and the percentage of the budget allocated to them. The next graph focuses on educational levels.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n30 Apr - 29 May 202423 May - 29 May 2024"
+    "text": "Targeting based on Employment or Education Instituation\nThe following graphs depict how parties utilize various job sectors and types of education as focus groups and the percentage of the budget allocated to them. The next graph focuses on educational levels.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n30 Apr - 29 May 202423 May - 29 May 2024",
+    "crumbs": [
+      "Demographics"
+    ]
   },
   {
     "objectID": "demographics.html#education-levels-targeting",
     "href": "demographics.html#education-levels-targeting",
     "title": "Demographics",
     "section": "Education Levels Targeting",
-    "text": "Education Levels Targeting\nThe graphs below illustrate how parties target various education levels as focus groups and the percentage of the budget allocated to each.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n30 Apr - 29 May 202423 May - 29 May 2024"
+    "text": "Education Levels Targeting\nThe graphs below illustrate how parties target various education levels as focus groups and the percentage of the budget allocated to each.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n30 Apr - 29 May 202423 May - 29 May 2024",
+    "crumbs": [
+      "Demographics"
+    ]
   },
   {
     "objectID": "demographics.html#relationship-status-targeting",
     "href": "demographics.html#relationship-status-targeting",
     "title": "Demographics",
     "section": "Relationship Status Targeting",
-    "text": "Relationship Status Targeting\nThe following graphs reveal how political parties utilize different relationship statuses as focus groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n30 Apr - 29 May 202423 May - 29 May 2024"
+    "text": "Relationship Status Targeting\nThe following graphs reveal how political parties utilize different relationship statuses as focus groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n30 Apr - 29 May 202423 May - 29 May 2024",
+    "crumbs": [
+      "Demographics"
+    ]
   },
   {
     "objectID": "detailed.html",
     "href": "detailed.html",
     "title": "Detailed Targeting",
     "section": "",
-    "text": "The chart below displays the most utilized targeting criteria by political parties on Meta, based on the amounts spent.\n\n30 Apr - 29 May 202423 May - 29 May 2024"
+    "text": "The chart below displays the most utilized targeting criteria by political parties on Meta, based on the amounts spent.\n\n30 Apr - 29 May 202423 May - 29 May 2024",
+    "crumbs": [
+      "Detailed Targeting"
+    ]
   },
   {
     "objectID": "detailed.html#top-targeted-audiences",
     "href": "detailed.html#top-targeted-audiences",
     "title": "Detailed Targeting",
     "section": "",
-    "text": "The chart below displays the most utilized targeting criteria by political parties on Meta, based on the amounts spent.\n\n30 Apr - 29 May 202423 May - 29 May 2024"
+    "text": "The chart below displays the most utilized targeting criteria by political parties on Meta, based on the amounts spent.\n\n30 Apr - 29 May 202423 May - 29 May 2024",
+    "crumbs": [
+      "Detailed Targeting"
+    ]
   },
   {
     "objectID": "detailed.html#top-excluded-audiences",
     "href": "detailed.html#top-excluded-audiences",
     "title": "Detailed Targeting",
     "section": "Top Excluded Audiences",
-    "text": "Top Excluded Audiences\nAmong the detailed options offered by Meta, the chart below shows the most excluded target audiences per party. The ranking is based on the amounts spent.\n\n30 Apr - 29 May 202423 May - 29 May 2024"
+    "text": "Top Excluded Audiences\nAmong the detailed options offered by Meta, the chart below shows the most excluded target audiences per party. The ranking is based on the amounts spent.\n\n30 Apr - 29 May 202423 May - 29 May 2024",
+    "crumbs": [
+      "Detailed Targeting"
+    ]
   },
   {
     "objectID": "detailed.html#top-contested-audiences",
     "href": "detailed.html#top-contested-audiences",
     "title": "Detailed Targeting",
     "section": "Top Contested Audiences",
-    "text": "Top Contested Audiences\nThe charts below show the target audiences where most competition takes place. For example, the groups in which all parties invest large amounts to reach voters with the same interests.\n\n30 Apr - 29 May 202423 May - 29 May 2024"
+    "text": "Top Contested Audiences\nThe charts below show the target audiences where most competition takes place. For example, the groups in which all parties invest large amounts to reach voters with the same interests.\n\n30 Apr - 29 May 202423 May - 29 May 2024",
+    "crumbs": [
+      "Detailed Targeting"
+    ]
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Spending",
     "section": "",
-    "text": "Here you can see the expenditures of political parties in the lead-up to the elections according to the latest data.\n\n30 Apr - 29 May 202423 May - 29 May 2024\n\n\nDuring this period, political parties spent a total of €146,830 and displayed 2595 advertisements on Meta.\n\n\n\n\n\n\n  \n    \n    \n      \n      Number of Advertisers\n      Top Spenders\n      Number of Ads\n      Total Spend\n    \n  \n  \n    KOK\n\n41\n\n1. Markku Rentto (€13,699)2. Ville Kaunisto (€9,270)3. Kokoomus (€7,650)\n\n1,187\n\n€57,104\n\n    SDP\n\n34\n\n1. Sosialidemokraatit SDP (€14,923)2. Pinja Perholehto (€2,903)3. Eero Heinäluoma (€2,453)\n\n269\n\n€26,895\n\n    KES\n\n23\n\n1. Keskusta (€7,347)2. Joel Taskila (€2,415)3. Elsi Katainen (€1,453)\n\n211\n\n€15,112\n\n    VIH\n\n42\n\n1. Vihreät - De Gröna (€2,365)2. Perttu Jussila (€1,784)3. Atte Harjanne (€1,617)\n\n420\n\n€13,576\n\n    RKP\n\n21\n\n1. Svenska folkpartiet i Finland - RKP (€5,817)2. Kalle Pusa (€1,773)3. Samuel Broman (€1,147)\n\n238\n\n€13,427\n\n    VAS\n\n26\n\n1. Vasemmistoliitto (€7,111)2. Harri Pikkarainen (€668)3. Matleena Käppi (€393)\n\n120\n\n€9,114\n\n    KD\n\n4\n\n1. Kristillisdemokraatit (€4,575)2. David Pettersson politiker (€268)3. KD Nuoret/KD Unga (€1)\n\n45\n\n€4,845\n\n    PER\n\n12\n\n1. Joonas Kiviranta (€2,107)2. Kaisa Garedew PS (€688)3. Uudenmaan Perussuomalaiset (€670)\n\n44\n\n€4,059\n\n    MUUT\n\n11\n\n1. Teollisuusliitto (€1,755)2. Petrus Pennanen (€278)3. Eläinoikeuspuolue (€217)\n\n61\n\n€2,698\n\n  \n  \n  \n\n\n\n\n\n\nDuring this period, political parties spent a total of €78,020 and displayed 1588 advertisements on Meta.\n\n\n\n\n\n\n  \n    \n    \n      \n      Number of Advertisers\n      Top Spenders\n      Number of Ads\n      Total Spend\n    \n  \n  \n    KOK\n\n32\n\n1. Kokoomus (€5,180)2. Markku Rentto (€4,752)3. Susanne Päivärinta (€2,746)\n\n630\n\n€22,511\n\n    SDP\n\n30\n\n1. Sosialidemokraatit SDP (€8,771)2. Pinja Perholehto (€1,521)3. Tiina Kyllönen (€1,349)\n\n192\n\n€15,536\n\n    KES\n\n21\n\n1. Keskusta (€5,299)2. Joel Taskila (€1,328)3. Marju Silander (€953)\n\n144\n\n€9,500\n\n    VIH\n\n31\n\n1. Vihreät - De Gröna (€2,365)2. Atte Harjanne (€683)3. Perttu Jussila (€677)\n\n302\n\n€7,752\n\n    RKP\n\n18\n\n1. Svenska folkpartiet i Finland - RKP (€3,095)2. Kalle Pusa (€1,253)3. Samuel Broman (€762)\n\n169\n\n€7,382\n\n    VAS\n\n21\n\n1. Vasemmistoliitto (€6,432)2. Harri Pikkarainen (€221)3. Riku Nieminen (€171)\n\n69\n\n€7,171\n\n    KD\n\n3\n\n1. Kristillisdemokraatit (€4,202)2. David Pettersson politiker (€176)3. Marika Visakorpi-Kemppainen poliitikkosivut (€1)\n\n23\n\n€4,379\n\n    PER\n\n9\n\n1. Joonas Kiviranta (€1,491)2. Uudenmaan Perussuomalaiset (€670)3. Kaisa Garedew PS (€579)\n\n31\n\n€2,861\n\n    MUUT\n\n8\n\n1. Teollisuusliitto (€752)2. Petrus Pennanen (€170)3. Mikko Luomala (€1)\n\n28\n\n€928"
-  },
-  {
-    "objectID": "targeting.html",
-    "href": "targeting.html",
-    "title": "Spending per Targeting",
-    "section": "",
-    "text": "These charts show the groups that political parties target with their advertisements leading up to the elections, according to the latest data. The focus is on Meta’s platforms (Facebook and Instagram) because they offer the most detailed targeting options for political advertisements.\nHow much did the campaigns of political parties spend on different audiences? The charts below show both the total and the expenditures per party.\n\nNote: Different targeting criteria may overlap, so the outcome may not necessarily add up to 100%.\n\n\n30 Apr - 29 May 202423 May - 29 May 2024\n\n\n\nTotalBy Party\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTotalBy Party"
+    "text": "Here you can see the expenditures of political parties in the lead-up to the elections according to the latest data.\n\n30 Apr - 29 May 202423 May - 29 May 2024\n\n\nDuring this period, political parties spent a total of €146,830 and displayed 2595 advertisements on Meta.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNumber of Advertisers\nTop Spenders\nNumber of Ads\nTotal Spend\n\n\n\n\nKOK\n41\n1. Markku Rentto (€13,699)2. Ville Kaunisto (€9,270)3. Kokoomus (€7,650)\n1,187\n€57,104\n\n\nSDP\n34\n1. Sosialidemokraatit SDP (€14,923)2. Pinja Perholehto (€2,903)3. Eero Heinäluoma (€2,453)\n269\n€26,895\n\n\nKES\n23\n1. Keskusta (€7,347)2. Joel Taskila (€2,415)3. Elsi Katainen (€1,453)\n211\n€15,112\n\n\nVIH\n42\n1. Vihreät - De Gröna (€2,365)2. Perttu Jussila (€1,784)3. Atte Harjanne (€1,617)\n420\n€13,576\n\n\nRKP\n21\n1. Svenska folkpartiet i Finland - RKP (€5,817)2. Kalle Pusa (€1,773)3. Samuel Broman (€1,147)\n238\n€13,427\n\n\nVAS\n26\n1. Vasemmistoliitto (€7,111)2. Harri Pikkarainen (€668)3. Matleena Käppi (€393)\n120\n€9,114\n\n\nKD\n4\n1. Kristillisdemokraatit (€4,575)2. David Pettersson politiker (€268)3. KD Nuoret/KD Unga (€1)\n45\n€4,845\n\n\nPER\n12\n1. Joonas Kiviranta (€2,107)2. Kaisa Garedew PS (€688)3. Uudenmaan Perussuomalaiset (€670)\n44\n€4,059\n\n\nMUUT\n11\n1. Teollisuusliitto (€1,755)2. Petrus Pennanen (€278)3. Eläinoikeuspuolue (€217)\n61\n€2,698\n\n\n\n\n\n\n\n\n\nDuring this period, political parties spent a total of €78,020 and displayed 1588 advertisements on Meta.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNumber of Advertisers\nTop Spenders\nNumber of Ads\nTotal Spend\n\n\n\n\nKOK\n32\n1. Kokoomus (€5,180)2. Markku Rentto (€4,752)3. Susanne Päivärinta (€2,746)\n630\n€22,511\n\n\nSDP\n30\n1. Sosialidemokraatit SDP (€8,771)2. Pinja Perholehto (€1,521)3. Tiina Kyllönen (€1,349)\n192\n€15,536\n\n\nKES\n21\n1. Keskusta (€5,299)2. Joel Taskila (€1,328)3. Marju Silander (€953)\n144\n€9,500\n\n\nVIH\n31\n1. Vihreät - De Gröna (€2,365)2. Atte Harjanne (€683)3. Perttu Jussila (€677)\n302\n€7,752\n\n\nRKP\n18\n1. Svenska folkpartiet i Finland - RKP (€3,095)2. Kalle Pusa (€1,253)3. Samuel Broman (€762)\n169\n€7,382\n\n\nVAS\n21\n1. Vasemmistoliitto (€6,432)2. Harri Pikkarainen (€221)3. Riku Nieminen (€171)\n69\n€7,171\n\n\nKD\n3\n1. Kristillisdemokraatit (€4,202)2. David Pettersson politiker (€176)3. Marika Visakorpi-Kemppainen poliitikkosivut (€1)\n23\n€4,379\n\n\nPER\n9\n1. Joonas Kiviranta (€1,491)2. Uudenmaan Perussuomalaiset (€670)3. Kaisa Garedew PS (€579)\n31\n€2,861\n\n\nMUUT\n8\n1. Teollisuusliitto (€752)2. Petrus Pennanen (€170)3. Mikko Luomala (€1)\n28\n€928"
   }
 ]

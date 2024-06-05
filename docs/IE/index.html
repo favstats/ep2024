@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.433">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -48,7 +48,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -57,6 +63,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -70,9 +77,9 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
     <img src="./wtm_logo_2020_transparent-300x300.png" alt="" class="navbar-logo">
     </a>
@@ -87,40 +94,40 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="https://favstats.github.io/ep2024/" rel="" target="">
- <span class="menu-text"><iconify-icon inline="" icon="ph:map-trifold-thin" aria-label="Icon map-trifold-thin from ph Iconify.design set." title="Icon map-trifold-thin from ph Iconify.design set."></iconify-icon> Map</span></a>
+    <a class="nav-link" href="https://favstats.github.io/ep2024/"> 
+<span class="menu-text"><iconify-icon inline="" icon="ph:map-trifold-thin" aria-label="Icon map-trifold-thin from ph Iconify.design set." title="Icon map-trifold-thin from ph Iconify.design set."></iconify-icon> Map</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
- <span class="menu-text"><iconify-icon inline="" icon="ph:coins" aria-label="Icon coins from ph Iconify.design set." title="Icon coins from ph Iconify.design set."></iconify-icon> Spending</span></a>
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text"><iconify-icon inline="" icon="ph:coins" aria-label="Icon coins from ph Iconify.design set." title="Icon coins from ph Iconify.design set."></iconify-icon> Spending</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-iconify-ph-users-three-thin--targeting" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-iconify-ph-users-three-thin--targeting" role="button" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text"><iconify-icon inline="" icon="ph:users-three-thin" aria-label="Icon users-three-thin from ph Iconify.design set." title="Icon users-three-thin from ph Iconify.design set."></iconify-icon> Targeting</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-iconify-ph-users-three-thin--targeting">    
         <li>
-    <a class="dropdown-item" href="./targeting.html" rel="" target="">
+    <a class="dropdown-item" href="./targeting.html">
  <span class="dropdown-text">Spending per Targeting</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./detailed.html" rel="" target="">
+    <a class="dropdown-item" href="./detailed.html">
  <span class="dropdown-text">Detailed Targeting</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./demographics.html" rel="" target="">
+    <a class="dropdown-item" href="./demographics.html">
  <span class="dropdown-text">Demographics</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
- <span class="menu-text"><iconify-icon inline="" icon="ph:info-thin" aria-label="Icon info-thin from ph Iconify.design set." title="Icon info-thin from ph Iconify.design set."></iconify-icon> About</span></a>
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text"><iconify-icon inline="" icon="ph:info-thin" aria-label="Icon info-thin from ph Iconify.design set." title="Icon info-thin from ph Iconify.design set."></iconify-icon> About</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -139,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -147,7 +154,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <p>Here you can see the expenditures of political parties in the lead-up to the elections according to the latest data.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
@@ -157,25 +166,27 @@ ul.task-list li input[type="checkbox"] {
 <p>During this period, political parties spent a total of €231,528 and displayed 3961 advertisements on Meta.</p>
 <div class="cell">
 <div class="cell-output-display">
-
-<div id="fdvhpnqogi" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="jyzvusmsxe" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#fdvhpnqogi table {
-  font-family: Chivo, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+#jyzvusmsxe table {
+  font-family: Cairo, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#fdvhpnqogi thead, #fdvhpnqogi tbody, #fdvhpnqogi tfoot, #fdvhpnqogi tr, #fdvhpnqogi td, #fdvhpnqogi th {
+#jyzvusmsxe thead, #jyzvusmsxe tbody, #jyzvusmsxe tfoot, #jyzvusmsxe tr, #jyzvusmsxe td, #jyzvusmsxe th {
   border-style: none;
 }
 
-#fdvhpnqogi p {
+#jyzvusmsxe p {
   margin: 0;
   padding: 0;
 }
 
-#fdvhpnqogi .gt_table {
+#jyzvusmsxe .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -183,7 +194,7 @@ ul.task-list li input[type="checkbox"] {
   margin-right: auto;
   color: #333333;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   background-color: #FFFFFF;
   width: auto;
@@ -201,12 +212,12 @@ ul.task-list li input[type="checkbox"] {
   border-left-color: #D3D3D3;
 }
 
-#fdvhpnqogi .gt_caption {
+#jyzvusmsxe .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#fdvhpnqogi .gt_title {
+#jyzvusmsxe .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -218,7 +229,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-width: 0;
 }
 
-#fdvhpnqogi .gt_subtitle {
+#jyzvusmsxe .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -230,7 +241,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-width: 0;
 }
 
-#fdvhpnqogi .gt_heading {
+#jyzvusmsxe .gt_heading {
   background-color: #FFFFFF;
   text-align: left;
   border-bottom-color: #FFFFFF;
@@ -242,13 +253,13 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#fdvhpnqogi .gt_bottom_border {
+#jyzvusmsxe .gt_bottom_border {
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#fdvhpnqogi .gt_col_headings {
+#jyzvusmsxe .gt_col_headings {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -263,12 +274,12 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#fdvhpnqogi .gt_col_heading {
+#jyzvusmsxe .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
+  font-size: 100%;
   font-weight: normal;
-  text-transform: uppercase;
+  text-transform: inherit;
   border-left-style: none;
   border-left-width: 1px;
   border-left-color: #D3D3D3;
@@ -283,27 +294,27 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#fdvhpnqogi .gt_column_spanner_outer {
+#jyzvusmsxe .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
+  font-size: 100%;
   font-weight: normal;
-  text-transform: uppercase;
+  text-transform: inherit;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 4px;
   padding-right: 4px;
 }
 
-#fdvhpnqogi .gt_column_spanner_outer:first-child {
+#jyzvusmsxe .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#fdvhpnqogi .gt_column_spanner_outer:last-child {
+#jyzvusmsxe .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#fdvhpnqogi .gt_column_spanner {
+#jyzvusmsxe .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #000000;
@@ -315,20 +326,20 @@ ul.task-list li input[type="checkbox"] {
   width: 100%;
 }
 
-#fdvhpnqogi .gt_spanner_row {
+#jyzvusmsxe .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#fdvhpnqogi .gt_group_heading {
+#jyzvusmsxe .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
   padding-right: 5px;
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
-  font-weight: bolder;
-  text-transform: uppercase;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #000000;
@@ -345,12 +356,12 @@ ul.task-list li input[type="checkbox"] {
   text-align: left;
 }
 
-#fdvhpnqogi .gt_empty_group_heading {
+#jyzvusmsxe .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
-  font-weight: bolder;
+  font-size: 100%;
+  font-weight: initial;
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #000000;
@@ -360,15 +371,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 
-#fdvhpnqogi .gt_from_md > :first-child {
+#jyzvusmsxe .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#fdvhpnqogi .gt_from_md > :last-child {
+#jyzvusmsxe .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#fdvhpnqogi .gt_row {
+#jyzvusmsxe .gt_row {
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 5px;
@@ -387,12 +398,12 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#fdvhpnqogi .gt_stub {
+#jyzvusmsxe .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
-  font-weight: bolder;
-  text-transform: uppercase;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
   border-right-style: solid;
   border-right-width: 0px;
   border-right-color: #FFFFFF;
@@ -400,7 +411,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#fdvhpnqogi .gt_stub_row_group {
+#jyzvusmsxe .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -414,15 +425,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: top;
 }
 
-#fdvhpnqogi .gt_row_group_first td {
+#jyzvusmsxe .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#fdvhpnqogi .gt_row_group_first th {
+#jyzvusmsxe .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#fdvhpnqogi .gt_summary_row {
+#jyzvusmsxe .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -432,16 +443,16 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#fdvhpnqogi .gt_first_summary_row {
+#jyzvusmsxe .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#fdvhpnqogi .gt_first_summary_row.thick {
+#jyzvusmsxe .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#fdvhpnqogi .gt_last_summary_row {
+#jyzvusmsxe .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -451,7 +462,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#fdvhpnqogi .gt_grand_summary_row {
+#jyzvusmsxe .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -461,7 +472,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#fdvhpnqogi .gt_first_grand_summary_row {
+#jyzvusmsxe .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -471,7 +482,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-color: #D3D3D3;
 }
 
-#fdvhpnqogi .gt_last_grand_summary_row_top {
+#jyzvusmsxe .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -481,11 +492,11 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#fdvhpnqogi .gt_striped {
+#jyzvusmsxe .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#fdvhpnqogi .gt_table_body {
+#jyzvusmsxe .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -494,7 +505,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#fdvhpnqogi .gt_footnotes {
+#jyzvusmsxe .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -508,7 +519,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#fdvhpnqogi .gt_footnote {
+#jyzvusmsxe .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -517,7 +528,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#fdvhpnqogi .gt_sourcenotes {
+#jyzvusmsxe .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -531,7 +542,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#fdvhpnqogi .gt_sourcenote {
+#jyzvusmsxe .gt_sourcenote {
   font-size: 12px;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -539,63 +550,63 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#fdvhpnqogi .gt_left {
+#jyzvusmsxe .gt_left {
   text-align: left;
 }
 
-#fdvhpnqogi .gt_center {
+#jyzvusmsxe .gt_center {
   text-align: center;
 }
 
-#fdvhpnqogi .gt_right {
+#jyzvusmsxe .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#fdvhpnqogi .gt_font_normal {
+#jyzvusmsxe .gt_font_normal {
   font-weight: normal;
 }
 
-#fdvhpnqogi .gt_font_bold {
+#jyzvusmsxe .gt_font_bold {
   font-weight: bold;
 }
 
-#fdvhpnqogi .gt_font_italic {
+#jyzvusmsxe .gt_font_italic {
   font-style: italic;
 }
 
-#fdvhpnqogi .gt_super {
+#jyzvusmsxe .gt_super {
   font-size: 65%;
 }
 
-#fdvhpnqogi .gt_footnote_marks {
+#jyzvusmsxe .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#fdvhpnqogi .gt_asterisk {
+#jyzvusmsxe .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#fdvhpnqogi .gt_indent_1 {
+#jyzvusmsxe .gt_indent_1 {
   text-indent: 5px;
 }
 
-#fdvhpnqogi .gt_indent_2 {
+#jyzvusmsxe .gt_indent_2 {
   text-indent: 10px;
 }
 
-#fdvhpnqogi .gt_indent_3 {
+#jyzvusmsxe .gt_indent_3 {
   text-indent: 15px;
 }
 
-#fdvhpnqogi .gt_indent_4 {
+#jyzvusmsxe .gt_indent_4 {
   text-indent: 20px;
 }
 
-#fdvhpnqogi .gt_indent_5 {
+#jyzvusmsxe .gt_indent_5 {
   text-indent: 25px;
 }
 
@@ -603,132 +614,105 @@ tbody tr:last-child {
   border-bottom: 2px solid #ffffff00;
 }
 </style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-  <thead>
-    
-    <tr class="gt_col_headings">
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id=""></th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;" scope="col" id="Number of Advertisers">Number of Advertisers</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;" scope="col" id="Top Spenders">Top Spenders</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;" scope="col" id="Number of Ads">Number of Ads</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;" scope="col" id="Total Spend">Total Spend</th>
-    </tr>
-  </thead>
-  <tbody class="gt_table_body">
-    <tr><th id="stub_1_1" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>FG</p>
-</div></th>
-<td headers="stub_1_1 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #6699FF;"><div class="gt_from_md"><p>58</p>
-</div></td>
-<td headers="stub_1_1 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=105664372269815">Nina Carberry</a> (€10,378)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=883806764992893">Maria Walsh</a> (€7,952)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=677425502390676">Regina Doherty for Dublin</a> (€7,261)<br><br></p>
-</div></td>
-<td headers="stub_1_1 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>547</p>
-</div></td>
-<td headers="stub_1_1 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€49,079</p>
-</div></td></tr>
-    <tr><th id="stub_1_2" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>SF</p>
-</div></th>
-<td headers="stub_1_2 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #326760;"><div class="gt_from_md"><p>47</p>
-</div></td>
-<td headers="stub_1_2 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=148726998530273">Sinn Féin Ireland</a> (€38,750)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=1486666311655495">Chris MacManus MEP</a> (€5,151)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=260003440534750">Paddy Kevane - Sinn Féin</a> (€815)<br><br></p>
-</div></td>
-<td headers="stub_1_2 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>463</p>
-</div></td>
-<td headers="stub_1_2 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€47,464</p>
-</div></td></tr>
-    <tr><th id="stub_1_3" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>FF</p>
-</div></th>
-<td headers="stub_1_3 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #66BB66;"><div class="gt_from_md"><p>76</p>
-</div></td>
-<td headers="stub_1_3 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=238147196053924">Cynthia Ní Mhurchú</a> (€7,747)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=188114061407">Barry Andrews MEP</a> (€5,267)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=192896394071880">Lisa Chambers</a> (€4,375)<br><br></p>
-</div></td>
-<td headers="stub_1_3 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>1,156</p>
-</div></td>
-<td headers="stub_1_3 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€34,582</p>
-</div></td></tr>
-    <tr><th id="stub_1_4" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>Lab</p>
-</div></th>
-<td headers="stub_1_4 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #CC0000;"><div class="gt_from_md"><p>37</p>
-</div></td>
-<td headers="stub_1_4 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=210570272336539">Aodhán Ó Ríordáin</a> (€4,936)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=164027949687">Labour Party</a> (€4,008)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=208654012339760">Niamh Hourigan - MEP Candidate Ireland South</a> (€3,833)<br><br></p>
-</div></td>
-<td headers="stub_1_4 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>369</p>
-</div></td>
-<td headers="stub_1_4 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€20,091</p>
-</div></td></tr>
-    <tr><th id="stub_1_5" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>Ind</p>
-</div></th>
-<td headers="stub_1_5 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #FFC0CB;"><div class="gt_from_md"><p>54</p>
-</div></td>
-<td headers="stub_1_5 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=131193550289985">The Niall Boylan Podcast</a> (€3,965)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=346069865514537">Mick Wallace</a> (€2,052)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=1473814189502078">Peter Casey for Member of European Parliament</a> (€1,939)<br><br></p>
-</div></td>
-<td headers="stub_1_5 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>534</p>
-</div></td>
-<td headers="stub_1_5 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€18,518</p>
-</div></td></tr>
-    <tr><th id="stub_1_6" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>Gov</p>
-</div></th>
-<td headers="stub_1_6 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #cccccc;"><div class="gt_from_md"><p>5</p>
-</div></td>
-<td headers="stub_1_6 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=226252295997245">An Coimisiún Toghcháin - The Electoral Commission of Ireland</a> (€10,854)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=2259750964278363">Department of Housing, Local Government and Heritage</a> (€4,947)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=374974667323">European Parliament Office in Ireland</a> (€138)<br><br></p>
-</div></td>
-<td headers="stub_1_6 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>28</p>
-</div></td>
-<td headers="stub_1_6 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€15,941</p>
-</div></td></tr>
-    <tr><th id="stub_1_7" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>Gre</p>
-</div></th>
-<td headers="stub_1_7 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #22AC6F;"><div class="gt_from_md"><p>33</p>
-</div></td>
-<td headers="stub_1_7 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=507921412901472">Senator Pauline O’Reilly - Green Party</a> (€5,406)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=108339693065">Green Party Ireland</a> (€5,179)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=577183942371138">Grace O’Sullivan</a> (€2,035)<br><br></p>
-</div></td>
-<td headers="stub_1_7 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>374</p>
-</div></td>
-<td headers="stub_1_7 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€15,627</p>
-</div></td></tr>
-    <tr><th id="stub_1_8" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>SD</p>
-</div></th>
-<td headers="stub_1_8 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #752F8B;"><div class="gt_from_md"><p>40</p>
-</div></td>
-<td headers="stub_1_8 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=1655751191219071">Sinéad Gibney</a> (€5,787)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=174793585728504">Susan Doyle, Social Democrats</a> (€2,355)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=1012851375393300">Social Democrats</a> (€2,257)<br><br></p>
-</div></td>
-<td headers="stub_1_8 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>221</p>
-</div></td>
-<td headers="stub_1_8 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€12,527</p>
-</div></td></tr>
-    <tr><th id="stub_1_9" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>Oth</p>
-</div></th>
-<td headers="stub_1_9 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #333333;"><div class="gt_from_md"><p>7</p>
-</div></td>
-<td headers="stub_1_9 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=115885998520125">Women for Election</a> (€8,262)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=224615650378">Pro Life Campaign Ireland</a> (€1,114)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=162814401227663">Josiah Burke</a> (€482)<br><br></p>
-</div></td>
-<td headers="stub_1_9 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>71</p>
-</div></td>
-<td headers="stub_1_9 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€10,044</p>
-</div></td></tr>
-    <tr><th id="stub_1_10" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>PBP</p>
-</div></th>
-<td headers="stub_1_10 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #8E2420;"><div class="gt_from_md"><p>17</p>
-</div></td>
-<td headers="stub_1_10 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=199320167085990">Bríd Smith TD</a> (€2,142)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=574029596021905">People Before Profit</a> (€1,731)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=156398467784136">Ruth Coppinger</a> (€670)<br><br></p>
-</div></td>
-<td headers="stub_1_10 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>163</p>
-</div></td>
-<td headers="stub_1_10 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€6,486</p>
-</div></td></tr>
-    <tr><th id="stub_1_11" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>AON</p>
-</div></th>
-<td headers="stub_1_11 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: orange;"><div class="gt_from_md"><p>6</p>
-</div></td>
-<td headers="stub_1_11 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=1052704411520149">Aontú</a> (€965)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=861906963958580">Luke Peter Silke</a> (€200)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=140508652479026">Michael O’Dowd Election 24</a> (€1)<br><br></p>
-</div></td>
-<td headers="stub_1_11 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>35</p>
-</div></td>
-<td headers="stub_1_11 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€1,169</p>
-</div></td></tr>
-  </tbody>
-  
-  
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header gt_col_headings">
+<th class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"></th>
+<th id="Number of Advertisers" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Number of Advertisers</th>
+<th id="Top Spenders" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Top Spenders</th>
+<th id="Number of Ads" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Number of Ads</th>
+<th id="Total Spend" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Total Spend</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td id="stub_1_1" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>FG</p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #6699FF"><p>58</p></td>
+<td class="gt_row gt_left" headers="stub_1_1 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=105664372269815">Nina Carberry</a> (€10,378)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=883806764992893">Maria Walsh</a> (€7,952)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=677425502390676">Regina Doherty for Dublin</a> (€7,261)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Number of Ads"><p>547</p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Total Spend"><p>€49,079</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_2" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>SF</p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #326760"><p>47</p></td>
+<td class="gt_row gt_left" headers="stub_1_2 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=148726998530273">Sinn Féin Ireland</a> (€38,750)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=1486666311655495">Chris MacManus MEP</a> (€5,151)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=260003440534750">Paddy Kevane - Sinn Féin</a> (€815)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Number of Ads"><p>463</p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Total Spend"><p>€47,464</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_3" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>FF</p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #66BB66"><p>76</p></td>
+<td class="gt_row gt_left" headers="stub_1_3 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=238147196053924">Cynthia Ní Mhurchú</a> (€7,747)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=188114061407">Barry Andrews MEP</a> (€5,267)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=192896394071880">Lisa Chambers</a> (€4,375)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Number of Ads"><p>1,156</p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Total Spend"><p>€34,582</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_4" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>Lab</p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #CC0000"><p>37</p></td>
+<td class="gt_row gt_left" headers="stub_1_4 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=210570272336539">Aodhán Ó Ríordáin</a> (€4,936)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=164027949687">Labour Party</a> (€4,008)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=208654012339760">Niamh Hourigan - MEP Candidate Ireland South</a> (€3,833)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Number of Ads"><p>369</p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Total Spend"><p>€20,091</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_5" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>Ind</p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #FFC0CB"><p>54</p></td>
+<td class="gt_row gt_left" headers="stub_1_5 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=131193550289985">The Niall Boylan Podcast</a> (€3,965)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=346069865514537">Mick Wallace</a> (€2,052)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=1473814189502078">Peter Casey for Member of European Parliament</a> (€1,939)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Number of Ads"><p>534</p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Total Spend"><p>€18,518</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_6" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>Gov</p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #cccccc"><p>5</p></td>
+<td class="gt_row gt_left" headers="stub_1_6 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=226252295997245">An Coimisiún Toghcháin - The Electoral Commission of Ireland</a> (€10,854)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=2259750964278363">Department of Housing, Local Government and Heritage</a> (€4,947)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=374974667323">European Parliament Office in Ireland</a> (€138)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Number of Ads"><p>28</p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Total Spend"><p>€15,941</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_7" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>Gre</p></td>
+<td class="gt_row gt_center" headers="stub_1_7 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #22AC6F"><p>33</p></td>
+<td class="gt_row gt_left" headers="stub_1_7 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=507921412901472">Senator Pauline O’Reilly - Green Party</a> (€5,406)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=108339693065">Green Party Ireland</a> (€5,179)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=577183942371138">Grace O’Sullivan</a> (€2,035)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_7 Number of Ads"><p>374</p></td>
+<td class="gt_row gt_center" headers="stub_1_7 Total Spend"><p>€15,627</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_8" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>SD</p></td>
+<td class="gt_row gt_center" headers="stub_1_8 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #752F8B"><p>40</p></td>
+<td class="gt_row gt_left" headers="stub_1_8 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=1655751191219071">Sinéad Gibney</a> (€5,787)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=174793585728504">Susan Doyle, Social Democrats</a> (€2,355)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=1012851375393300">Social Democrats</a> (€2,257)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_8 Number of Ads"><p>221</p></td>
+<td class="gt_row gt_center" headers="stub_1_8 Total Spend"><p>€12,527</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_9" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>Oth</p></td>
+<td class="gt_row gt_center" headers="stub_1_9 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #333333"><p>7</p></td>
+<td class="gt_row gt_left" headers="stub_1_9 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=115885998520125">Women for Election</a> (€8,262)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=224615650378">Pro Life Campaign Ireland</a> (€1,114)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=162814401227663">Josiah Burke</a> (€482)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_9 Number of Ads"><p>71</p></td>
+<td class="gt_row gt_center" headers="stub_1_9 Total Spend"><p>€10,044</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_10" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>PBP</p></td>
+<td class="gt_row gt_center" headers="stub_1_10 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #8E2420"><p>17</p></td>
+<td class="gt_row gt_left" headers="stub_1_10 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=199320167085990">Bríd Smith TD</a> (€2,142)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=574029596021905">People Before Profit</a> (€1,731)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=156398467784136">Ruth Coppinger</a> (€670)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_10 Number of Ads"><p>163</p></td>
+<td class="gt_row gt_center" headers="stub_1_10 Total Spend"><p>€6,486</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_11" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>AON</p></td>
+<td class="gt_row gt_center" headers="stub_1_11 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: orange"><p>6</p></td>
+<td class="gt_row gt_left" headers="stub_1_11 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=1052704411520149">Aontú</a> (€965)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=861906963958580">Luke Peter Silke</a> (€200)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=140508652479026">Michael O’Dowd Election 24</a> (€1)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_11 Number of Ads"><p>35</p></td>
+<td class="gt_row gt_center" headers="stub_1_11 Total Spend"><p>€1,169</p></td>
+</tr>
+</tbody>
 </table>
+
 </div>
 </div>
 </div>
@@ -737,25 +721,27 @@ tbody tr:last-child {
 <p>During this period, political parties spent a total of €97,424 and displayed 2313 advertisements on Meta.</p>
 <div class="cell">
 <div class="cell-output-display">
-
-<div id="xsnttonaey" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="ouizqyanic" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#xsnttonaey table {
-  font-family: Chivo, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+#ouizqyanic table {
+  font-family: Cairo, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#xsnttonaey thead, #xsnttonaey tbody, #xsnttonaey tfoot, #xsnttonaey tr, #xsnttonaey td, #xsnttonaey th {
+#ouizqyanic thead, #ouizqyanic tbody, #ouizqyanic tfoot, #ouizqyanic tr, #ouizqyanic td, #ouizqyanic th {
   border-style: none;
 }
 
-#xsnttonaey p {
+#ouizqyanic p {
   margin: 0;
   padding: 0;
 }
 
-#xsnttonaey .gt_table {
+#ouizqyanic .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -763,7 +749,7 @@ tbody tr:last-child {
   margin-right: auto;
   color: #333333;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   background-color: #FFFFFF;
   width: auto;
@@ -781,12 +767,12 @@ tbody tr:last-child {
   border-left-color: #D3D3D3;
 }
 
-#xsnttonaey .gt_caption {
+#ouizqyanic .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#xsnttonaey .gt_title {
+#ouizqyanic .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -798,7 +784,7 @@ tbody tr:last-child {
   border-bottom-width: 0;
 }
 
-#xsnttonaey .gt_subtitle {
+#ouizqyanic .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -810,7 +796,7 @@ tbody tr:last-child {
   border-top-width: 0;
 }
 
-#xsnttonaey .gt_heading {
+#ouizqyanic .gt_heading {
   background-color: #FFFFFF;
   text-align: left;
   border-bottom-color: #FFFFFF;
@@ -822,13 +808,13 @@ tbody tr:last-child {
   border-right-color: #D3D3D3;
 }
 
-#xsnttonaey .gt_bottom_border {
+#ouizqyanic .gt_bottom_border {
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#xsnttonaey .gt_col_headings {
+#ouizqyanic .gt_col_headings {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -843,12 +829,12 @@ tbody tr:last-child {
   border-right-color: #D3D3D3;
 }
 
-#xsnttonaey .gt_col_heading {
+#ouizqyanic .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
+  font-size: 100%;
   font-weight: normal;
-  text-transform: uppercase;
+  text-transform: inherit;
   border-left-style: none;
   border-left-width: 1px;
   border-left-color: #D3D3D3;
@@ -863,27 +849,27 @@ tbody tr:last-child {
   overflow-x: hidden;
 }
 
-#xsnttonaey .gt_column_spanner_outer {
+#ouizqyanic .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
+  font-size: 100%;
   font-weight: normal;
-  text-transform: uppercase;
+  text-transform: inherit;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 4px;
   padding-right: 4px;
 }
 
-#xsnttonaey .gt_column_spanner_outer:first-child {
+#ouizqyanic .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#xsnttonaey .gt_column_spanner_outer:last-child {
+#ouizqyanic .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#xsnttonaey .gt_column_spanner {
+#ouizqyanic .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #000000;
@@ -895,20 +881,20 @@ tbody tr:last-child {
   width: 100%;
 }
 
-#xsnttonaey .gt_spanner_row {
+#ouizqyanic .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#xsnttonaey .gt_group_heading {
+#ouizqyanic .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
   padding-right: 5px;
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
-  font-weight: bolder;
-  text-transform: uppercase;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #000000;
@@ -925,12 +911,12 @@ tbody tr:last-child {
   text-align: left;
 }
 
-#xsnttonaey .gt_empty_group_heading {
+#ouizqyanic .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
-  font-weight: bolder;
+  font-size: 100%;
+  font-weight: initial;
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #000000;
@@ -940,15 +926,15 @@ tbody tr:last-child {
   vertical-align: middle;
 }
 
-#xsnttonaey .gt_from_md > :first-child {
+#ouizqyanic .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#xsnttonaey .gt_from_md > :last-child {
+#ouizqyanic .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#xsnttonaey .gt_row {
+#ouizqyanic .gt_row {
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 5px;
@@ -967,12 +953,12 @@ tbody tr:last-child {
   overflow-x: hidden;
 }
 
-#xsnttonaey .gt_stub {
+#ouizqyanic .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
-  font-weight: bolder;
-  text-transform: uppercase;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
   border-right-style: solid;
   border-right-width: 0px;
   border-right-color: #FFFFFF;
@@ -980,7 +966,7 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#xsnttonaey .gt_stub_row_group {
+#ouizqyanic .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -994,15 +980,15 @@ tbody tr:last-child {
   vertical-align: top;
 }
 
-#xsnttonaey .gt_row_group_first td {
+#ouizqyanic .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#xsnttonaey .gt_row_group_first th {
+#ouizqyanic .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#xsnttonaey .gt_summary_row {
+#ouizqyanic .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1012,16 +998,16 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#xsnttonaey .gt_first_summary_row {
+#ouizqyanic .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#xsnttonaey .gt_first_summary_row.thick {
+#ouizqyanic .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#xsnttonaey .gt_last_summary_row {
+#ouizqyanic .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1031,7 +1017,7 @@ tbody tr:last-child {
   border-bottom-color: #D3D3D3;
 }
 
-#xsnttonaey .gt_grand_summary_row {
+#ouizqyanic .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1041,7 +1027,7 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#xsnttonaey .gt_first_grand_summary_row {
+#ouizqyanic .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1051,7 +1037,7 @@ tbody tr:last-child {
   border-top-color: #D3D3D3;
 }
 
-#xsnttonaey .gt_last_grand_summary_row_top {
+#ouizqyanic .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1061,11 +1047,11 @@ tbody tr:last-child {
   border-bottom-color: #D3D3D3;
 }
 
-#xsnttonaey .gt_striped {
+#ouizqyanic .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#xsnttonaey .gt_table_body {
+#ouizqyanic .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1074,7 +1060,7 @@ tbody tr:last-child {
   border-bottom-color: #D3D3D3;
 }
 
-#xsnttonaey .gt_footnotes {
+#ouizqyanic .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1088,7 +1074,7 @@ tbody tr:last-child {
   border-right-color: #D3D3D3;
 }
 
-#xsnttonaey .gt_footnote {
+#ouizqyanic .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1097,7 +1083,7 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#xsnttonaey .gt_sourcenotes {
+#ouizqyanic .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1111,7 +1097,7 @@ tbody tr:last-child {
   border-right-color: #D3D3D3;
 }
 
-#xsnttonaey .gt_sourcenote {
+#ouizqyanic .gt_sourcenote {
   font-size: 12px;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1119,63 +1105,63 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#xsnttonaey .gt_left {
+#ouizqyanic .gt_left {
   text-align: left;
 }
 
-#xsnttonaey .gt_center {
+#ouizqyanic .gt_center {
   text-align: center;
 }
 
-#xsnttonaey .gt_right {
+#ouizqyanic .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#xsnttonaey .gt_font_normal {
+#ouizqyanic .gt_font_normal {
   font-weight: normal;
 }
 
-#xsnttonaey .gt_font_bold {
+#ouizqyanic .gt_font_bold {
   font-weight: bold;
 }
 
-#xsnttonaey .gt_font_italic {
+#ouizqyanic .gt_font_italic {
   font-style: italic;
 }
 
-#xsnttonaey .gt_super {
+#ouizqyanic .gt_super {
   font-size: 65%;
 }
 
-#xsnttonaey .gt_footnote_marks {
+#ouizqyanic .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#xsnttonaey .gt_asterisk {
+#ouizqyanic .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#xsnttonaey .gt_indent_1 {
+#ouizqyanic .gt_indent_1 {
   text-indent: 5px;
 }
 
-#xsnttonaey .gt_indent_2 {
+#ouizqyanic .gt_indent_2 {
   text-indent: 10px;
 }
 
-#xsnttonaey .gt_indent_3 {
+#ouizqyanic .gt_indent_3 {
   text-indent: 15px;
 }
 
-#xsnttonaey .gt_indent_4 {
+#ouizqyanic .gt_indent_4 {
   text-indent: 20px;
 }
 
-#xsnttonaey .gt_indent_5 {
+#ouizqyanic .gt_indent_5 {
   text-indent: 25px;
 }
 
@@ -1183,132 +1169,105 @@ tbody tr:last-child {
   border-bottom: 2px solid #ffffff00;
 }
 </style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-  <thead>
-    
-    <tr class="gt_col_headings">
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id=""></th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;" scope="col" id="Number of Advertisers">Number of Advertisers</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;" scope="col" id="Top Spenders">Top Spenders</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;" scope="col" id="Number of Ads">Number of Ads</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;" scope="col" id="Total Spend">Total Spend</th>
-    </tr>
-  </thead>
-  <tbody class="gt_table_body">
-    <tr><th id="stub_1_1" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>SF</p>
-</div></th>
-<td headers="stub_1_1 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #326760;"><div class="gt_from_md"><p>38</p>
-</div></td>
-<td headers="stub_1_1 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=148726998530273">Sinn Féin Ireland</a> (€23,053)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=1486666311655495">Chris MacManus MEP</a> (€3,334)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=996940053694510">Maurice Quinlivan TD</a> (€225)<br><br></p>
-</div></td>
-<td headers="stub_1_1 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>273</p>
-</div></td>
-<td headers="stub_1_1 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€27,212</p>
-</div></td></tr>
-    <tr><th id="stub_1_2" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>FG</p>
-</div></th>
-<td headers="stub_1_2 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #6699FF;"><div class="gt_from_md"><p>47</p>
-</div></td>
-<td headers="stub_1_2 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=105664372269815">Nina Carberry</a> (€6,810)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=677425502390676">Regina Doherty for Dublin</a> (€3,397)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=264172043210">Fine Gael</a> (€3,238)<br><br></p>
-</div></td>
-<td headers="stub_1_2 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>331</p>
-</div></td>
-<td headers="stub_1_2 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€19,891</p>
-</div></td></tr>
-    <tr><th id="stub_1_3" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>FF</p>
-</div></th>
-<td headers="stub_1_3 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #66BB66;"><div class="gt_from_md"><p>61</p>
-</div></td>
-<td headers="stub_1_3 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=238147196053924">Cynthia Ní Mhurchú</a> (€2,793)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=222629035132">Fianna Fáil</a> (€2,755)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=188114061407">Barry Andrews MEP</a> (€997)<br><br></p>
-</div></td>
-<td headers="stub_1_3 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>653</p>
-</div></td>
-<td headers="stub_1_3 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€10,572</p>
-</div></td></tr>
-    <tr><th id="stub_1_4" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>Ind</p>
-</div></th>
-<td headers="stub_1_4 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #FFC0CB;"><div class="gt_from_md"><p>48</p>
-</div></td>
-<td headers="stub_1_4 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=131193550289985">The Niall Boylan Podcast</a> (€1,804)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=131945143326091">Independent Ireland</a> (€1,246)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=1473814189502078">Peter Casey for Member of European Parliament</a> (€988)<br><br></p>
-</div></td>
-<td headers="stub_1_4 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>357</p>
-</div></td>
-<td headers="stub_1_4 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€8,217</p>
-</div></td></tr>
-    <tr><th id="stub_1_5" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>Lab</p>
-</div></th>
-<td headers="stub_1_5 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #CC0000;"><div class="gt_from_md"><p>32</p>
-</div></td>
-<td headers="stub_1_5 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=210570272336539">Aodhán Ó Ríordáin</a> (€2,457)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=208654012339760">Niamh Hourigan - MEP Candidate Ireland South</a> (€1,672)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=164027949687">Labour Party</a> (€1,203)<br><br></p>
-</div></td>
-<td headers="stub_1_5 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>190</p>
-</div></td>
-<td headers="stub_1_5 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€7,665</p>
-</div></td></tr>
-    <tr><th id="stub_1_6" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>Gre</p>
-</div></th>
-<td headers="stub_1_6 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #22AC6F;"><div class="gt_from_md"><p>27</p>
-</div></td>
-<td headers="stub_1_6 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=108339693065">Green Party Ireland</a> (€3,992)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=507921412901472">Senator Pauline O’Reilly - Green Party</a> (€1,416)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=577183942371138">Grace O’Sullivan</a> (€1,036)<br><br></p>
-</div></td>
-<td headers="stub_1_6 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>211</p>
-</div></td>
-<td headers="stub_1_6 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€6,985</p>
-</div></td></tr>
-    <tr><th id="stub_1_7" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>Gov</p>
-</div></th>
-<td headers="stub_1_7 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #cccccc;"><div class="gt_from_md"><p>5</p>
-</div></td>
-<td headers="stub_1_7 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=226252295997245">An Coimisiún Toghcháin - The Electoral Commission of Ireland</a> (€4,278)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=2259750964278363">Department of Housing, Local Government and Heritage</a> (€1,287)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=374974667323">European Parliament Office in Ireland</a> (€131)<br><br></p>
-</div></td>
-<td headers="stub_1_7 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>16</p>
-</div></td>
-<td headers="stub_1_7 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€5,698</p>
-</div></td></tr>
-    <tr><th id="stub_1_8" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>SD</p>
-</div></th>
-<td headers="stub_1_8 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #752F8B;"><div class="gt_from_md"><p>34</p>
-</div></td>
-<td headers="stub_1_8 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=1655751191219071">Sinéad Gibney</a> (€2,635)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=174793585728504">Susan Doyle, Social Democrats</a> (€1,117)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=1012851375393300">Social Democrats</a> (€781)<br><br></p>
-</div></td>
-<td headers="stub_1_8 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>113</p>
-</div></td>
-<td headers="stub_1_8 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€4,887</p>
-</div></td></tr>
-    <tr><th id="stub_1_9" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>Oth</p>
-</div></th>
-<td headers="stub_1_9 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #333333;"><div class="gt_from_md"><p>5</p>
-</div></td>
-<td headers="stub_1_9 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=115885998520125">Women for Election</a> (€2,073)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=224615650378">Pro Life Campaign Ireland</a> (€595)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=286636685593885">SHE - See Her Elected</a> (€165)<br><br></p>
-</div></td>
-<td headers="stub_1_9 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>26</p>
-</div></td>
-<td headers="stub_1_9 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€2,835</p>
-</div></td></tr>
-    <tr><th id="stub_1_10" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>PBP</p>
-</div></th>
-<td headers="stub_1_10 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #8E2420;"><div class="gt_from_md"><p>16</p>
-</div></td>
-<td headers="stub_1_10 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=574029596021905">People Before Profit</a> (€1,567)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=199320167085990">Bríd Smith TD</a> (€782)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=156398467784136">Ruth Coppinger</a> (€195)<br><br></p>
-</div></td>
-<td headers="stub_1_10 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>117</p>
-</div></td>
-<td headers="stub_1_10 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€2,829</p>
-</div></td></tr>
-    <tr><th id="stub_1_11" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>AON</p>
-</div></th>
-<td headers="stub_1_11 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: orange;"><div class="gt_from_md"><p>6</p>
-</div></td>
-<td headers="stub_1_11 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=1052704411520149">Aontú</a> (€431)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=861906963958580">Luke Peter Silke</a> (€198)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=140508652479026">Michael O’Dowd Election 24</a> (€1)<br><br></p>
-</div></td>
-<td headers="stub_1_11 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>26</p>
-</div></td>
-<td headers="stub_1_11 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€633</p>
-</div></td></tr>
-  </tbody>
-  
-  
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header gt_col_headings">
+<th class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"></th>
+<th id="Number of Advertisers" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Number of Advertisers</th>
+<th id="Top Spenders" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Top Spenders</th>
+<th id="Number of Ads" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Number of Ads</th>
+<th id="Total Spend" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Total Spend</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td id="stub_1_1" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>SF</p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #326760"><p>38</p></td>
+<td class="gt_row gt_left" headers="stub_1_1 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=148726998530273">Sinn Féin Ireland</a> (€23,053)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=1486666311655495">Chris MacManus MEP</a> (€3,334)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=996940053694510">Maurice Quinlivan TD</a> (€225)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Number of Ads"><p>273</p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Total Spend"><p>€27,212</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_2" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>FG</p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #6699FF"><p>47</p></td>
+<td class="gt_row gt_left" headers="stub_1_2 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=105664372269815">Nina Carberry</a> (€6,810)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=677425502390676">Regina Doherty for Dublin</a> (€3,397)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=264172043210">Fine Gael</a> (€3,238)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Number of Ads"><p>331</p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Total Spend"><p>€19,891</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_3" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>FF</p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #66BB66"><p>61</p></td>
+<td class="gt_row gt_left" headers="stub_1_3 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=238147196053924">Cynthia Ní Mhurchú</a> (€2,793)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=222629035132">Fianna Fáil</a> (€2,755)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=188114061407">Barry Andrews MEP</a> (€997)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Number of Ads"><p>653</p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Total Spend"><p>€10,572</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_4" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>Ind</p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #FFC0CB"><p>48</p></td>
+<td class="gt_row gt_left" headers="stub_1_4 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=131193550289985">The Niall Boylan Podcast</a> (€1,804)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=131945143326091">Independent Ireland</a> (€1,246)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=1473814189502078">Peter Casey for Member of European Parliament</a> (€988)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Number of Ads"><p>357</p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Total Spend"><p>€8,217</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_5" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>Lab</p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #CC0000"><p>32</p></td>
+<td class="gt_row gt_left" headers="stub_1_5 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=210570272336539">Aodhán Ó Ríordáin</a> (€2,457)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=208654012339760">Niamh Hourigan - MEP Candidate Ireland South</a> (€1,672)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=164027949687">Labour Party</a> (€1,203)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Number of Ads"><p>190</p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Total Spend"><p>€7,665</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_6" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>Gre</p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #22AC6F"><p>27</p></td>
+<td class="gt_row gt_left" headers="stub_1_6 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=108339693065">Green Party Ireland</a> (€3,992)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=507921412901472">Senator Pauline O’Reilly - Green Party</a> (€1,416)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=577183942371138">Grace O’Sullivan</a> (€1,036)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Number of Ads"><p>211</p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Total Spend"><p>€6,985</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_7" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>Gov</p></td>
+<td class="gt_row gt_center" headers="stub_1_7 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #cccccc"><p>5</p></td>
+<td class="gt_row gt_left" headers="stub_1_7 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=226252295997245">An Coimisiún Toghcháin - The Electoral Commission of Ireland</a> (€4,278)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=2259750964278363">Department of Housing, Local Government and Heritage</a> (€1,287)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=374974667323">European Parliament Office in Ireland</a> (€131)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_7 Number of Ads"><p>16</p></td>
+<td class="gt_row gt_center" headers="stub_1_7 Total Spend"><p>€5,698</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_8" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>SD</p></td>
+<td class="gt_row gt_center" headers="stub_1_8 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #752F8B"><p>34</p></td>
+<td class="gt_row gt_left" headers="stub_1_8 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=1655751191219071">Sinéad Gibney</a> (€2,635)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=174793585728504">Susan Doyle, Social Democrats</a> (€1,117)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=1012851375393300">Social Democrats</a> (€781)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_8 Number of Ads"><p>113</p></td>
+<td class="gt_row gt_center" headers="stub_1_8 Total Spend"><p>€4,887</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_9" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>Oth</p></td>
+<td class="gt_row gt_center" headers="stub_1_9 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #333333"><p>5</p></td>
+<td class="gt_row gt_left" headers="stub_1_9 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=115885998520125">Women for Election</a> (€2,073)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=224615650378">Pro Life Campaign Ireland</a> (€595)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=286636685593885">SHE - See Her Elected</a> (€165)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_9 Number of Ads"><p>26</p></td>
+<td class="gt_row gt_center" headers="stub_1_9 Total Spend"><p>€2,835</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_10" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>PBP</p></td>
+<td class="gt_row gt_center" headers="stub_1_10 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #8E2420"><p>16</p></td>
+<td class="gt_row gt_left" headers="stub_1_10 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=574029596021905">People Before Profit</a> (€1,567)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=199320167085990">Bríd Smith TD</a> (€782)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=156398467784136">Ruth Coppinger</a> (€195)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_10 Number of Ads"><p>117</p></td>
+<td class="gt_row gt_center" headers="stub_1_10 Total Spend"><p>€2,829</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_11" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>AON</p></td>
+<td class="gt_row gt_center" headers="stub_1_11 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: orange"><p>6</p></td>
+<td class="gt_row gt_left" headers="stub_1_11 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=1052704411520149">Aontú</a> (€431)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=861906963958580">Luke Peter Silke</a> (€198)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=IE&amp;view_all_page_id=140508652479026">Michael O’Dowd Election 24</a> (€1)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_11 Number of Ads"><p>26</p></td>
+<td class="gt_row gt_center" headers="stub_1_11 Total Spend"><p>€633</p></td>
+</tr>
+</tbody>
 </table>
+
 </div>
 </div>
 </div>
@@ -1398,10 +1357,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1411,8 +1387,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1424,7 +1409,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1468,6 +1576,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1493,6 +1602,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1553,6 +1688,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 

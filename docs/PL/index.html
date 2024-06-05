@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.433">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -48,7 +48,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -57,6 +63,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -70,9 +77,9 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
     <img src="./wtm_logo_2020_transparent-300x300.png" alt="" class="navbar-logo">
     </a>
@@ -87,40 +94,40 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="https://favstats.github.io/ep2024/" rel="" target="">
- <span class="menu-text"><iconify-icon inline="" icon="ph:map-trifold-thin" aria-label="Icon map-trifold-thin from ph Iconify.design set." title="Icon map-trifold-thin from ph Iconify.design set."></iconify-icon> Map</span></a>
+    <a class="nav-link" href="https://favstats.github.io/ep2024/"> 
+<span class="menu-text"><iconify-icon inline="" icon="ph:map-trifold-thin" aria-label="Icon map-trifold-thin from ph Iconify.design set." title="Icon map-trifold-thin from ph Iconify.design set."></iconify-icon> Map</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
- <span class="menu-text"><iconify-icon inline="" icon="ph:coins" aria-label="Icon coins from ph Iconify.design set." title="Icon coins from ph Iconify.design set."></iconify-icon> Spending</span></a>
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text"><iconify-icon inline="" icon="ph:coins" aria-label="Icon coins from ph Iconify.design set." title="Icon coins from ph Iconify.design set."></iconify-icon> Spending</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-iconify-ph-users-three-thin--targeting" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-iconify-ph-users-three-thin--targeting" role="button" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text"><iconify-icon inline="" icon="ph:users-three-thin" aria-label="Icon users-three-thin from ph Iconify.design set." title="Icon users-three-thin from ph Iconify.design set."></iconify-icon> Targeting</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-iconify-ph-users-three-thin--targeting">    
         <li>
-    <a class="dropdown-item" href="./targeting.html" rel="" target="">
+    <a class="dropdown-item" href="./targeting.html">
  <span class="dropdown-text">Spending per Targeting</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./detailed.html" rel="" target="">
+    <a class="dropdown-item" href="./detailed.html">
  <span class="dropdown-text">Detailed Targeting</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./demographics.html" rel="" target="">
+    <a class="dropdown-item" href="./demographics.html">
  <span class="dropdown-text">Demographics</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
- <span class="menu-text"><iconify-icon inline="" icon="ph:info-thin" aria-label="Icon info-thin from ph Iconify.design set." title="Icon info-thin from ph Iconify.design set."></iconify-icon> About</span></a>
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text"><iconify-icon inline="" icon="ph:info-thin" aria-label="Icon info-thin from ph Iconify.design set." title="Icon info-thin from ph Iconify.design set."></iconify-icon> About</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -139,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -147,7 +154,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <p>Here you can see the expenditures of political parties in the lead-up to the elections according to the latest data.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
@@ -157,25 +166,27 @@ ul.task-list li input[type="checkbox"] {
 <p>During this period, political parties spent a total of €248,742 and displayed 4481 advertisements on Meta.</p>
 <div class="cell">
 <div class="cell-output-display">
-
-<div id="tzmxfwuqqn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="knlfouwctt" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#tzmxfwuqqn table {
-  font-family: Chivo, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+#knlfouwctt table {
+  font-family: Cairo, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#tzmxfwuqqn thead, #tzmxfwuqqn tbody, #tzmxfwuqqn tfoot, #tzmxfwuqqn tr, #tzmxfwuqqn td, #tzmxfwuqqn th {
+#knlfouwctt thead, #knlfouwctt tbody, #knlfouwctt tfoot, #knlfouwctt tr, #knlfouwctt td, #knlfouwctt th {
   border-style: none;
 }
 
-#tzmxfwuqqn p {
+#knlfouwctt p {
   margin: 0;
   padding: 0;
 }
 
-#tzmxfwuqqn .gt_table {
+#knlfouwctt .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -183,7 +194,7 @@ ul.task-list li input[type="checkbox"] {
   margin-right: auto;
   color: #333333;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   background-color: #FFFFFF;
   width: auto;
@@ -201,12 +212,12 @@ ul.task-list li input[type="checkbox"] {
   border-left-color: #D3D3D3;
 }
 
-#tzmxfwuqqn .gt_caption {
+#knlfouwctt .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#tzmxfwuqqn .gt_title {
+#knlfouwctt .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -218,7 +229,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-width: 0;
 }
 
-#tzmxfwuqqn .gt_subtitle {
+#knlfouwctt .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -230,7 +241,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-width: 0;
 }
 
-#tzmxfwuqqn .gt_heading {
+#knlfouwctt .gt_heading {
   background-color: #FFFFFF;
   text-align: left;
   border-bottom-color: #FFFFFF;
@@ -242,13 +253,13 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#tzmxfwuqqn .gt_bottom_border {
+#knlfouwctt .gt_bottom_border {
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#tzmxfwuqqn .gt_col_headings {
+#knlfouwctt .gt_col_headings {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -263,12 +274,12 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#tzmxfwuqqn .gt_col_heading {
+#knlfouwctt .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
+  font-size: 100%;
   font-weight: normal;
-  text-transform: uppercase;
+  text-transform: inherit;
   border-left-style: none;
   border-left-width: 1px;
   border-left-color: #D3D3D3;
@@ -283,27 +294,27 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#tzmxfwuqqn .gt_column_spanner_outer {
+#knlfouwctt .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
+  font-size: 100%;
   font-weight: normal;
-  text-transform: uppercase;
+  text-transform: inherit;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 4px;
   padding-right: 4px;
 }
 
-#tzmxfwuqqn .gt_column_spanner_outer:first-child {
+#knlfouwctt .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#tzmxfwuqqn .gt_column_spanner_outer:last-child {
+#knlfouwctt .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#tzmxfwuqqn .gt_column_spanner {
+#knlfouwctt .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #000000;
@@ -315,20 +326,20 @@ ul.task-list li input[type="checkbox"] {
   width: 100%;
 }
 
-#tzmxfwuqqn .gt_spanner_row {
+#knlfouwctt .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#tzmxfwuqqn .gt_group_heading {
+#knlfouwctt .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
   padding-right: 5px;
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
-  font-weight: bolder;
-  text-transform: uppercase;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #000000;
@@ -345,12 +356,12 @@ ul.task-list li input[type="checkbox"] {
   text-align: left;
 }
 
-#tzmxfwuqqn .gt_empty_group_heading {
+#knlfouwctt .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
-  font-weight: bolder;
+  font-size: 100%;
+  font-weight: initial;
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #000000;
@@ -360,15 +371,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 
-#tzmxfwuqqn .gt_from_md > :first-child {
+#knlfouwctt .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#tzmxfwuqqn .gt_from_md > :last-child {
+#knlfouwctt .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#tzmxfwuqqn .gt_row {
+#knlfouwctt .gt_row {
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 5px;
@@ -387,12 +398,12 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#tzmxfwuqqn .gt_stub {
+#knlfouwctt .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
-  font-weight: bolder;
-  text-transform: uppercase;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
   border-right-style: solid;
   border-right-width: 0px;
   border-right-color: #FFFFFF;
@@ -400,7 +411,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#tzmxfwuqqn .gt_stub_row_group {
+#knlfouwctt .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -414,15 +425,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: top;
 }
 
-#tzmxfwuqqn .gt_row_group_first td {
+#knlfouwctt .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#tzmxfwuqqn .gt_row_group_first th {
+#knlfouwctt .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#tzmxfwuqqn .gt_summary_row {
+#knlfouwctt .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -432,16 +443,16 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#tzmxfwuqqn .gt_first_summary_row {
+#knlfouwctt .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#tzmxfwuqqn .gt_first_summary_row.thick {
+#knlfouwctt .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#tzmxfwuqqn .gt_last_summary_row {
+#knlfouwctt .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -451,7 +462,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#tzmxfwuqqn .gt_grand_summary_row {
+#knlfouwctt .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -461,7 +472,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#tzmxfwuqqn .gt_first_grand_summary_row {
+#knlfouwctt .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -471,7 +482,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-color: #D3D3D3;
 }
 
-#tzmxfwuqqn .gt_last_grand_summary_row_top {
+#knlfouwctt .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -481,11 +492,11 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#tzmxfwuqqn .gt_striped {
+#knlfouwctt .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#tzmxfwuqqn .gt_table_body {
+#knlfouwctt .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -494,7 +505,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#tzmxfwuqqn .gt_footnotes {
+#knlfouwctt .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -508,7 +519,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#tzmxfwuqqn .gt_footnote {
+#knlfouwctt .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -517,7 +528,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#tzmxfwuqqn .gt_sourcenotes {
+#knlfouwctt .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -531,7 +542,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#tzmxfwuqqn .gt_sourcenote {
+#knlfouwctt .gt_sourcenote {
   font-size: 12px;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -539,63 +550,63 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#tzmxfwuqqn .gt_left {
+#knlfouwctt .gt_left {
   text-align: left;
 }
 
-#tzmxfwuqqn .gt_center {
+#knlfouwctt .gt_center {
   text-align: center;
 }
 
-#tzmxfwuqqn .gt_right {
+#knlfouwctt .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#tzmxfwuqqn .gt_font_normal {
+#knlfouwctt .gt_font_normal {
   font-weight: normal;
 }
 
-#tzmxfwuqqn .gt_font_bold {
+#knlfouwctt .gt_font_bold {
   font-weight: bold;
 }
 
-#tzmxfwuqqn .gt_font_italic {
+#knlfouwctt .gt_font_italic {
   font-style: italic;
 }
 
-#tzmxfwuqqn .gt_super {
+#knlfouwctt .gt_super {
   font-size: 65%;
 }
 
-#tzmxfwuqqn .gt_footnote_marks {
+#knlfouwctt .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#tzmxfwuqqn .gt_asterisk {
+#knlfouwctt .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#tzmxfwuqqn .gt_indent_1 {
+#knlfouwctt .gt_indent_1 {
   text-indent: 5px;
 }
 
-#tzmxfwuqqn .gt_indent_2 {
+#knlfouwctt .gt_indent_2 {
   text-indent: 10px;
 }
 
-#tzmxfwuqqn .gt_indent_3 {
+#knlfouwctt .gt_indent_3 {
   text-indent: 15px;
 }
 
-#tzmxfwuqqn .gt_indent_4 {
+#knlfouwctt .gt_indent_4 {
   text-indent: 20px;
 }
 
-#tzmxfwuqqn .gt_indent_5 {
+#knlfouwctt .gt_indent_5 {
   text-indent: 25px;
 }
 
@@ -603,162 +614,126 @@ tbody tr:last-child {
   border-bottom: 2px solid #ffffff00;
 }
 </style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-  <thead>
-    
-    <tr class="gt_col_headings">
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id=""></th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;" scope="col" id="Number of Advertisers">Number of Advertisers</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;" scope="col" id="Top Spenders">Top Spenders</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;" scope="col" id="Number of Ads">Number of Ads</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;" scope="col" id="Total Spend">Total Spend</th>
-    </tr>
-  </thead>
-  <tbody class="gt_table_body">
-    <tr><th id="stub_1_1" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>INNY</p>
-</div></th>
-<td headers="stub_1_1 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #6F9E23;"><div class="gt_from_md"><p>85</p>
-</div></td>
-<td headers="stub_1_1 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=1539769832715676">Ogólnopolski Strajk Kobiet</a> (€21,056)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=618179678235315">wschód</a> (€7,604)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=450781218391641">Protestuj.pl</a> (€3,898)<br><br></p>
-</div></td>
-<td headers="stub_1_1 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>586</p>
-</div></td>
-<td headers="stub_1_1 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€53,624</p>
-</div></td></tr>
-    <tr><th id="stub_1_2" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>LEW</p>
-</div></th>
-<td headers="stub_1_2 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #AC145A;"><div class="gt_from_md"><p>27</p>
-</div></td>
-<td headers="stub_1_2 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=137877409609952">Lewica</a> (€43,413)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=113729263331952">Bożena Przyłuska</a> (€928)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=1830591737192332">Arkadiusz Sikora Lewica - Poseł na Sejm RP X kadencji</a> (€810)<br><br></p>
-</div></td>
-<td headers="stub_1_2 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>738</p>
-</div></td>
-<td headers="stub_1_2 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€48,636</p>
-</div></td></tr>
-    <tr><th id="stub_1_3" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>ECR</p>
-</div></th>
-<td headers="stub_1_3 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #0000FF;"><div class="gt_from_md"><p>30</p>
-</div></td>
-<td headers="stub_1_3 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=199877710116314">Patryk Jaki</a> (€4,541)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=106058134201158">Tobiasz Bocheński</a> (€3,094)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=228951150597089">Adam Bielan</a> (€2,873)<br><br></p>
-</div></td>
-<td headers="stub_1_3 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>1,008</p>
-</div></td>
-<td headers="stub_1_3 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€32,790</p>
-</div></td></tr>
-    <tr><th id="stub_1_4" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>EPP</p>
-</div></th>
-<td headers="stub_1_4 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #FF8C00;"><div class="gt_from_md"><p>28</p>
-</div></td>
-<td headers="stub_1_4 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=2030215917007850">Stefan Krajewski</a> (€5,558)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=2273340699395517">Tomasz Frankowski</a> (€5,076)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=370319116027">Andrzej Halicki</a> (€2,030)<br><br></p>
-</div></td>
-<td headers="stub_1_4 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>389</p>
-</div></td>
-<td headers="stub_1_4 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€28,243</p>
-</div></td></tr>
-    <tr><th id="stub_1_5" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>ZP</p>
-</div></th>
-<td headers="stub_1_5 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #263778;"><div class="gt_from_md"><p>73</p>
-</div></td>
-<td headers="stub_1_5 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=157458232131">Prawo i Sprawiedliwość</a> (€9,945)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=136932946358747">Michał Dworczyk</a> (€3,900)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=111465470197991">Mateusz Morawiecki</a> (€3,685)<br><br></p>
-</div></td>
-<td headers="stub_1_5 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>436</p>
-</div></td>
-<td headers="stub_1_5 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€26,711</p>
-</div></td></tr>
-    <tr><th id="stub_1_6" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>KO</p>
-</div></th>
-<td headers="stub_1_6 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #F68F2D;"><div class="gt_from_md"><p>75</p>
-</div></td>
-<td headers="stub_1_6 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=102931488739">Platforma Obywatelska</a> (€12,393)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=295830137207924">Marek Sowa       Poseł na Sejm RP</a> (€2,695)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=648495745485275">Adrian Witczak - Poseł na Sejm RP</a> (€1,143)<br><br></p>
-</div></td>
-<td headers="stub_1_6 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>328</p>
-</div></td>
-<td headers="stub_1_6 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€23,702</p>
-</div></td></tr>
-    <tr><th id="stub_1_7" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>TD</p>
-</div></th>
-<td headers="stub_1_7 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #3DB53A;"><div class="gt_from_md"><p>32</p>
-</div></td>
-<td headers="stub_1_7 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=1607487699534202">Krzysztof Hetman</a> (€4,915)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=177473808919">Polskie Stronnictwo Ludowe</a> (€2,470)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=325037134611169">Michał Kobosko</a> (€2,212)<br><br></p>
-</div></td>
-<td headers="stub_1_7 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>599</p>
-</div></td>
-<td headers="stub_1_7 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€18,797</p>
-</div></td></tr>
-    <tr><th id="stub_1_8" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>KWIN</p>
-</div></th>
-<td headers="stub_1_8 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #0d1e3a;"><div class="gt_from_md"><p>16</p>
-</div></td>
-<td headers="stub_1_8 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=1971966879776579">Konfederacja</a> (€8,105)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=2281285658805846">Anna Bryłka</a> (€1,032)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=1444719475790367">Ewa Zajączkowska</a> (€988)<br><br></p>
-</div></td>
-<td headers="stub_1_8 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>164</p>
-</div></td>
-<td headers="stub_1_8 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€11,565</p>
-</div></td></tr>
-    <tr><th id="stub_1_9" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>InneEP</p>
-</div></th>
-<td headers="stub_1_9 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #001100;"><div class="gt_from_md"><p>14</p>
-</div></td>
-<td headers="stub_1_9 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=1260515550792236">Tomasz Buczek</a> (€409)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=102800456094413">Piotr Wawrzyniak</a> (€366)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=135572762969659">Marek Bąkowski</a> (€284)<br><br></p>
-</div></td>
-<td headers="stub_1_9 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>50</p>
-</div></td>
-<td headers="stub_1_9 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€1,933</p>
-</div></td></tr>
-    <tr><th id="stub_1_10" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>S&amp;D</p>
-</div></th>
-<td headers="stub_1_10 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #FF0A00;"><div class="gt_from_md"><p>10</p>
-</div></td>
-<td headers="stub_1_10 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=254834855469973">Marek Belka</a> (€318)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=1465965073732774">Łukasz Kohut</a> (€255)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=409448322773622">Leszek Miller</a> (€234)<br><br></p>
-</div></td>
-<td headers="stub_1_10 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>91</p>
-</div></td>
-<td headers="stub_1_10 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€1,252</p>
-</div></td></tr>
-    <tr><th id="stub_1_11" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>RE</p>
-</div></th>
-<td headers="stub_1_11 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #FFDA03;"><div class="gt_from_md"><p>7</p>
-</div></td>
-<td headers="stub_1_11 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=298419500028105">Małgorzata Terlecka-Maciejewska Kandydatka do Parlamentu Europejskiego</a> (€352)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=1478691439094785">Paweł Zalewski</a> (€325)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=284135998125027">Piotr STOlecki- Kandydat do PE</a> (€170)<br><br></p>
-</div></td>
-<td headers="stub_1_11 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>60</p>
-</div></td>
-<td headers="stub_1_11 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€942</p>
-</div></td></tr>
-    <tr><th id="stub_1_12" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>BS</p>
-</div></th>
-<td headers="stub_1_12 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #E6001A;"><div class="gt_from_md"><p>4</p>
-</div></td>
-<td headers="stub_1_12 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=427996317730040">Tymoteusz Myrda, Członek Zarządu Województwa Dolnośląskiego</a> (€222)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=378891755591358">Cezary Przybylski - Marszałek Województwa Dolnośląskiego</a> (€95)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=187613920648">Mazowiecka Wspólnota Samorządowa</a> (€47)<br><br></p>
-</div></td>
-<td headers="stub_1_12 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>7</p>
-</div></td>
-<td headers="stub_1_12 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€364</p>
-</div></td></tr>
-    <tr><th id="stub_1_13" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>InnyKW</p>
-</div></th>
-<td headers="stub_1_13 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #DAA520;"><div class="gt_from_md"><p>13</p>
-</div></td>
-<td headers="stub_1_13 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=115190293247596">Pawel Kownacki</a> (€70)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=192417727291211">Drużyna Kowala</a> (€47)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=228532990351021">PJJ Nowy Sącz</a> (€36)<br><br></p>
-</div></td>
-<td headers="stub_1_13 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>22</p>
-</div></td>
-<td headers="stub_1_13 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€183</p>
-</div></td></tr>
-    <tr><th id="stub_1_14" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>G/EFA</p>
-</div></th>
-<td headers="stub_1_14 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #66FF00;"><div class="gt_from_md"><p>1</p>
-</div></td>
-<td headers="stub_1_14 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=117183118030950">Józef Podyma</a> (€0)<br><br></p>
-</div></td>
-<td headers="stub_1_14 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>3</p>
-</div></td>
-<td headers="stub_1_14 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€0</p>
-</div></td></tr>
-  </tbody>
-  
-  
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header gt_col_headings">
+<th class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"></th>
+<th id="Number of Advertisers" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Number of Advertisers</th>
+<th id="Top Spenders" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Top Spenders</th>
+<th id="Number of Ads" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Number of Ads</th>
+<th id="Total Spend" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Total Spend</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td id="stub_1_1" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>INNY</p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #9D18E5"><p>85</p></td>
+<td class="gt_row gt_left" headers="stub_1_1 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=1539769832715676">Ogólnopolski Strajk Kobiet</a> (€21,056)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=618179678235315">wschód</a> (€7,604)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=450781218391641">Protestuj.pl</a> (€3,898)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Number of Ads"><p>586</p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Total Spend"><p>€53,624</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_2" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>LEW</p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #AC145A"><p>27</p></td>
+<td class="gt_row gt_left" headers="stub_1_2 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=137877409609952">Lewica</a> (€43,413)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=113729263331952">Bożena Przyłuska</a> (€928)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=1830591737192332">Arkadiusz Sikora Lewica - Poseł na Sejm RP X kadencji</a> (€810)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Number of Ads"><p>738</p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Total Spend"><p>€48,636</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_3" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>ECR</p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #0000FF"><p>30</p></td>
+<td class="gt_row gt_left" headers="stub_1_3 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=199877710116314">Patryk Jaki</a> (€4,541)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=106058134201158">Tobiasz Bocheński</a> (€3,094)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=228951150597089">Adam Bielan</a> (€2,873)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Number of Ads"><p>1,008</p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Total Spend"><p>€32,790</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_4" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>EPP</p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #FF8C00"><p>28</p></td>
+<td class="gt_row gt_left" headers="stub_1_4 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=2030215917007850">Stefan Krajewski</a> (€5,558)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=2273340699395517">Tomasz Frankowski</a> (€5,076)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=370319116027">Andrzej Halicki</a> (€2,030)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Number of Ads"><p>389</p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Total Spend"><p>€28,243</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_5" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>ZP</p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #263778"><p>73</p></td>
+<td class="gt_row gt_left" headers="stub_1_5 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=157458232131">Prawo i Sprawiedliwość</a> (€9,945)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=136932946358747">Michał Dworczyk</a> (€3,900)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=111465470197991">Mateusz Morawiecki</a> (€3,685)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Number of Ads"><p>436</p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Total Spend"><p>€26,711</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_6" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>KO</p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #F68F2D"><p>75</p></td>
+<td class="gt_row gt_left" headers="stub_1_6 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=102931488739">Platforma Obywatelska</a> (€12,393)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=295830137207924">Marek Sowa Poseł na Sejm RP</a> (€2,695)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=648495745485275">Adrian Witczak - Poseł na Sejm RP</a> (€1,143)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Number of Ads"><p>328</p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Total Spend"><p>€23,702</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_7" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>TD</p></td>
+<td class="gt_row gt_center" headers="stub_1_7 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #3DB53A"><p>32</p></td>
+<td class="gt_row gt_left" headers="stub_1_7 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=1607487699534202">Krzysztof Hetman</a> (€4,915)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=177473808919">Polskie Stronnictwo Ludowe</a> (€2,470)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=325037134611169">Michał Kobosko</a> (€2,212)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_7 Number of Ads"><p>599</p></td>
+<td class="gt_row gt_center" headers="stub_1_7 Total Spend"><p>€18,797</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_8" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>KWIN</p></td>
+<td class="gt_row gt_center" headers="stub_1_8 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #0d1e3a"><p>16</p></td>
+<td class="gt_row gt_left" headers="stub_1_8 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=1971966879776579">Konfederacja</a> (€8,105)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=2281285658805846">Anna Bryłka</a> (€1,032)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=1444719475790367">Ewa Zajączkowska</a> (€988)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_8 Number of Ads"><p>164</p></td>
+<td class="gt_row gt_center" headers="stub_1_8 Total Spend"><p>€11,565</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_9" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>InneEP</p></td>
+<td class="gt_row gt_center" headers="stub_1_9 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #001100"><p>14</p></td>
+<td class="gt_row gt_left" headers="stub_1_9 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=1260515550792236">Tomasz Buczek</a> (€409)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=102800456094413">Piotr Wawrzyniak</a> (€366)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=135572762969659">Marek Bąkowski</a> (€284)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_9 Number of Ads"><p>50</p></td>
+<td class="gt_row gt_center" headers="stub_1_9 Total Spend"><p>€1,933</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_10" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>S&amp;D</p></td>
+<td class="gt_row gt_center" headers="stub_1_10 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #FF0A00"><p>10</p></td>
+<td class="gt_row gt_left" headers="stub_1_10 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=254834855469973">Marek Belka</a> (€318)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=1465965073732774">Łukasz Kohut</a> (€255)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=409448322773622">Leszek Miller</a> (€234)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_10 Number of Ads"><p>91</p></td>
+<td class="gt_row gt_center" headers="stub_1_10 Total Spend"><p>€1,252</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_11" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>RE</p></td>
+<td class="gt_row gt_center" headers="stub_1_11 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #FFDA03"><p>7</p></td>
+<td class="gt_row gt_left" headers="stub_1_11 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=298419500028105">Małgorzata Terlecka-Maciejewska Kandydatka do Parlamentu Europejskiego</a> (€352)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=1478691439094785">Paweł Zalewski</a> (€325)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=284135998125027">Piotr STOlecki- Kandydat do PE</a> (€170)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_11 Number of Ads"><p>60</p></td>
+<td class="gt_row gt_center" headers="stub_1_11 Total Spend"><p>€942</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_12" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>BS</p></td>
+<td class="gt_row gt_center" headers="stub_1_12 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #E6001A"><p>4</p></td>
+<td class="gt_row gt_left" headers="stub_1_12 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=427996317730040">Tymoteusz Myrda, Członek Zarządu Województwa Dolnośląskiego</a> (€222)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=378891755591358">Cezary Przybylski - Marszałek Województwa Dolnośląskiego</a> (€95)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=187613920648">Mazowiecka Wspólnota Samorządowa</a> (€47)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_12 Number of Ads"><p>7</p></td>
+<td class="gt_row gt_center" headers="stub_1_12 Total Spend"><p>€364</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_13" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>InnyKW</p></td>
+<td class="gt_row gt_center" headers="stub_1_13 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #DAA520"><p>13</p></td>
+<td class="gt_row gt_left" headers="stub_1_13 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=115190293247596">Pawel Kownacki</a> (€70)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=192417727291211">Drużyna Kowala</a> (€47)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=228532990351021">PJJ Nowy Sącz</a> (€36)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_13 Number of Ads"><p>22</p></td>
+<td class="gt_row gt_center" headers="stub_1_13 Total Spend"><p>€183</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_14" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>G/EFA</p></td>
+<td class="gt_row gt_center" headers="stub_1_14 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #66FF00"><p>1</p></td>
+<td class="gt_row gt_left" headers="stub_1_14 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=117183118030950">Józef Podyma</a> (€0)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_14 Number of Ads"><p>3</p></td>
+<td class="gt_row gt_center" headers="stub_1_14 Total Spend"><p>€0</p></td>
+</tr>
+</tbody>
 </table>
+
 </div>
 </div>
 </div>
@@ -767,25 +742,27 @@ tbody tr:last-child {
 <p>During this period, political parties spent a total of €126,100 and displayed 3060 advertisements on Meta.</p>
 <div class="cell">
 <div class="cell-output-display">
-
-<div id="jcfdkldwrw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="tnwzzxtgcx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#jcfdkldwrw table {
-  font-family: Chivo, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+#tnwzzxtgcx table {
+  font-family: Cairo, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#jcfdkldwrw thead, #jcfdkldwrw tbody, #jcfdkldwrw tfoot, #jcfdkldwrw tr, #jcfdkldwrw td, #jcfdkldwrw th {
+#tnwzzxtgcx thead, #tnwzzxtgcx tbody, #tnwzzxtgcx tfoot, #tnwzzxtgcx tr, #tnwzzxtgcx td, #tnwzzxtgcx th {
   border-style: none;
 }
 
-#jcfdkldwrw p {
+#tnwzzxtgcx p {
   margin: 0;
   padding: 0;
 }
 
-#jcfdkldwrw .gt_table {
+#tnwzzxtgcx .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -793,7 +770,7 @@ tbody tr:last-child {
   margin-right: auto;
   color: #333333;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   background-color: #FFFFFF;
   width: auto;
@@ -811,12 +788,12 @@ tbody tr:last-child {
   border-left-color: #D3D3D3;
 }
 
-#jcfdkldwrw .gt_caption {
+#tnwzzxtgcx .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#jcfdkldwrw .gt_title {
+#tnwzzxtgcx .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -828,7 +805,7 @@ tbody tr:last-child {
   border-bottom-width: 0;
 }
 
-#jcfdkldwrw .gt_subtitle {
+#tnwzzxtgcx .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -840,7 +817,7 @@ tbody tr:last-child {
   border-top-width: 0;
 }
 
-#jcfdkldwrw .gt_heading {
+#tnwzzxtgcx .gt_heading {
   background-color: #FFFFFF;
   text-align: left;
   border-bottom-color: #FFFFFF;
@@ -852,13 +829,13 @@ tbody tr:last-child {
   border-right-color: #D3D3D3;
 }
 
-#jcfdkldwrw .gt_bottom_border {
+#tnwzzxtgcx .gt_bottom_border {
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#jcfdkldwrw .gt_col_headings {
+#tnwzzxtgcx .gt_col_headings {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -873,12 +850,12 @@ tbody tr:last-child {
   border-right-color: #D3D3D3;
 }
 
-#jcfdkldwrw .gt_col_heading {
+#tnwzzxtgcx .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
+  font-size: 100%;
   font-weight: normal;
-  text-transform: uppercase;
+  text-transform: inherit;
   border-left-style: none;
   border-left-width: 1px;
   border-left-color: #D3D3D3;
@@ -893,27 +870,27 @@ tbody tr:last-child {
   overflow-x: hidden;
 }
 
-#jcfdkldwrw .gt_column_spanner_outer {
+#tnwzzxtgcx .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
+  font-size: 100%;
   font-weight: normal;
-  text-transform: uppercase;
+  text-transform: inherit;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 4px;
   padding-right: 4px;
 }
 
-#jcfdkldwrw .gt_column_spanner_outer:first-child {
+#tnwzzxtgcx .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#jcfdkldwrw .gt_column_spanner_outer:last-child {
+#tnwzzxtgcx .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#jcfdkldwrw .gt_column_spanner {
+#tnwzzxtgcx .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #000000;
@@ -925,20 +902,20 @@ tbody tr:last-child {
   width: 100%;
 }
 
-#jcfdkldwrw .gt_spanner_row {
+#tnwzzxtgcx .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#jcfdkldwrw .gt_group_heading {
+#tnwzzxtgcx .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
   padding-right: 5px;
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
-  font-weight: bolder;
-  text-transform: uppercase;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #000000;
@@ -955,12 +932,12 @@ tbody tr:last-child {
   text-align: left;
 }
 
-#jcfdkldwrw .gt_empty_group_heading {
+#tnwzzxtgcx .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
-  font-weight: bolder;
+  font-size: 100%;
+  font-weight: initial;
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #000000;
@@ -970,15 +947,15 @@ tbody tr:last-child {
   vertical-align: middle;
 }
 
-#jcfdkldwrw .gt_from_md > :first-child {
+#tnwzzxtgcx .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#jcfdkldwrw .gt_from_md > :last-child {
+#tnwzzxtgcx .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#jcfdkldwrw .gt_row {
+#tnwzzxtgcx .gt_row {
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 5px;
@@ -997,12 +974,12 @@ tbody tr:last-child {
   overflow-x: hidden;
 }
 
-#jcfdkldwrw .gt_stub {
+#tnwzzxtgcx .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
-  font-weight: bolder;
-  text-transform: uppercase;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
   border-right-style: solid;
   border-right-width: 0px;
   border-right-color: #FFFFFF;
@@ -1010,7 +987,7 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#jcfdkldwrw .gt_stub_row_group {
+#tnwzzxtgcx .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1024,15 +1001,15 @@ tbody tr:last-child {
   vertical-align: top;
 }
 
-#jcfdkldwrw .gt_row_group_first td {
+#tnwzzxtgcx .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#jcfdkldwrw .gt_row_group_first th {
+#tnwzzxtgcx .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#jcfdkldwrw .gt_summary_row {
+#tnwzzxtgcx .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1042,16 +1019,16 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#jcfdkldwrw .gt_first_summary_row {
+#tnwzzxtgcx .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#jcfdkldwrw .gt_first_summary_row.thick {
+#tnwzzxtgcx .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#jcfdkldwrw .gt_last_summary_row {
+#tnwzzxtgcx .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1061,7 +1038,7 @@ tbody tr:last-child {
   border-bottom-color: #D3D3D3;
 }
 
-#jcfdkldwrw .gt_grand_summary_row {
+#tnwzzxtgcx .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1071,7 +1048,7 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#jcfdkldwrw .gt_first_grand_summary_row {
+#tnwzzxtgcx .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1081,7 +1058,7 @@ tbody tr:last-child {
   border-top-color: #D3D3D3;
 }
 
-#jcfdkldwrw .gt_last_grand_summary_row_top {
+#tnwzzxtgcx .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1091,11 +1068,11 @@ tbody tr:last-child {
   border-bottom-color: #D3D3D3;
 }
 
-#jcfdkldwrw .gt_striped {
+#tnwzzxtgcx .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#jcfdkldwrw .gt_table_body {
+#tnwzzxtgcx .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1104,7 +1081,7 @@ tbody tr:last-child {
   border-bottom-color: #D3D3D3;
 }
 
-#jcfdkldwrw .gt_footnotes {
+#tnwzzxtgcx .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1118,7 +1095,7 @@ tbody tr:last-child {
   border-right-color: #D3D3D3;
 }
 
-#jcfdkldwrw .gt_footnote {
+#tnwzzxtgcx .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1127,7 +1104,7 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#jcfdkldwrw .gt_sourcenotes {
+#tnwzzxtgcx .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1141,7 +1118,7 @@ tbody tr:last-child {
   border-right-color: #D3D3D3;
 }
 
-#jcfdkldwrw .gt_sourcenote {
+#tnwzzxtgcx .gt_sourcenote {
   font-size: 12px;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1149,63 +1126,63 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#jcfdkldwrw .gt_left {
+#tnwzzxtgcx .gt_left {
   text-align: left;
 }
 
-#jcfdkldwrw .gt_center {
+#tnwzzxtgcx .gt_center {
   text-align: center;
 }
 
-#jcfdkldwrw .gt_right {
+#tnwzzxtgcx .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#jcfdkldwrw .gt_font_normal {
+#tnwzzxtgcx .gt_font_normal {
   font-weight: normal;
 }
 
-#jcfdkldwrw .gt_font_bold {
+#tnwzzxtgcx .gt_font_bold {
   font-weight: bold;
 }
 
-#jcfdkldwrw .gt_font_italic {
+#tnwzzxtgcx .gt_font_italic {
   font-style: italic;
 }
 
-#jcfdkldwrw .gt_super {
+#tnwzzxtgcx .gt_super {
   font-size: 65%;
 }
 
-#jcfdkldwrw .gt_footnote_marks {
+#tnwzzxtgcx .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#jcfdkldwrw .gt_asterisk {
+#tnwzzxtgcx .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#jcfdkldwrw .gt_indent_1 {
+#tnwzzxtgcx .gt_indent_1 {
   text-indent: 5px;
 }
 
-#jcfdkldwrw .gt_indent_2 {
+#tnwzzxtgcx .gt_indent_2 {
   text-indent: 10px;
 }
 
-#jcfdkldwrw .gt_indent_3 {
+#tnwzzxtgcx .gt_indent_3 {
   text-indent: 15px;
 }
 
-#jcfdkldwrw .gt_indent_4 {
+#tnwzzxtgcx .gt_indent_4 {
   text-indent: 20px;
 }
 
-#jcfdkldwrw .gt_indent_5 {
+#tnwzzxtgcx .gt_indent_5 {
   text-indent: 25px;
 }
 
@@ -1213,152 +1190,119 @@ tbody tr:last-child {
   border-bottom: 2px solid #ffffff00;
 }
 </style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-  <thead>
-    
-    <tr class="gt_col_headings">
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id=""></th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;" scope="col" id="Number of Advertisers">Number of Advertisers</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;" scope="col" id="Top Spenders">Top Spenders</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;" scope="col" id="Number of Ads">Number of Ads</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;" scope="col" id="Total Spend">Total Spend</th>
-    </tr>
-  </thead>
-  <tbody class="gt_table_body">
-    <tr><th id="stub_1_1" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>LEW</p>
-</div></th>
-<td headers="stub_1_1 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #AC145A;"><div class="gt_from_md"><p>23</p>
-</div></td>
-<td headers="stub_1_1 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=137877409609952">Lewica</a> (€19,765)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=113729263331952">Bożena Przyłuska</a> (€1,130)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=1830591737192332">Arkadiusz Sikora Lewica - Poseł na Sejm RP X kadencji</a> (€649)<br><br></p>
-</div></td>
-<td headers="stub_1_1 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>678</p>
-</div></td>
-<td headers="stub_1_1 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€24,188</p>
-</div></td></tr>
-    <tr><th id="stub_1_2" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>KO</p>
-</div></th>
-<td headers="stub_1_2 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #F68F2D;"><div class="gt_from_md"><p>48</p>
-</div></td>
-<td headers="stub_1_2 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=102931488739">Platforma Obywatelska</a> (€12,193)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=295830137207924">Marek Sowa       Poseł na Sejm RP</a> (€3,184)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=108494929216934">Marcin Kierwiński</a> (€630)<br><br></p>
-</div></td>
-<td headers="stub_1_2 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>249</p>
-</div></td>
-<td headers="stub_1_2 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€20,580</p>
-</div></td></tr>
-    <tr><th id="stub_1_3" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>ZP</p>
-</div></th>
-<td headers="stub_1_3 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #263778;"><div class="gt_from_md"><p>53</p>
-</div></td>
-<td headers="stub_1_3 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=157458232131">Prawo i Sprawiedliwość</a> (€10,789)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=136932946358747">Michał Dworczyk</a> (€1,214)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=130727956973250">Anna Krupka</a> (€779)<br><br></p>
-</div></td>
-<td headers="stub_1_3 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>262</p>
-</div></td>
-<td headers="stub_1_3 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€17,782</p>
-</div></td></tr>
-    <tr><th id="stub_1_4" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>ECR</p>
-</div></th>
-<td headers="stub_1_4 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #0000FF;"><div class="gt_from_md"><p>28</p>
-</div></td>
-<td headers="stub_1_4 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=228951150597089">Adam Bielan</a> (€3,309)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=612725748801524">Karol Karski</a> (€1,756)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=106058134201158">Tobiasz Bocheński</a> (€1,427)<br><br></p>
-</div></td>
-<td headers="stub_1_4 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>700</p>
-</div></td>
-<td headers="stub_1_4 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€15,919</p>
-</div></td></tr>
-    <tr><th id="stub_1_5" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>EPP</p>
-</div></th>
-<td headers="stub_1_5 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #FF8C00;"><div class="gt_from_md"><p>25</p>
-</div></td>
-<td headers="stub_1_5 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=2273340699395517">Tomasz Frankowski</a> (€2,783)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=2030215917007850">Stefan Krajewski</a> (€1,688)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=566056256874205">Teresa Kubas-Hul</a> (€1,545)<br><br></p>
-</div></td>
-<td headers="stub_1_5 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>271</p>
-</div></td>
-<td headers="stub_1_5 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€13,664</p>
-</div></td></tr>
-    <tr><th id="stub_1_6" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>INNY</p>
-</div></th>
-<td headers="stub_1_6 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #6F9E23;"><div class="gt_from_md"><p>48</p>
-</div></td>
-<td headers="stub_1_6 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=450781218391641">Protestuj.pl</a> (€2,582)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=985119888221497">KOD-Świętokrzyskie</a> (€2,013)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=114988538373074">Fundacja “Twój głos jest ważny”</a> (€1,875)<br><br></p>
-</div></td>
-<td headers="stub_1_6 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>194</p>
-</div></td>
-<td headers="stub_1_6 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€12,929</p>
-</div></td></tr>
-    <tr><th id="stub_1_7" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>TD</p>
-</div></th>
-<td headers="stub_1_7 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #3DB53A;"><div class="gt_from_md"><p>31</p>
-</div></td>
-<td headers="stub_1_7 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=1607487699534202">Krzysztof Hetman</a> (€1,999)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=325037134611169">Michał Kobosko</a> (€1,406)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=177473808919">Polskie Stronnictwo Ludowe</a> (€1,359)<br><br></p>
-</div></td>
-<td headers="stub_1_7 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>371</p>
-</div></td>
-<td headers="stub_1_7 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€11,313</p>
-</div></td></tr>
-    <tr><th id="stub_1_8" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>KWIN</p>
-</div></th>
-<td headers="stub_1_8 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #0d1e3a;"><div class="gt_from_md"><p>11</p>
-</div></td>
-<td headers="stub_1_8 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=1971966879776579">Konfederacja</a> (€3,832)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=2281285658805846">Anna Bryłka</a> (€812)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=946704618680358">Marcin Sypniewski</a> (€499)<br><br></p>
-</div></td>
-<td headers="stub_1_8 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>118</p>
-</div></td>
-<td headers="stub_1_8 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€6,430</p>
-</div></td></tr>
-    <tr><th id="stub_1_9" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>InneEP</p>
-</div></th>
-<td headers="stub_1_9 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #001100;"><div class="gt_from_md"><p>13</p>
-</div></td>
-<td headers="stub_1_9 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=1260515550792236">Tomasz Buczek</a> (€302)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=135572762969659">Marek Bąkowski</a> (€192)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=108074960530325">Łukasz Komorowski</a> (€166)<br><br></p>
-</div></td>
-<td headers="stub_1_9 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>31</p>
-</div></td>
-<td headers="stub_1_9 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€1,271</p>
-</div></td></tr>
-    <tr><th id="stub_1_10" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>RE</p>
-</div></th>
-<td headers="stub_1_10 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #FFDA03;"><div class="gt_from_md"><p>6</p>
-</div></td>
-<td headers="stub_1_10 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=298419500028105">Małgorzata Terlecka-Maciejewska Kandydatka do Parlamentu Europejskiego</a> (€458)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=1478691439094785">Paweł Zalewski</a> (€315)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=284135998125027">Piotr STOlecki- Kandydat do PE</a> (€182)<br><br></p>
-</div></td>
-<td headers="stub_1_10 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>67</p>
-</div></td>
-<td headers="stub_1_10 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€1,034</p>
-</div></td></tr>
-    <tr><th id="stub_1_11" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>S&amp;D</p>
-</div></th>
-<td headers="stub_1_11 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #FF0A00;"><div class="gt_from_md"><p>8</p>
-</div></td>
-<td headers="stub_1_11 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=1465965073732774">Łukasz Kohut</a> (€267.0)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=300721143123471">Dorota Kolarska</a> (€203.0)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=254834855469973">Marek Belka</a> (€196.9)<br><br></p>
-</div></td>
-<td headers="stub_1_11 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>110</p>
-</div></td>
-<td headers="stub_1_11 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€945</p>
-</div></td></tr>
-    <tr><th id="stub_1_12" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>BS</p>
-</div></th>
-<td headers="stub_1_12 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #E6001A;"><div class="gt_from_md"><p>2</p>
-</div></td>
-<td headers="stub_1_12 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=336215792902047">Oskar Kida</a> (€44)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=378891755591358">Cezary Przybylski - Marszałek Województwa Dolnośląskiego</a> (€0)<br><br></p>
-</div></td>
-<td headers="stub_1_12 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>3</p>
-</div></td>
-<td headers="stub_1_12 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€44</p>
-</div></td></tr>
-    <tr><th id="stub_1_13" scope="row" class="gt_row gt_center gt_stub"><div class="gt_from_md"><p>InnyKW</p>
-</div></th>
-<td headers="stub_1_13 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #DAA520;"><div class="gt_from_md"><p>6</p>
-</div></td>
-<td headers="stub_1_13 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=109881633692666">Kamil Kraiński - Nowa Nadzieja</a> (€0)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=115190293247596">Pawel Kownacki</a> (€0)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=220337894503831">KWW Wacława Żarskiego</a> (€0)<br><br></p>
-</div></td>
-<td headers="stub_1_13 Number of Ads" class="gt_row gt_center"><div class="gt_from_md"><p>6</p>
-</div></td>
-<td headers="stub_1_13 Total Spend" class="gt_row gt_center"><div class="gt_from_md"><p>€1</p>
-</div></td></tr>
-  </tbody>
-  
-  
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header gt_col_headings">
+<th class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"></th>
+<th id="Number of Advertisers" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Number of Advertisers</th>
+<th id="Top Spenders" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Top Spenders</th>
+<th id="Number of Ads" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Number of Ads</th>
+<th id="Total Spend" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Total Spend</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td id="stub_1_1" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>LEW</p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #AC145A"><p>23</p></td>
+<td class="gt_row gt_left" headers="stub_1_1 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=137877409609952">Lewica</a> (€19,765)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=113729263331952">Bożena Przyłuska</a> (€1,130)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=1830591737192332">Arkadiusz Sikora Lewica - Poseł na Sejm RP X kadencji</a> (€649)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Number of Ads"><p>678</p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Total Spend"><p>€24,188</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_2" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>KO</p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #F68F2D"><p>48</p></td>
+<td class="gt_row gt_left" headers="stub_1_2 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=102931488739">Platforma Obywatelska</a> (€12,193)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=295830137207924">Marek Sowa Poseł na Sejm RP</a> (€3,184)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=108494929216934">Marcin Kierwiński</a> (€630)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Number of Ads"><p>249</p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Total Spend"><p>€20,580</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_3" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>ZP</p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #263778"><p>53</p></td>
+<td class="gt_row gt_left" headers="stub_1_3 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=157458232131">Prawo i Sprawiedliwość</a> (€10,789)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=136932946358747">Michał Dworczyk</a> (€1,214)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=130727956973250">Anna Krupka</a> (€779)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Number of Ads"><p>262</p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Total Spend"><p>€17,782</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_4" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>ECR</p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #0000FF"><p>28</p></td>
+<td class="gt_row gt_left" headers="stub_1_4 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=228951150597089">Adam Bielan</a> (€3,309)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=612725748801524">Karol Karski</a> (€1,756)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=106058134201158">Tobiasz Bocheński</a> (€1,427)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Number of Ads"><p>700</p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Total Spend"><p>€15,919</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_5" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>EPP</p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #FF8C00"><p>25</p></td>
+<td class="gt_row gt_left" headers="stub_1_5 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=2273340699395517">Tomasz Frankowski</a> (€2,783)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=2030215917007850">Stefan Krajewski</a> (€1,688)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=566056256874205">Teresa Kubas-Hul</a> (€1,545)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Number of Ads"><p>271</p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Total Spend"><p>€13,664</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_6" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>INNY</p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #9D18E5"><p>48</p></td>
+<td class="gt_row gt_left" headers="stub_1_6 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=450781218391641">Protestuj.pl</a> (€2,582)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=985119888221497">KOD-Świętokrzyskie</a> (€2,013)<br>3. [Fundacja</p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Number of Ads"><p>194</p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Total Spend"><p>€12,929</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_7" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>TD</p></td>
+<td class="gt_row gt_center" headers="stub_1_7 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #3DB53A"><p>31</p></td>
+<td class="gt_row gt_left" headers="stub_1_7 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=1607487699534202">Krzysztof Hetman</a> (€1,999)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=325037134611169">Michał Kobosko</a> (€1,406)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=177473808919">Polskie Stronnictwo Ludowe</a> (€1,359)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_7 Number of Ads"><p>371</p></td>
+<td class="gt_row gt_center" headers="stub_1_7 Total Spend"><p>€11,313</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_8" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>KWIN</p></td>
+<td class="gt_row gt_center" headers="stub_1_8 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #0d1e3a"><p>11</p></td>
+<td class="gt_row gt_left" headers="stub_1_8 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=1971966879776579">Konfederacja</a> (€3,832)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=2281285658805846">Anna Bryłka</a> (€812)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=946704618680358">Marcin Sypniewski</a> (€499)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_8 Number of Ads"><p>118</p></td>
+<td class="gt_row gt_center" headers="stub_1_8 Total Spend"><p>€6,430</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_9" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>InneEP</p></td>
+<td class="gt_row gt_center" headers="stub_1_9 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #001100"><p>13</p></td>
+<td class="gt_row gt_left" headers="stub_1_9 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=1260515550792236">Tomasz Buczek</a> (€302)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=135572762969659">Marek Bąkowski</a> (€192)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=108074960530325">Łukasz Komorowski</a> (€166)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_9 Number of Ads"><p>31</p></td>
+<td class="gt_row gt_center" headers="stub_1_9 Total Spend"><p>€1,271</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_10" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>RE</p></td>
+<td class="gt_row gt_center" headers="stub_1_10 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #FFDA03"><p>6</p></td>
+<td class="gt_row gt_left" headers="stub_1_10 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=298419500028105">Małgorzata Terlecka-Maciejewska Kandydatka do Parlamentu Europejskiego</a> (€458)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=1478691439094785">Paweł Zalewski</a> (€315)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=284135998125027">Piotr STOlecki- Kandydat do PE</a> (€182)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_10 Number of Ads"><p>67</p></td>
+<td class="gt_row gt_center" headers="stub_1_10 Total Spend"><p>€1,034</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_11" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>S&amp;D</p></td>
+<td class="gt_row gt_center" headers="stub_1_11 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #FF0A00"><p>8</p></td>
+<td class="gt_row gt_left" headers="stub_1_11 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=1465965073732774">Łukasz Kohut</a> (€267.0)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=300721143123471">Dorota Kolarska</a> (€203.0)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=254834855469973">Marek Belka</a> (€196.9)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_11 Number of Ads"><p>110</p></td>
+<td class="gt_row gt_center" headers="stub_1_11 Total Spend"><p>€945</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_12" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>BS</p></td>
+<td class="gt_row gt_center" headers="stub_1_12 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #E6001A"><p>2</p></td>
+<td class="gt_row gt_left" headers="stub_1_12 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=336215792902047">Oskar Kida</a> (€44)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=378891755591358">Cezary Przybylski - Marszałek Województwa Dolnośląskiego</a> (€0)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_12 Number of Ads"><p>3</p></td>
+<td class="gt_row gt_center" headers="stub_1_12 Total Spend"><p>€44</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_13" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>InnyKW</p></td>
+<td class="gt_row gt_center" headers="stub_1_13 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #DAA520"><p>6</p></td>
+<td class="gt_row gt_left" headers="stub_1_13 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=109881633692666">Kamil Kraiński - Nowa Nadzieja</a> (€0)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=115190293247596">Pawel Kownacki</a> (€0)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=PL&amp;view_all_page_id=220337894503831">KWW Wacława Żarskiego</a> (€0)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_13 Number of Ads"><p>6</p></td>
+<td class="gt_row gt_center" headers="stub_1_13 Total Spend"><p>€1</p></td>
+</tr>
+</tbody>
 </table>
+
 </div>
 </div>
 </div>
@@ -1448,10 +1392,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1461,8 +1422,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1474,7 +1444,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1518,6 +1611,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1543,6 +1637,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1603,6 +1723,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 
