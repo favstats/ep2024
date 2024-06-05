@@ -4,133 +4,97 @@
     "href": "about.html",
     "title": "European Parliament Elections 2024",
     "section": "",
-    "text": "Methodology\nIn collaboration with Who Targets Me, we monitored 170 political advertisers to better understand how campaigns use different targeting methods made available by Meta. To do this, we used data from the Meta Ad Library, using the new ‘Audience’ data which gives some detail on how pages target their ads.\nTo better understand the election, we kept only advertisers who:\n\nAdvertised in the last 7 days (NA - NA NA)\nAdvertised in the last 30 days (NA - NA NA)\n\n\n\n\n\n\n\nNote\n\n\n\nMeta only provides 7, 30 and 90 days windows for the targeting data in their Ad Library. Meta’s data also lags by a few days. Report will be updated as soon as new data is available.\n\n\n\n\n\n\n\n\nDisclaimer\n\n\n\nThe data shown in this dashboard is based on the platform’s respective ad libraries which are known to be sometimes incomplete (Edelson et al. 2020; Silva et al. 2020). For this reason the data shown here might not reflect the full picture nor all political ads that were targeted at voters.\n\n\n\n\nAbout the Creator of the Dashboard\n\n\n\n\n\n\n\n\n\n\n\nFabio Votta is a Postdoc at the University of Amsterdam who studies (online) political microtargeting and its usage around the world.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  BlueSky\n  Twitter\n  Personal Website\n\n\n\n\n\n\n\n\n\nWant to see how political parties target you? Sign up at Who Targets Me and download the gratis browser plugin to see how parties on Facebook use your data:\nhttps://whotargets.me/\n\n\n\n\n\n\n\nWant to retrieve targeting data from the Facebook Ad Library yourself? This dashboard is powered by the R package: metatargetr. Check it out here:\nhttps://github.com/favstats/metatargetr\n\n\n\n\nElection Targeting Dashboards\nA list of election dashboards:\n\n🇳🇱 2021 Dutch parliamentary election (15th-17th March 2021)\n🇩🇪 2021 German federal election (26 September 2021)\n🇸🇪 2022 Swedish general election (11th September 2022)\n🇺🇸 2022 United States midterm elections (8th November 2022)\n🇺🇸 2022 United States midterm elections - Georgia Runoff (6th December 2022)\n🇮🇹 2023 Lazio & Lombardy regional election (12-13th February 2023)\n🇪🇪 2023 Estonian parliamentary election (5th March 2023)\n🇳🇱 2023 Dutch provincial elections (15th March 2023)\n🇲🇪 2023 Montenegrin presidential elections (19th March 2023) - 1st round\n🇦🇺 2023 New South Wales state election (25th March 2023)\n🇫🇮 2023 Finnish parliamentary election (2 April 2023)\n🇹🇷 2023 Turkish general election (14 May 2023) - Round 1\n🇩🇪 2023 Bremen State election (14 May 2023)\n🇬🇷 2023 Greek Legislative election (21 May 2023)\n🇹🇷 2023 Turkish Presidential election (14 May 2023) - Round 2\n🇲🇪 2023 Montenegrin parliamentary elections (11 June 2023)\n🇬🇷 2nd 2023 Greek Legislative election (25 May 2023)\n🇸🇰 2023 Slovak parliamentary election (30 September 2023)\n🇩🇪 2023 Bavarian state election (8 October 2023)\n🇩🇪 2023 Hessian state election (8 October 2023)\n🇳🇿 2023 New Zealand general election (14 October 2023)\n🇵🇱 2023 Polish parliamentary election (15 October 2023)\n🇺🇸 US Presidential Primaries (2023-2024)"
+    "text": "Methodology\nIn collaboration with Who Targets Me, we monitored 170 political advertisers to better understand how campaigns use different targeting methods made available by Meta. To do this, we used data from the Meta Ad Library, using the new ‘Audience’ data which gives some detail on how pages target their ads.\nTo better understand the election, we kept only advertisers who:\n\nAdvertised in the last 7 days (23 May - 29 May 2024)\nAdvertised in the last 30 days (30 Apr - 29 May 2024)\n\n\n\n\n\n\n\nNote\n\n\n\nMeta only provides 7, 30 and 90 days windows for the targeting data in their Ad Library. Meta’s data also lags by a few days. Report will be updated as soon as new data is available.\n\n\n\n\n\n\n\n\nDisclaimer\n\n\n\nThe data shown in this dashboard is based on the platform’s respective ad libraries which are known to be sometimes incomplete (Edelson et al. 2020; Silva et al. 2020). For this reason the data shown here might not reflect the full picture nor all political ads that were targeted at voters.\n\n\n\n\nAbout the Creator of the Dashboard\n\n\n\n\n\n\n\n\n\n\n\nFabio Votta is a Postdoc at the University of Amsterdam who studies (online) political microtargeting and its usage around the world.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  BlueSky\n  Twitter\n  Personal Website\n\n\n\n\n\n\n\n\n\nWant to see how political parties target you? Sign up at Who Targets Me and download the gratis browser plugin to see how parties on Facebook use your data:\nhttps://whotargets.me/\n\n\n\n\n\n\n\nWant to retrieve targeting data from the Facebook Ad Library yourself? This dashboard is powered by the R package: metatargetr. Check it out here:\nhttps://github.com/favstats/metatargetr\n\n\n\n\nElection Targeting Dashboards\nA list of election dashboards:\n\n🇳🇱 2021 Dutch parliamentary election (15th-17th March 2021)\n🇩🇪 2021 German federal election (26 September 2021)\n🇸🇪 2022 Swedish general election (11th September 2022)\n🇺🇸 2022 United States midterm elections (8th November 2022)\n🇺🇸 2022 United States midterm elections - Georgia Runoff (6th December 2022)\n🇮🇹 2023 Lazio & Lombardy regional election (12-13th February 2023)\n🇪🇪 2023 Estonian parliamentary election (5th March 2023)\n🇳🇱 2023 Dutch provincial elections (15th March 2023)\n🇲🇪 2023 Montenegrin presidential elections (19th March 2023) - 1st round\n🇦🇺 2023 New South Wales state election (25th March 2023)\n🇫🇮 2023 Finnish parliamentary election (2 April 2023)\n🇹🇷 2023 Turkish general election (14 May 2023) - Round 1\n🇩🇪 2023 Bremen State election (14 May 2023)\n🇬🇷 2023 Greek Legislative election (21 May 2023)\n🇹🇷 2023 Turkish Presidential election (14 May 2023) - Round 2\n🇲🇪 2023 Montenegrin parliamentary elections (11 June 2023)\n🇬🇷 2nd 2023 Greek Legislative election (25 May 2023)\n🇸🇰 2023 Slovak parliamentary election (30 September 2023)\n🇩🇪 2023 Bavarian state election (8 October 2023)\n🇩🇪 2023 Hessian state election (8 October 2023)\n🇳🇿 2023 New Zealand general election (14 October 2023)\n🇵🇱 2023 Polish parliamentary election (15 October 2023)\n🇺🇸 US Presidential Primaries (2023-2024)"
   },
   {
     "objectID": "demographics.html",
     "href": "demographics.html",
     "title": "Demographics",
     "section": "",
-    "text": "The following graphs illustrate how parties target different age groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024",
-    "crumbs": [
-      "Demographics"
-    ]
+    "text": "The following graphs illustrate how parties target different age groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024"
   },
   {
     "objectID": "demographics.html#age-targeting",
     "href": "demographics.html#age-targeting",
     "title": "Demographics",
     "section": "",
-    "text": "The following graphs illustrate how parties target different age groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024",
-    "crumbs": [
-      "Demographics"
-    ]
+    "text": "The following graphs illustrate how parties target different age groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024"
   },
   {
     "objectID": "demographics.html#gender-targeting",
     "href": "demographics.html#gender-targeting",
     "title": "Demographics",
     "section": "Gender Targeting",
-    "text": "Gender Targeting\nDe onderstaande grafieken laten zien hoe partijen gender als focusgroep gebruiken en welk percentage van het budget daaraan werd uitgegeven.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024",
-    "crumbs": [
-      "Demographics"
-    ]
+    "text": "Gender Targeting\nDe onderstaande grafieken laten zien hoe partijen gender als focusgroep gebruiken en welk percentage van het budget daaraan werd uitgegeven.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024"
   },
   {
     "objectID": "demographics.html#language-targeting",
     "href": "demographics.html#language-targeting",
     "title": "Demographics",
     "section": "Language Targeting",
-    "text": "Language Targeting\nThe following graphs show how parties use different languages as focus groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024",
-    "crumbs": [
-      "Demographics"
-    ]
+    "text": "Language Targeting\nThe following graphs show how parties use different languages as focus groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024"
   },
   {
     "objectID": "demographics.html#targeting-based-on-employment-or-education-instituation",
     "href": "demographics.html#targeting-based-on-employment-or-education-instituation",
     "title": "Demographics",
     "section": "Targeting based on Employment or Education Instituation",
-    "text": "Targeting based on Employment or Education Instituation\nThe following graphs depict how parties utilize various job sectors and types of education as focus groups and the percentage of the budget allocated to them. The next graph focuses on educational levels.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024",
-    "crumbs": [
-      "Demographics"
-    ]
+    "text": "Targeting based on Employment or Education Instituation\nThe following graphs depict how parties utilize various job sectors and types of education as focus groups and the percentage of the budget allocated to them. The next graph focuses on educational levels.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024"
   },
   {
     "objectID": "demographics.html#education-levels-targeting",
     "href": "demographics.html#education-levels-targeting",
     "title": "Demographics",
     "section": "Education Levels Targeting",
-    "text": "Education Levels Targeting\nThe graphs below illustrate how parties target various education levels as focus groups and the percentage of the budget allocated to each.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024",
-    "crumbs": [
-      "Demographics"
-    ]
+    "text": "Education Levels Targeting\nThe graphs below illustrate how parties target various education levels as focus groups and the percentage of the budget allocated to each.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024"
   },
   {
     "objectID": "demographics.html#relationship-status-targeting",
     "href": "demographics.html#relationship-status-targeting",
     "title": "Demographics",
     "section": "Relationship Status Targeting",
-    "text": "Relationship Status Targeting\nThe following graphs reveal how political parties utilize different relationship statuses as focus groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo data (yet).",
-    "crumbs": [
-      "Demographics"
-    ]
+    "text": "Relationship Status Targeting\nThe following graphs reveal how political parties utilize different relationship statuses as focus groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo data (yet)."
   },
   {
     "objectID": "detailed.html",
     "href": "detailed.html",
     "title": "Detailed Targeting",
     "section": "",
-    "text": "The chart below displays the most utilized targeting criteria by political parties on Meta, based on the amounts spent.\n\n29 Apr - 28 May 202422 May - 28 May 2024",
-    "crumbs": [
-      "Detailed Targeting"
-    ]
+    "text": "The chart below displays the most utilized targeting criteria by political parties on Meta, based on the amounts spent.\n\n29 Apr - 28 May 202422 May - 28 May 2024"
   },
   {
     "objectID": "detailed.html#top-targeted-audiences",
     "href": "detailed.html#top-targeted-audiences",
     "title": "Detailed Targeting",
     "section": "",
-    "text": "The chart below displays the most utilized targeting criteria by political parties on Meta, based on the amounts spent.\n\n29 Apr - 28 May 202422 May - 28 May 2024",
-    "crumbs": [
-      "Detailed Targeting"
-    ]
+    "text": "The chart below displays the most utilized targeting criteria by political parties on Meta, based on the amounts spent.\n\n29 Apr - 28 May 202422 May - 28 May 2024"
   },
   {
     "objectID": "detailed.html#top-excluded-audiences",
     "href": "detailed.html#top-excluded-audiences",
     "title": "Detailed Targeting",
     "section": "Top Excluded Audiences",
-    "text": "Top Excluded Audiences\nAmong the detailed options offered by Meta, the chart below shows the most excluded target audiences per party. The ranking is based on the amounts spent.\n\n29 Apr - 28 May 202422 May - 28 May 2024",
-    "crumbs": [
-      "Detailed Targeting"
-    ]
+    "text": "Top Excluded Audiences\nAmong the detailed options offered by Meta, the chart below shows the most excluded target audiences per party. The ranking is based on the amounts spent.\n\n29 Apr - 28 May 202422 May - 28 May 2024"
   },
   {
     "objectID": "detailed.html#top-contested-audiences",
     "href": "detailed.html#top-contested-audiences",
     "title": "Detailed Targeting",
     "section": "Top Contested Audiences",
-    "text": "Top Contested Audiences\nThe charts below show the target audiences where most competition takes place. For example, the groups in which all parties invest large amounts to reach voters with the same interests.\n\n29 Apr - 28 May 202422 May - 28 May 2024",
-    "crumbs": [
-      "Detailed Targeting"
-    ]
+    "text": "Top Contested Audiences\nThe charts below show the target audiences where most competition takes place. For example, the groups in which all parties invest large amounts to reach voters with the same interests.\n\n29 Apr - 28 May 202422 May - 28 May 2024"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Spending",
     "section": "",
-    "text": "Here you can see the expenditures of political parties in the lead-up to the elections according to the latest data.\n\n29 Apr - 28 May 202422 May - 28 May 2024\n\n\nDuring this period, political parties spent a total of €2,685,023 and displayed 20325 advertisements on Meta.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNumber of Advertisers\nTop Spenders\nNumber of Ads\nTotal Spend\n\n\n\n\nPol\n97\n1. European Parliament (€762,692)2. European Commission (€120,866)3. Campact e.V. (€79,730)\n5,929\n€1,469,723\n\n\nGrü\n177\n1. BÜNDNIS 90/DIE GRÜNEN (€105,414)2. European Greens (€40,675)3. BÜNDNIS 90/DIE GRÜNEN Baden-Württemberg (€4,331)\n2,894\n€198,571\n\n\nCDU\n368\n1. CDU (€61,709)2. CSU (Christlich-Soziale Union) (€27,680)3. CDU CSU Europa (€8,812)\n3,397\n€193,595\n\n\nFDP\n123\n1. FDP (€103,980)2. FDP Fraktion Bundestag (€4,552)3. FDP Stuttgart (€3,580)\n1,014\n€140,700\n\n\nSPD\n319\n1. SPD-Fraktion im Bundestag (€25,732)2. Sozialdemokratische Partei Europas (€13,617)3. SPD Mannheim (€12,815)\n2,881\n€133,659\n\n\nSta\n41\n1. land.nrw (€37,217)2. Bundesregierung (€13,829)3. wir.sh (€10,749)\n586\n€131,279\n\n\nAND\n128\n1. Partei der Humanisten (€45,397)2. DieBasis (€24,935)3. PARTEI MENSCH UMWELT TIERSCHUTZ (€7,403)\n1,225\n€120,763\n\n\nVOL\n2\n1. Volt Deutschland (€105,125)2. Volt Thüringen (€1)\n204\n€105,126\n\n\nBSW\n3\n1. Bündnis Sahra Wagenknecht - Vernunft und Gerechtigkeit (€66,040.000)2. Fraktion Bündnis Sahra Wagenknecht - Vernunft und Gerechtigkeit Zwickau (€1.000)3. BSW Bündnis Sahra Wagenknecht - Neubrandenburg (€0.926)\n115\n€66,042\n\n\nLin\n71\n1. DIE LINKE (€26,305)2. Rosa-Luxemburg-Stiftung (€2,223)3. DIE LINKE. Dresden (€1,497)\n518\n€42,818\n\n\nAfD\n136\n1. AfD (€13,975)2. AfD Sachsen (€5,764)3. AfD-Fraktion im Landtag von Baden-Württemberg (€4,151)\n793\n€42,432\n\n\nFW\n91\n1. Freie Wähler Landesverband Baden-Württemberg e.V. (€9,323)2. BVB / Freie Wähler (€3,373)3. BVB / Freie Wähler - Fraktion im Landtag Brandenburg (€2,136)\n660\n€32,251\n\n\nFAM\n2\n1. Familien-Partei-Deutschlands (€3,570)2. Familien-Partei LV Saarland (€327)\n27\n€3,897\n\n\nNPD\n5\n1. Die Heimat-Stadtratsfraktion Eisenach (€1,848)2. Heimat Hessen (€750)3. Heimat Kyffhäuserkreis (€506)\n42\n€3,263\n\n\nCSU\n9\n1. Konrad Körner (€520)2. Christian von Dobschütz (€234)3. Philine Blees (€1)\n29\n€761\n\n\nPIR\n2\n1. Piraten Welzheim (€141)2. Piratenpartei Göppingen (€1)\n5\n€142\n\n\nPAR\n1\n1. Die PARTEI Trier (€1)\n6\n€1\n\n\n\n\n\n\n\n\n\n\nDuring this period, political parties spent a total of €961,225 and displayed 11069 advertisements on Meta.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNumber of Advertisers\nTop Spenders\nNumber of Ads\nTotal Spend\n\n\n\n\nPol\n74\n1. European Parliament (€228,126)2. European Commission (€66,026)3. Greenpeace Deutschland (€19,846)\n3,039\n€445,680.0\n\n\nCDU\n294\n1. CDU (€61,602)2. CSU (Christlich-Soziale Union) (€12,050)3. EPP - European People’s Party (€5,300)\n2,028\n€107,767.0\n\n\nGrü\n150\n1. BÜNDNIS 90/DIE GRÜNEN (€42,976)2. European Greens (€22,482)3. BÜNDNIS 90/DIE GRÜNEN Baden-Württemberg (€3,113)\n1,613\n€88,364.0\n\n\nSta\n31\n1. land.nrw (€15,537)2. Bundesregierung (€13,829)3. Bayerisches Staatsministerium für Digitales (€7,871)\n262\n€60,114.0\n\n\nVOL\n1\n1. Volt Deutschland (€59,211)\n91\n€59,211.0\n\n\nAND\n94\n1. Partei der Humanisten (€22,282)2. DieBasis (€8,346)3. Pulse of Europe (€2,656)\n618\n€47,901.9\n\n\nFDP\n98\n1. FDP (€32,897)2. FDP Fraktion Bundestag (€1,316)3. FDP Strohgäu (€1,072)\n625\n€46,753.0\n\n\nSPD\n241\n1. SPD Mannheim (€6,615)2. SPD-Fraktion im Bundestag (€5,197)3. SPD Ulm (€2,584)\n1,662\n€44,398.0\n\n\nBSW\n1\n1. Bündnis Sahra Wagenknecht - Vernunft und Gerechtigkeit (€25,188)\n53\n€25,188.0\n\n\nLin\n58\n1. DIE LINKE (€7,121)2. Rosa-Luxemburg-Stiftung (€746)3. DIE LINKE Thüringen (€639)\n291\n€13,078.1\n\n\nAfD\n99\n1. AfD (€2,661)2. AfD-Fraktion im Landtag von Baden-Württemberg (€1,299)3. AfD Sachsen (€1,178)\n350\n€10,154.9\n\n\nFW\n76\n1. Freie Wähler Landesverband Baden-Württemberg e.V. (€2,118)2. FREIE WÄHLER Bundesvereinigung (€670)3. Freie Wähler Brandenburg an der Havel (€471)\n364\n€7,341.9\n\n\nFAM\n2\n1. Familien-Partei-Deutschlands (€3,281)2. Familien-Partei LV Saarland (€192)\n24\n€3,473.0\n\n\nNPD\n4\n1. Die Heimat-Stadtratsfraktion Eisenach (€637)2. Heimat Hessen (€498)3. Heimat Kyffhäuserkreis (€455)\n27\n€1,591.0\n\n\nCSU\n5\n1. Konrad Körner (€202)2. Philine Blees (€1)3. CSU Haag/Amper (€1)\n14\n€206.0\n\n\nPIR\n2\n1. Piratenpartei Göppingen (€1)2. Piraten Welzheim (€1)\n4\n€2.0\n\n\nPAR\n1\n1. Die PARTEI Trier (€1)\n4\n€1.0"
+    "text": "Here you can see the expenditures of political parties in the lead-up to the elections according to the latest data.\n\n29 Apr - 28 May 202422 May - 28 May 2024\n\n\nDuring this period, political parties spent a total of €2,685,023 and displayed 20325 advertisements on Meta.\n\n\n\n\n\n\n  \n    \n    \n      \n      Number of Advertisers\n      Top Spenders\n      Number of Ads\n      Total Spend\n    \n  \n  \n    Pol\n\n97\n\n1. European Parliament (€762,692)2. European Commission (€120,866)3. Campact e.V. (€79,730)\n\n5,929\n\n€1,469,723\n\n    Grü\n\n177\n\n1. BÜNDNIS 90/DIE GRÜNEN (€105,414)2. European Greens (€40,675)3. BÜNDNIS 90/DIE GRÜNEN Baden-Württemberg (€4,331)\n\n2,894\n\n€198,571\n\n    CDU\n\n368\n\n1. CDU (€61,709)2. CSU (Christlich-Soziale Union) (€27,680)3. CDU CSU Europa (€8,812)\n\n3,397\n\n€193,595\n\n    FDP\n\n123\n\n1. FDP (€103,980)2. FDP Fraktion Bundestag (€4,552)3. FDP Stuttgart (€3,580)\n\n1,014\n\n€140,700\n\n    SPD\n\n319\n\n1. SPD-Fraktion im Bundestag (€25,732)2. Sozialdemokratische Partei Europas (€13,617)3. SPD Mannheim (€12,815)\n\n2,881\n\n€133,659\n\n    Sta\n\n41\n\n1. land.nrw (€37,217)2. Bundesregierung (€13,829)3. wir.sh (€10,749)\n\n586\n\n€131,279\n\n    AND\n\n128\n\n1. Partei der Humanisten (€45,397)2. DieBasis (€24,935)3. PARTEI MENSCH UMWELT TIERSCHUTZ (€7,403)\n\n1,225\n\n€120,763\n\n    VOL\n\n2\n\n1. Volt Deutschland (€105,125)2. Volt Thüringen (€1)\n\n204\n\n€105,126\n\n    BSW\n\n3\n\n1. Bündnis Sahra Wagenknecht - Vernunft und Gerechtigkeit (€66,040.000)2. Fraktion Bündnis Sahra Wagenknecht - Vernunft und Gerechtigkeit Zwickau (€1.000)3. BSW Bündnis Sahra Wagenknecht - Neubrandenburg (€0.926)\n\n115\n\n€66,042\n\n    Lin\n\n71\n\n1. DIE LINKE (€26,305)2. Rosa-Luxemburg-Stiftung (€2,223)3. DIE LINKE. Dresden (€1,497)\n\n518\n\n€42,818\n\n    AfD\n\n136\n\n1. AfD (€13,975)2. AfD Sachsen (€5,764)3. AfD-Fraktion im Landtag von Baden-Württemberg (€4,151)\n\n793\n\n€42,432\n\n    FW\n\n91\n\n1. Freie Wähler Landesverband Baden-Württemberg e.V. (€9,323)2. BVB / Freie Wähler (€3,373)3. BVB / Freie Wähler - Fraktion im Landtag Brandenburg (€2,136)\n\n660\n\n€32,251\n\n    FAM\n\n2\n\n1. Familien-Partei-Deutschlands (€3,570)2. Familien-Partei LV Saarland (€327)\n\n27\n\n€3,897\n\n    NPD\n\n5\n\n1. Die Heimat-Stadtratsfraktion Eisenach (€1,848)2. Heimat Hessen (€750)3. Heimat Kyffhäuserkreis (€506)\n\n42\n\n€3,263\n\n    CSU\n\n9\n\n1. Konrad Körner (€520)2. Christian von Dobschütz (€234)3. Philine Blees (€1)\n\n29\n\n€761\n\n    PIR\n\n2\n\n1. Piraten Welzheim (€141)2. Piratenpartei Göppingen (€1)\n\n5\n\n€142\n\n    PAR\n\n1\n\n1. Die PARTEI Trier (€1)\n\n6\n\n€1\n\n  \n  \n  \n\n\n\n\n\n\nDuring this period, political parties spent a total of €961,225 and displayed 11069 advertisements on Meta.\n\n\n\n\n\n\n  \n    \n    \n      \n      Number of Advertisers\n      Top Spenders\n      Number of Ads\n      Total Spend\n    \n  \n  \n    Pol\n\n74\n\n1. European Parliament (€228,126)2. European Commission (€66,026)3. Greenpeace Deutschland (€19,846)\n\n3,039\n\n€445,680.0\n\n    CDU\n\n294\n\n1. CDU (€61,602)2. CSU (Christlich-Soziale Union) (€12,050)3. EPP - European People’s Party (€5,300)\n\n2,028\n\n€107,767.0\n\n    Grü\n\n150\n\n1. BÜNDNIS 90/DIE GRÜNEN (€42,976)2. European Greens (€22,482)3. BÜNDNIS 90/DIE GRÜNEN Baden-Württemberg (€3,113)\n\n1,613\n\n€88,364.0\n\n    Sta\n\n31\n\n1. land.nrw (€15,537)2. Bundesregierung (€13,829)3. Bayerisches Staatsministerium für Digitales (€7,871)\n\n262\n\n€60,114.0\n\n    VOL\n\n1\n\n1. Volt Deutschland (€59,211)\n\n91\n\n€59,211.0\n\n    AND\n\n94\n\n1. Partei der Humanisten (€22,282)2. DieBasis (€8,346)3. Pulse of Europe (€2,656)\n\n618\n\n€47,901.9\n\n    FDP\n\n98\n\n1. FDP (€32,897)2. FDP Fraktion Bundestag (€1,316)3. FDP Strohgäu (€1,072)\n\n625\n\n€46,753.0\n\n    SPD\n\n241\n\n1. SPD Mannheim (€6,615)2. SPD-Fraktion im Bundestag (€5,197)3. SPD Ulm (€2,584)\n\n1,662\n\n€44,398.0\n\n    BSW\n\n1\n\n1. Bündnis Sahra Wagenknecht - Vernunft und Gerechtigkeit (€25,188)\n\n53\n\n€25,188.0\n\n    Lin\n\n58\n\n1. DIE LINKE (€7,121)2. Rosa-Luxemburg-Stiftung (€746)3. DIE LINKE Thüringen (€639)\n\n291\n\n€13,078.1\n\n    AfD\n\n99\n\n1. AfD (€2,661)2. AfD-Fraktion im Landtag von Baden-Württemberg (€1,299)3. AfD Sachsen (€1,178)\n\n350\n\n€10,154.9\n\n    FW\n\n76\n\n1. Freie Wähler Landesverband Baden-Württemberg e.V. (€2,118)2. FREIE WÄHLER Bundesvereinigung (€670)3. Freie Wähler Brandenburg an der Havel (€471)\n\n364\n\n€7,341.9\n\n    FAM\n\n2\n\n1. Familien-Partei-Deutschlands (€3,281)2. Familien-Partei LV Saarland (€192)\n\n24\n\n€3,473.0\n\n    NPD\n\n4\n\n1. Die Heimat-Stadtratsfraktion Eisenach (€637)2. Heimat Hessen (€498)3. Heimat Kyffhäuserkreis (€455)\n\n27\n\n€1,591.0\n\n    CSU\n\n5\n\n1. Konrad Körner (€202)2. Philine Blees (€1)3. CSU Haag/Amper (€1)\n\n14\n\n€206.0\n\n    PIR\n\n2\n\n1. Piratenpartei Göppingen (€1)2. Piraten Welzheim (€1)\n\n4\n\n€2.0\n\n    PAR\n\n1\n\n1. Die PARTEI Trier (€1)\n\n4\n\n€1.0"
   },
   {
     "objectID": "targeting.html",
     "href": "targeting.html",
     "title": "Spending per Targeting",
     "section": "",
-    "text": "These charts show the groups that political parties target with their advertisements leading up to the elections, according to the latest data. The focus is on Meta’s platforms (Facebook and Instagram) because they offer the most detailed targeting options for political advertisements.\nHow much did the campaigns of political parties spend on different audiences? The charts below show both the total and the expenditures per party.\n\nNote: Different targeting criteria may overlap, so the outcome may not necessarily add up to 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024\n\n\n\nTotalBy Party\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTotalBy Party",
-    "crumbs": [
-      "Spending per Targeting"
-    ]
+    "text": "These charts show the groups that political parties target with their advertisements leading up to the elections, according to the latest data. The focus is on Meta’s platforms (Facebook and Instagram) because they offer the most detailed targeting options for political advertisements.\nHow much did the campaigns of political parties spend on different audiences? The charts below show both the total and the expenditures per party.\n\nNote: Different targeting criteria may overlap, so the outcome may not necessarily add up to 100%.\n\n\n29 Apr - 28 May 202422 May - 28 May 2024\n\n\n\nTotalBy Party\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTotalBy Party"
   }
 ]

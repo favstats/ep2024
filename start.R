@@ -207,7 +207,8 @@ full_cntry_list$iso2c %>%
   })
 
 if (Sys.info()[["effective_user"]] == "fabio" | Sys.info()[["effective_user"]] == "favoo") {
-  system("git pull")
+  # system("git pull")
+  gert::git_pull()
   # system("git add -A")
   # system('git commit -m "update"')
   # system("git push")
