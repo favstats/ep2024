@@ -573,29 +573,36 @@ saveRDS(col_each30, "col_each30.rds")
 ```{r, echo = F, message=F, warning=F}
 
 library(highcharter)
+        # align: 'right',
+        # verticalAlign: 'middle',
+        # width: '200%',
 
+        # width: 400,
+        # floating: true,
+        # align: 'left',
+        # x: 70, // = marginLeft - default spacingLeft
+        # itemWidth: 100,
+        # borderWidth: 1
 hcmap(
   map = "custom/europe",
-  data = ncavc %>% mutate(spn_per_capita = log(spn_per_capita)), 
+  data = ncavc %>% mutate(spn_per_capita_raw = spn_per_capita, spn_per_capita = log(spn_per_capita)), 
   joinBy = c('iso-a2','cntry'),
   name = "Time zone",
-  value = "spn_per_capita"#,
-  # tooltip = list(pointFormat = "{point.name} {point.tz}"),
-  # dataLabels = list(enabled = TRUE, format = "{cntry}")
-  )   %>% 
-  # hc_colorAxis(stops = color_stops()) %>% 
-  hc_title(text = "World Map")  %>%
-hc_tooltip(formatter = JS("function () {
+  value = "spn_per_capita",
+) %>% 
+  hc_title(text = "World Map") %>%
+  hc_tooltip(formatter = JS("function () {
     return '<b>' + this.point.name + '</b>: <br><i>€' + new Intl.NumberFormat('fr-FR').format(Math.exp(this.point.value).toFixed(0)) + ' </i> per 1000 inhabitants<br><i>$' + new Intl.NumberFormat('fr-FR').format(this.point.euro_spend.toFixed(0)) + '</i> total spent in last 30 days (' + this.point.perc + '%)';
   }")) %>%
-  # hc_mapNavigation(enabled = TRUE) %>%
   hc_title(text = glue::glue("Political Ad Spend on Facebook and Instagram in last 30 Days ({last30days_string})")) %>%
-  hc_caption(text = "Click on any country for more details. To see individual dashboards use the dropbox menu in the upper right.") %>% 
-hc_legend(enabled = F) %>% 
+  hc_caption(text = "Click on any country for more details. To see individual dashboards use the dropbox menu in the upper right.") %>%
+  hc_legend(enabled = F,  width = 400, align = "center", itemWidth = 100) %>%
   hc_colorAxis(
-    # stops = color_stops(),
     minColor = "lightblue",
-    maxColor = "#003194"
+    maxColor = "#003194",
+    labels = list(formatter = JS("function () {
+      return '€' + new Intl.NumberFormat('fr-FR').format(Math.exp(this.value).toFixed(0));
+    }"))
   ) %>%
   hc_plotOptions(
     series = list(
