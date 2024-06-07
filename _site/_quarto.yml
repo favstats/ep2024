@@ -8,7 +8,7 @@ website:
   navbar:
     logo: "wtm_logo_2020_transparent-300x300.png"
     left:
-      - href: https://favstats.github.io/ep2024/
+      - href: https://favstats.github.io/ep2024/map.html
         text: "{{< iconify ph map-trifold-thin >}} Map"
       - href: index.qmd
         text: "{{< iconify ph coins >}} Spending"

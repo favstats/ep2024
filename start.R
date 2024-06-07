@@ -171,6 +171,9 @@ for (cntryy in full_cntry_list$iso2c) {
 }
 
 rmarkdown::render("index.Rmd", output_file = "docs/index.html")
+
+fs::file_copy("docs/EU/map.html", "docs/map.html")
+
 # dir.create(glue::glue("docs/{sets$cntry}"), recursive = T)
 # file.copy(from = "index.html", to = glue::glue("docs/index.html"), overwrite = T)
 # dir(full.names = F) %>%
