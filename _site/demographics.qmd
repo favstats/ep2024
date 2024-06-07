@@ -34,7 +34,9 @@ source(here::here("party_utils.R"))
 
 ```
 
-## Age Targeting
+::: {.panel-tabset}
+
+## Age
 
 
 The following graphs illustrate how parties target different age groups and the percentage of the budget allocated to them.
@@ -278,7 +280,7 @@ tags$div(class = "container", do.call(tags$div, rows))
 
 <br>
 
-## Gender Targeting
+## Gender
 
 De onderstaande grafieken laten zien hoe partijen gender als focusgroep gebruiken en welk percentage van het budget daaraan werd uitgegeven.
 
@@ -461,7 +463,7 @@ tags$div(class = "container", do.call(tags$div, rows))
 
 <br>
 
-## Language Targeting
+## Language
 
 The following graphs show how parties use different languages as focus groups and the percentage of the budget allocated to them.
 
@@ -640,7 +642,7 @@ tags$div(class = "container", do.call(tags$div, rows))
 
 <br>
 
-## Targeting based on Employment or Education Instituation
+##  Employment/Education Institution
 
 The following graphs depict how parties utilize various job sectors and types of education as focus groups and the percentage of the budget allocated to them. The next graph focuses on educational levels.
 
@@ -891,7 +893,7 @@ tags$div(class = "container", do.call(tags$div, rows))
 
 <br>
 
-## Education Levels Targeting
+## Education Levels
 
 The graphs below illustrate how parties target various education levels as focus groups and the percentage of the budget allocated to each.
 
@@ -1117,13 +1119,14 @@ tags$div(class = "container", do.call(tags$div, rows))
 
 <br>
 
-## Relationship Status Targeting
+## Relationship Status
 
 The following graphs reveal how political parties utilize different relationship statuses as focus groups and the percentage of the budget allocated to them.
 
 > Note: targeting criteria may overlap, so the total may not necessarily be 100%.
 
 ::: panel-tabset
+
 ### `r last30days_string`
 
 ```{r, fig.width= 8, fig.height=5, dpi = 300}
@@ -1339,5 +1342,7 @@ tags$div(class = "container", do.call(tags$div, rows))
 
 
 ```
+:::
+
 :::
 

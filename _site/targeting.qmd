@@ -248,7 +248,7 @@ plot_geography <- function(x) {
       
       hchart(daaat, type = "bar", hcaes(x = target, y = perc), color = the_color) %>%
             hc_plotOptions(bar = list(horizontal = TRUE, stacking = "normal")) %>%
-            hc_yAxis(title = list(text = "% Party Budget spent on targeting method"), max = 100, min = 0) %>%
+            hc_yAxis(title = list(text = "% party budget spent on targeting method"), max = 100, min = 0) %>%
             hc_xAxis(title = "", labels = list(style = list(fontSize = "10px"))) %>%
             hc_add_theme(hc_theme_google()) %>%
            highcharter::hc_tooltip(
@@ -472,7 +472,7 @@ overall_spend <- col_each30 %>%
 
 hchart(overall_spend, type = "bar", hcaes(x = max_calc, y = perc), color = "grey") %>%
             hc_plotOptions(bar = list(horizontal = TRUE, stacking = "normal")) %>%
-            hc_yAxis(title = list(text = "% Party Budget spent on targeting method"), max = 100, min = 0) %>%
+            hc_yAxis(title = list(text = "% party budget spent on targeting method"), max = 100, min = 0) %>%
             hc_xAxis(title = "", labels = list(style = list(fontSize = "10px"))) %>%
             hc_add_theme(hc_theme_google()) %>%
            highcharter::hc_tooltip(

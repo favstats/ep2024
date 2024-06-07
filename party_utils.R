@@ -174,6 +174,83 @@ if(sets$cntry == "EU"){
   
   most_left_party <- color_dat$party[1]
   
+}else if(sets$cntry == "DE"){
+  
+  wtm_labs <- read_csv("../data/c4b7f904-acac-45e0-b5c5-75e24ffdb34d.csv.gzip")
+  
+  wtm_labs_fin <- wtm_labs %>% 
+    # mutate(European_Political_Group2 = ifelse(entities_groups.group_name == "Group 4", entities.short_name, NA)) %>%
+    filter(entities_groups.group_name == "Group 1") %>% 
+    # left_join(thhone) %>% 
+    rename(party = entities.short_name,
+           internal_id = advertisers_platforms.advertiser_platform_ref) %>% 
+    mutate(party = case_when(
+      party == "AND" ~ "Others",
+      party == "Sta" ~ "Government",
+      party == "Pol" ~ "Political Actors",
+      party == "Grü" ~ "B90/Die Grünen",
+      party == "Lin" ~ "LINKE",
+      party == "PIR" ~ "Piraten",
+      party == "VOL" ~ "Volt Deutschland",
+      party == "FAM" ~ "Familienpartei",
+      party == "PAR" ~ "Die PARTEI",
+      party == "NPD" ~ "HEIMAT (prev. NPD)",
+      party == "PdH" ~ "Partei der Humanisten",
+      T ~ party
+    )) %>% 
+    filter(!(party %in% c("Government", "Political Actors"))) %>% 
+    filter(name != "Pulse of Europe") %>% 
+    filter(party != "Others")
+  
+  color_dat <- wtm_labs_fin %>% 
+    filter(countries.alpha2 == str_to_lower(sets$cntry)) %>% 
+    select(party, color  = entities.color) %>% 
+    distinct() %>% 
+    setColors() %>% 
+    rename(colors = color) %>% 
+    mutate(party = case_when(
+      party == "AND" ~ "Others",
+      party == "Sta" ~ "Government",
+      party == "Pol" ~ "Political Actors",
+      party == "Grü" ~ "B90/Die Grünen",
+      party == "Lin" ~ "LINKE",
+      party == "PIR" ~ "Piraten",
+      party == "VOL" ~ "Volt Deutschland",
+      party == "FAM" ~ "Familienpartei",
+      party == "PAR" ~ "Die PARTEI",
+      party == "NPD" ~ "HEIMAT (prev. NPD)",
+      party == "PdH" ~ "Partei der Humanisten",
+      T ~ party
+    )) %>% 
+    filter(!(party %in% c("Government", "Political Actors")))   %>% 
+    filter(party != "Others")
+  
+  saveRDS(color_dat, here::here("data/color_dat.rds"))
+  
+  election_dat30 <- readRDS("../data/election_dat30.rds")  %>% 
+    as_tibble() %>% 
+    select(-party) %>% 
+    left_join(wtm_labs_fin %>% select(internal_id, party)) %>% 
+    # mutate(party = ifelse(is.na(party), "-", party)) %>% 
+    # mutate(national_party = ifelse(party == "-", "-", national_party))%>% 
+    # mutate(party = national_party) %>% 
+    # filter(party != "-")  %>%
+    filter(cntry == str_to_upper(sets$cntry)) %>% 
+    filter(party %in% color_dat$party)
+  
+  election_dat7 <- readRDS("../data/election_dat7.rds")  %>% 
+    as_tibble() %>% 
+    select(-party) %>% 
+    left_join(wtm_labs_fin %>% select(internal_id, party)) %>% 
+    # mutate(party = ifelse(is.na(party), "-", party)) %>% 
+    # mutate(national_party = ifelse(party == "-", "-", national_party))%>% 
+    # mutate(party = national_party) %>% 
+    # filter(party != "-")  %>%
+    filter(cntry == str_to_upper(sets$cntry)) %>% 
+    filter(party %in% color_dat$party)
+  
+  most_left_party <- color_dat$party[1]
+  
 } else if(sets$cntry != "EU"){
   
   wtm_labs_fin <- wtm_labs %>% 

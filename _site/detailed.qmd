@@ -3,8 +3,6 @@ title: "Detailed Targeting"
 description-meta: "How do political parties chase your vote, what do they want to keep hidden, and how much money do they spend on it? In the lead-up to the elections, we monitor political microtargeting."
 format:
   html:
-    toc: true
-    toc-location: right
     page-layout: full
 ---
 
@@ -35,6 +33,9 @@ source(here::here("utils.R"))
 source(here::here("party_utils.R"))
 ```
 
+
+
+::: {.panel-tabset}
 
 ## Top Targeted Audiences
 
@@ -618,5 +619,7 @@ if(length(thegraph7$x$hc_opts$series)!=0){
 }
 
 ```
+
+:::
 
 :::
