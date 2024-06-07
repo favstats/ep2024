@@ -594,7 +594,7 @@ hcmap(
   hc_tooltip(formatter = JS("function () {
     return '<b>' + this.point.name + '</b>: <br><i>€' + new Intl.NumberFormat('fr-FR').format(Math.exp(this.point.value).toFixed(0)) + ' </i> per 1000 inhabitants<br><i>$' + new Intl.NumberFormat('fr-FR').format(this.point.euro_spend.toFixed(0)) + '</i> total spent in last 30 days (' + this.point.perc + '%)';
   }")) %>%
-  hc_title(text = glue::glue("Political Ad Spend on Facebook and Instagram in last 30 Days ({last30days_string})")) %>%
+  hc_title(text = glue::glue("Political Ad Spend on Facebook and Instagram in last 30 Days ({read_lines('last30days_string.txt')})")) %>%
   hc_caption(text = "Click on any country for more details. To see individual dashboards use the dropbox menu in the upper right.") %>%
   hc_legend(enabled = F,  width = 400, align = "center", itemWidth = 100) %>%
   hc_colorAxis(
@@ -626,6 +626,40 @@ hcmap(
 
 ```
 
+```{r, eval = F}
+library(rnaturalearth)
+
+# Load the map data for Europe
+europe <- ne_countries(scale = "large", type = "countries", continent = "Europe", returnclass = "sf")
+
+# Merge the map data with the dataset
+map_data <- europe %>%
+  left_join(ncavc, by = c("iso_a3_eh" = "iso3c"))
+
+# Create the map
+ggplot(map_data) +
+  geom_sf(aes(fill = spn_per_capita), color = "black") +
+  # scale_fill_viridis_c(option = "viridis", name = "Spend per Capita (€)") +
+  colorspace::scale_fill_continuous_sequential(name = "Spend per 1000 inhabitants (€)", ,palette= "Blues 3", trans = "log10", na.value = "lightgrey",
+                                                   guide = guide_colorbar(
+      title.position = "top", 
+      barwidth = 20, 
+      barheight = 1
+    )) +
+  theme_void() +
+  coord_sf(xlim = c(-25, 45), ylim = c(34, 72), expand = FALSE) +
+  labs(
+    title = glue::glue("Political Ad Spend on Facebook and Instagram in last 30 Days ({read_lines('last30days_string.txt')})"),
+    caption = ""
+  ) +
+  theme(
+    legend.position = "bottom",
+    plot.title = element_text(hjust = 0.5),
+    plot.caption = element_text(hjust = 0.5)
+  )
+
+ggsave("map.png", width = 8, height = 6, dpi = 300, bg = "white")
+```
 
 
 ```{r}

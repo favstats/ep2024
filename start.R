@@ -2,7 +2,7 @@
 pacman::p_load(knitr, tidyverse, openxlsx, sf, rmarkdown, rvest)
 # setwd("C:/Users/fabio/Dropbox/postdoc/microdashboards/wtm_iq/")
 # setwd("..")
-print(getwd())
+# print(getwd())
 
 # dir("../_site", full.names = T) %>% keep(~str_detect(.x, "qmd")) %>% keep(~str_detect(.x, "qmd")) %>% walk(render_it)
 
@@ -36,7 +36,7 @@ full_cntry_list <- read_rds("https://github.com/favstats/meta_ad_reports/raw/mai
   # sample_n(n()) %>% 
   mutate(iso2c = fct_relevel(iso2c, eu_countries)) %>% 
   arrange(iso2c) %>% 
-  filter(iso2c %in% c("EU", "NL", "PT", "DE"))
+  filter(iso2c %in% c("EU"))
 
 render_it <- function(...) {
   print(...)
@@ -173,6 +173,7 @@ for (cntryy in full_cntry_list$iso2c) {
 rmarkdown::render("index.Rmd", output_file = "docs/index.html")
 
 fs::file_copy("docs/EU/map.html", "docs/map.html")
+fs::dir_copy("docs/EU/site_libs", "docs/site_libs", overwrite = T)
 
 # dir.create(glue::glue("docs/{sets$cntry}"), recursive = T)
 # file.copy(from = "index.html", to = glue::glue("docs/index.html"), overwrite = T)
